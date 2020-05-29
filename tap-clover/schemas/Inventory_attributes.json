@@ -1,0 +1,28 @@
+{
+   "type":"object",
+   "selected": false,
+   "properties":{
+      "id":{
+         "type":"string"
+      },
+      "name":{
+         "type":"string"
+      },
+      "itemGroup":{
+         "type":"object",
+         "properties":{
+            "id":{
+               "type":"string"
+            }
+         },
+         "required":[
+            "id"
+         ]
+      }
+   },
+   "required":[
+      "id",
+      "itemGroup",
+      "name"
+   ]
+}

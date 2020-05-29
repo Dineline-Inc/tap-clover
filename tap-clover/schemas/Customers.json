@@ -1,0 +1,44 @@
+{
+  "type":"object",
+  "selected": false,
+  "properties":{
+    "href":{
+      "type":"string"
+    },
+    "id":{
+      "type":"string"
+    },
+    "orderRef":{
+      "type":"null"
+    },
+    "merchant":{
+      "type":"null"
+    },
+    "firstName":{
+      "type":"string"
+    },
+    "lastName":{
+      "type":"string"
+    },
+    "marketingAllowed":{
+      "type":"boolean"
+    },
+    "customerSince":{
+      "type":"integer"
+    },
+    "metadata":{
+      "type":"null"
+    }
+  },
+  "required":[
+    "customerSince",
+    "firstName",
+    "href",
+    "id",
+    "lastName",
+    "marketingAllowed",
+    "merchant",
+    "metadata",
+    "orderRef"
+  ]
+}

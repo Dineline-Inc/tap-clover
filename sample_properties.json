@@ -1,0 +1,7597 @@
+{
+  "streams": [
+    {
+      "stream": "Orders",
+      "tap_stream_id": "Orders",
+      "schema": {
+        "type": "object",
+        "selected": false,
+        "properties": {
+          "href": {
+            "type": "string"
+          },
+          "id": {
+            "type": "string"
+          },
+          "currency": {
+            "type": "string"
+          },
+          "employee": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "id"
+            ]
+          },
+          "total": {
+            "type": "integer"
+          },
+          "externalReferenceId": {
+            "type": "string"
+          },
+          "unpaidBalance": {
+            "type": "integer"
+          },
+          "paymentState": {
+            "type": "string"
+          },
+          "title": {
+            "type": "string"
+          },
+          "note": {
+            "type": "string"
+          },
+          "orderType": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "labelKey": {
+                "type": "string"
+              },
+              "label": {
+                "type": "string"
+              },
+              "taxable": {
+                "type": "boolean"
+              },
+              "isDefault": {
+                "type": "boolean"
+              },
+              "filterCategories": {
+                "type": "boolean"
+              },
+              "isHidden": {
+                "type": "boolean"
+              },
+              "fee": {
+                "type": "integer"
+              },
+              "minOrderAmount": {
+                "type": "integer"
+              },
+              "maxOrderAmount": {
+                "type": "integer"
+              },
+              "maxRadius": {
+                "type": "integer"
+              },
+              "avgOrderTime": {
+                "type": "integer"
+              },
+              "hoursAvailable": {
+                "type": "string"
+              },
+              "customerIdMethod": {
+                "type": "string"
+              },
+              "isDeleted": {
+                "type": "boolean"
+              },
+              "systemOrderTypeId": {
+                "type": "string"
+              },
+              "hours": {
+                "type": "null"
+              }
+            },
+            "required": [
+              "avgOrderTime",
+              "customerIdMethod",
+              "fee",
+              "filterCategories",
+              "hours",
+              "hoursAvailable",
+              "id",
+              "isDefault",
+              "isDeleted",
+              "isHidden",
+              "label",
+              "labelKey",
+              "maxOrderAmount",
+              "maxRadius",
+              "minOrderAmount",
+              "systemOrderTypeId",
+              "taxable"
+            ]
+          },
+          "taxRemoved": {
+            "type": "boolean"
+          },
+          "isVat": {
+            "type": "boolean"
+          },
+          "state": {
+            "type": "string"
+          },
+          "manualTransaction": {
+            "type": "boolean"
+          },
+          "groupLineItems": {
+            "type": "boolean"
+          },
+          "testMode": {
+            "type": "boolean"
+          },
+          "payType": {
+            "type": "string"
+          },
+          "createdTime": {
+            "type": "integer"
+          },
+          "clientCreatedTime": {
+            "type": "integer"
+          },
+          "modifiedTime": {
+            "type": "integer"
+          },
+          "deletedTimestamp": {
+            "type": "null"
+          },
+          "serviceCharge": {
+            "type": "null"
+          },
+          "device": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "id"
+            ]
+          },
+          "merchant": {
+            "type": "null"
+          },
+          "onlineOrder": {
+            "type": "null"
+          }
+        },
+        "required": [
+          "clientCreatedTime",
+          "createdTime",
+          "currency",
+          "deletedTimestamp",
+          "device",
+          "employee",
+          "externalReferenceId",
+          "groupLineItems",
+          "href",
+          "id",
+          "isVat",
+          "manualTransaction",
+          "merchant",
+          "modifiedTime",
+          "note",
+          "onlineOrder",
+          "orderType",
+          "payType",
+          "paymentState",
+          "serviceCharge",
+          "state",
+          "taxRemoved",
+          "testMode",
+          "title",
+          "total",
+          "unpaidBalance"
+        ]
+      },
+      "metadata": [
+        {
+          "breadcrumb": [],
+          "metadata": {
+            "forced-replication-method": "FULL_TABLE",
+            "valid-replication-keys": [
+              "updated_at"
+            ],
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "href"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "id"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "currency"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "employee"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "total"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "externalReferenceId"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "unpaidBalance"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "paymentState"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "title"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "note"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "orderType"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "taxRemoved"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "isVat"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "state"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "manualTransaction"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "groupLineItems"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "testMode"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "payType"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "createdTime"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "clientCreatedTime"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "modifiedTime"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "deletedTimestamp"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "serviceCharge"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "device"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "merchant"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "onlineOrder"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        }
+      ]
+    },
+    {
+      "stream": "Merchant_address",
+      "tap_stream_id": "Merchant_address",
+      "schema": {
+        "type": "object",
+        "selected": false,
+        "properties": {
+          "href": {
+            "type": "string"
+          },
+          "address1": {
+            "type": "string"
+          },
+          "address2": {
+            "type": "string"
+          },
+          "address3": {
+            "type": "string"
+          },
+          "city": {
+            "type": "string"
+          },
+          "country": {
+            "type": "string"
+          },
+          "phoneNumber": {
+            "type": "string"
+          },
+          "state": {
+            "type": "string"
+          },
+          "zip": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "address1",
+          "address2",
+          "address3",
+          "city",
+          "country",
+          "href",
+          "phoneNumber",
+          "state",
+          "zip"
+        ]
+      },
+      "metadata": [
+        {
+          "breadcrumb": [],
+          "metadata": {
+            "forced-replication-method": "FULL_TABLE",
+            "valid-replication-keys": [
+              "updated_at"
+            ],
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "href"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "address1"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "address2"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "address3"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "city"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "country"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "phoneNumber"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "state"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "zip"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        }
+      ]
+    },
+    {
+      "stream": "Merchant_opening_hours",
+      "tap_stream_id": "Merchant_opening_hours",
+      "schema": {
+        "type": "object",
+        "selected": false,
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "reference": {
+            "type": "null"
+          },
+          "sunday": {
+            "type": "object",
+            "properties": {
+              "elements": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "start": {
+                      "type": "integer"
+                    },
+                    "end": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "end",
+                    "start"
+                  ]
+                }
+              }
+            },
+            "required": [
+              "elements"
+            ]
+          },
+          "monday": {
+            "type": "object",
+            "properties": {
+              "elements": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "start": {
+                      "type": "integer"
+                    },
+                    "end": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "end",
+                    "start"
+                  ]
+                }
+              }
+            },
+            "required": [
+              "elements"
+            ]
+          },
+          "tuesday": {
+            "type": "object",
+            "properties": {
+              "elements": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "start": {
+                      "type": "integer"
+                    },
+                    "end": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "end",
+                    "start"
+                  ]
+                }
+              }
+            },
+            "required": [
+              "elements"
+            ]
+          },
+          "wednesday": {
+            "type": "object",
+            "properties": {
+              "elements": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "start": {
+                      "type": "integer"
+                    },
+                    "end": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "end",
+                    "start"
+                  ]
+                }
+              }
+            },
+            "required": [
+              "elements"
+            ]
+          },
+          "thursday": {
+            "type": "object",
+            "properties": {
+              "elements": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "start": {
+                      "type": "integer"
+                    },
+                    "end": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "end",
+                    "start"
+                  ]
+                }
+              }
+            },
+            "required": [
+              "elements"
+            ]
+          },
+          "friday": {
+            "type": "object",
+            "properties": {
+              "elements": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "start": {
+                      "type": "integer"
+                    },
+                    "end": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "end",
+                    "start"
+                  ]
+                }
+              }
+            },
+            "required": [
+              "elements"
+            ]
+          },
+          "saturday": {
+            "type": "object",
+            "properties": {
+              "elements": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "start": {
+                      "type": "integer"
+                    },
+                    "end": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "end",
+                    "start"
+                  ]
+                }
+              }
+            },
+            "required": [
+              "elements"
+            ]
+          }
+        },
+        "required": [
+          "friday",
+          "id",
+          "monday",
+          "name",
+          "reference",
+          "saturday",
+          "sunday",
+          "thursday",
+          "tuesday",
+          "wednesday"
+        ]
+      },
+      "metadata": [
+        {
+          "breadcrumb": [],
+          "metadata": {
+            "forced-replication-method": "FULL_TABLE",
+            "valid-replication-keys": [
+              "updated_at"
+            ],
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "id"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "name"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "reference"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "sunday"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "monday"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "tuesday"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "wednesday"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "thursday"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "friday"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "saturday"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        }
+      ]
+    },
+    {
+      "stream": "Customers",
+      "tap_stream_id": "Customers",
+      "schema": {
+        "type": "object",
+        "selected": false,
+        "properties": {
+          "href": {
+            "type": "string"
+          },
+          "id": {
+            "type": "string"
+          },
+          "orderRef": {
+            "type": "null"
+          },
+          "merchant": {
+            "type": "null"
+          },
+          "firstName": {
+            "type": "string"
+          },
+          "lastName": {
+            "type": "string"
+          },
+          "marketingAllowed": {
+            "type": "boolean"
+          },
+          "customerSince": {
+            "type": "integer"
+          },
+          "metadata": {
+            "type": "null"
+          }
+        },
+        "required": [
+          "customerSince",
+          "firstName",
+          "href",
+          "id",
+          "lastName",
+          "marketingAllowed",
+          "merchant",
+          "metadata",
+          "orderRef"
+        ]
+      },
+      "metadata": [
+        {
+          "breadcrumb": [],
+          "metadata": {
+            "forced-replication-method": "FULL_TABLE",
+            "valid-replication-keys": [
+              "updated_at"
+            ],
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "href"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "id"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "orderRef"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "merchant"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "firstName"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "lastName"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "marketingAllowed"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "customerSince"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "metadata"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        }
+      ]
+    },
+    {
+      "stream": "Employees",
+      "tap_stream_id": "Employees",
+      "schema": {
+        "type": "object",
+        "selected": false,
+        "properties": {
+          "href": {
+            "type": "string"
+          },
+          "id": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "nickname": {
+            "type": "string"
+          },
+          "customId": {
+            "type": "string"
+          },
+          "email": {
+            "type": "string"
+          },
+          "inviteSent": {
+            "type": "boolean"
+          },
+          "claimedTime": {
+            "type": "integer"
+          },
+          "deletedTime": {
+            "type": "integer"
+          },
+          "pin": {
+            "type": "string"
+          },
+          "unhashedPin": {
+            "type": "string"
+          },
+          "role": {
+            "type": "string"
+          },
+          "isOwner": {
+            "type": "boolean"
+          },
+          "orders": {
+            "type": "object",
+            "properties": {
+              "href": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "href"
+            ]
+          },
+          "merchant": {
+            "type": "null"
+          }
+        },
+        "required": [
+          "claimedTime",
+          "customId",
+          "deletedTime",
+          "email",
+          "href",
+          "id",
+          "inviteSent",
+          "isOwner",
+          "merchant",
+          "name",
+          "nickname",
+          "orders",
+          "pin",
+          "role",
+          "unhashedPin"
+        ]
+      },
+      "metadata": [
+        {
+          "breadcrumb": [],
+          "metadata": {
+            "forced-replication-method": "FULL_TABLE",
+            "valid-replication-keys": [
+              "updated_at"
+            ],
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "href"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "id"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "name"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "nickname"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "customId"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "email"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "inviteSent"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "claimedTime"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "deletedTime"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "pin"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "unhashedPin"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "role"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "isOwner"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "orders"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "merchant"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        }
+      ]
+    },
+    {
+      "stream": "Inventory_items",
+      "tap_stream_id": "Inventory_items",
+      "schema": {
+        "type": "object",
+        "selected": false,
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "hidden": {
+            "type": "boolean"
+          },
+          "itemGroup": {
+            "type": "null"
+          },
+          "name": {
+            "type": "string"
+          },
+          "alternateName": {
+            "type": "string"
+          },
+          "code": {
+            "type": "string"
+          },
+          "sku": {
+            "type": "string"
+          },
+          "price": {
+            "type": "integer"
+          },
+          "priceType": {
+            "type": "string"
+          },
+          "defaultTaxRates": {
+            "type": "boolean"
+          },
+          "unitName": {
+            "type": "string"
+          },
+          "cost": {
+            "type": "integer"
+          },
+          "isRevenue": {
+            "type": "boolean"
+          },
+          "stockCount": {
+            "type": "integer"
+          },
+          "canonical": {
+            "type": "null"
+          },
+          "itemStock": {
+            "type": "null"
+          },
+          "menuItem": {
+            "type": "null"
+          },
+          "modifiedTime": {
+            "type": "integer"
+          },
+          "deletedTime": {
+            "type": "integer"
+          },
+          "priceWithoutVat": {
+            "type": "integer"
+          }
+        },
+        "required": [
+          "alternateName",
+          "canonical",
+          "code",
+          "cost",
+          "defaultTaxRates",
+          "deletedTime",
+          "hidden",
+          "id",
+          "isRevenue",
+          "itemGroup",
+          "itemStock",
+          "menuItem",
+          "modifiedTime",
+          "name",
+          "price",
+          "priceType",
+          "priceWithoutVat",
+          "sku",
+          "stockCount",
+          "unitName"
+        ]
+      },
+      "metadata": [
+        {
+          "breadcrumb": [],
+          "metadata": {
+            "forced-replication-method": "FULL_TABLE",
+            "valid-replication-keys": [
+              "updated_at"
+            ],
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "id"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "hidden"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "itemGroup"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "name"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "alternateName"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "code"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "sku"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "price"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "priceType"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "defaultTaxRates"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "unitName"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "cost"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "isRevenue"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "stockCount"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "canonical"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "itemStock"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "menuItem"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "modifiedTime"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "deletedTime"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "priceWithoutVat"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        }
+      ]
+    },
+    {
+      "stream": "Inventory_item_stocks",
+      "tap_stream_id": "Inventory_item_stocks",
+      "schema": {
+        "type": "object",
+        "selected": false,
+        "properties": {
+          "item": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "id"
+            ]
+          },
+          "stockCount": {
+            "type": "integer"
+          },
+          "quantity": {
+            "type": "number"
+          },
+          "modifiedTime": {
+            "type": "integer"
+          }
+        },
+        "required": [
+          "item",
+          "modifiedTime",
+          "quantity",
+          "stockCount"
+        ]
+      },
+      "metadata": [
+        {
+          "breadcrumb": [],
+          "metadata": {
+            "forced-replication-method": "FULL_TABLE",
+            "valid-replication-keys": [
+              "updated_at"
+            ],
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "item"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "stockCount"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "quantity"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "modifiedTime"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        }
+      ]
+    },
+    {
+      "stream": "Inventory_tags",
+      "tap_stream_id": "Inventory_tags",
+      "schema": {
+        "type": "object",
+        "selected": false,
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "showInReporting": {
+            "type": "boolean"
+          }
+        },
+        "required": [
+          "id",
+          "name",
+          "showInReporting"
+        ]
+      },
+      "metadata": [
+        {
+          "breadcrumb": [],
+          "metadata": {
+            "forced-replication-method": "FULL_TABLE",
+            "valid-replication-keys": [
+              "updated_at"
+            ],
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "id"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "name"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "showInReporting"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        }
+      ]
+    },
+    {
+      "stream": "Inventory_tax_rates",
+      "tap_stream_id": "Inventory_tax_rates",
+      "schema": {
+        "type": "object",
+        "selected": false,
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "lineItemRef": {
+            "type": "null"
+          },
+          "name": {
+            "type": "string"
+          },
+          "taxType": {
+            "type": "string"
+          },
+          "rate": {
+            "type": "integer"
+          },
+          "isDefault": {
+            "type": "boolean"
+          },
+          "taxAmount": {
+            "type": "integer"
+          },
+          "deletedTime": {
+            "type": "integer"
+          },
+          "modifiedTime": {
+            "type": "integer"
+          }
+        },
+        "required": [
+          "deletedTime",
+          "id",
+          "isDefault",
+          "lineItemRef",
+          "modifiedTime",
+          "name",
+          "rate",
+          "taxAmount",
+          "taxType"
+        ]
+      },
+      "metadata": [
+        {
+          "breadcrumb": [],
+          "metadata": {
+            "forced-replication-method": "FULL_TABLE",
+            "valid-replication-keys": [
+              "updated_at"
+            ],
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "id"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "lineItemRef"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "name"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "taxType"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "rate"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "isDefault"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "taxAmount"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "deletedTime"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "modifiedTime"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        }
+      ]
+    },
+    {
+      "stream": "Inventory_item_groups",
+      "tap_stream_id": "Inventory_item_groups",
+      "schema": {
+        "type": "object",
+        "selected": false,
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "id",
+          "name"
+        ]
+      },
+      "metadata": [
+        {
+          "breadcrumb": [],
+          "metadata": {
+            "forced-replication-method": "FULL_TABLE",
+            "valid-replication-keys": [
+              "updated_at"
+            ],
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "id"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "name"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        }
+      ]
+    },
+    {
+      "stream": "Inventory_categories",
+      "tap_stream_id": "Inventory_categories",
+      "schema": {
+        "type": "object",
+        "selected": false,
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "sortOrder": {
+            "type": "integer"
+          },
+          "deleted": {
+            "type": "boolean"
+          },
+          "modifiedTime": {
+            "type": "integer"
+          },
+          "canonical": {
+            "type": "null"
+          },
+          "menuSection": {
+            "type": "null"
+          }
+        },
+        "required": [
+          "canonical",
+          "deleted",
+          "id",
+          "menuSection",
+          "modifiedTime",
+          "name",
+          "sortOrder"
+        ]
+      },
+      "metadata": [
+        {
+          "breadcrumb": [],
+          "metadata": {
+            "forced-replication-method": "FULL_TABLE",
+            "valid-replication-keys": [
+              "updated_at"
+            ],
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "id"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "name"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "sortOrder"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "deleted"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "modifiedTime"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "canonical"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "menuSection"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        }
+      ]
+    },
+    {
+      "stream": "Inventory_modifier_groups",
+      "tap_stream_id": "Inventory_modifier_groups",
+      "schema": {
+        "type": "object",
+        "selected": false,
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "alternateName": {
+            "type": "string"
+          },
+          "minRequired": {
+            "type": "integer"
+          },
+          "maxAllowed": {
+            "type": "integer"
+          },
+          "showByDefault": {
+            "type": "boolean"
+          },
+          "modifierIds": {
+            "type": "string"
+          },
+          "menuModifierGroup": {
+            "type": "null"
+          },
+          "sortOrder": {
+            "type": "null"
+          }
+        },
+        "required": [
+          "alternateName",
+          "id",
+          "maxAllowed",
+          "menuModifierGroup",
+          "minRequired",
+          "modifierIds",
+          "name",
+          "showByDefault",
+          "sortOrder"
+        ]
+      },
+      "metadata": [
+        {
+          "breadcrumb": [],
+          "metadata": {
+            "forced-replication-method": "FULL_TABLE",
+            "valid-replication-keys": [
+              "updated_at"
+            ],
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "id"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "name"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "alternateName"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "minRequired"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "maxAllowed"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "showByDefault"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "modifierIds"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "menuModifierGroup"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "sortOrder"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        }
+      ]
+    },
+    {
+      "stream": "Inventory_modifiers",
+      "tap_stream_id": "Inventory_modifiers",
+      "schema": {
+        "type": "object",
+        "selected": false,
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "alternateName": {
+            "type": "string"
+          },
+          "price": {
+            "type": "integer"
+          },
+          "modifierGroup": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "id"
+            ]
+          },
+          "menuModifier": {
+            "type": "null"
+          }
+        },
+        "required": [
+          "alternateName",
+          "id",
+          "menuModifier",
+          "modifierGroup",
+          "name",
+          "price"
+        ]
+      },
+      "metadata": [
+        {
+          "breadcrumb": [],
+          "metadata": {
+            "forced-replication-method": "FULL_TABLE",
+            "valid-replication-keys": [
+              "updated_at"
+            ],
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "id"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "name"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "alternateName"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "price"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "modifierGroup"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "menuModifier"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        }
+      ]
+    },
+    {
+      "stream": "Inventory_attributes",
+      "tap_stream_id": "Inventory_attributes",
+      "schema": {
+        "type": "object",
+        "selected": false,
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "itemGroup": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "id"
+            ]
+          }
+        },
+        "required": [
+          "id",
+          "itemGroup",
+          "name"
+        ]
+      },
+      "metadata": [
+        {
+          "breadcrumb": [],
+          "metadata": {
+            "forced-replication-method": "FULL_TABLE",
+            "valid-replication-keys": [
+              "updated_at"
+            ],
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "id"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "name"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "itemGroup"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        }
+      ]
+    },
+    {
+      "stream": "Refunds",
+      "tap_stream_id": "Refunds",
+      "schema": {
+        "type": "object",
+        "selected": false,
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "orderRef": {
+            "type": "object",
+            "properties": {
+              "href": {
+                "type": "string"
+              },
+              "id": {
+                "type": "string"
+              },
+              "currency": {
+                "type": "string"
+              },
+              "employee": {
+                "type": "object",
+                "properties": {
+                  "href": {
+                    "type": "string"
+                  },
+                  "id": {
+                    "type": "string"
+                  },
+                  "name": {
+                    "type": "null"
+                  },
+                  "nickname": {
+                    "type": "null"
+                  },
+                  "customId": {
+                    "type": "null"
+                  },
+                  "email": {
+                    "type": "null"
+                  },
+                  "inviteSent": {
+                    "type": "null"
+                  },
+                  "claimedTime": {
+                    "type": "null"
+                  },
+                  "deletedTime": {
+                    "type": "null"
+                  },
+                  "pin": {
+                    "type": "null"
+                  },
+                  "unhashedPin": {
+                    "type": "null"
+                  },
+                  "role": {
+                    "type": "null"
+                  },
+                  "isOwner": {
+                    "type": "null"
+                  },
+                  "orders": {
+                    "type": "object",
+                    "properties": {
+                      "href": {
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "href"
+                    ]
+                  },
+                  "merchant": {
+                    "type": "null"
+                  }
+                },
+                "required": [
+                  "claimedTime",
+                  "customId",
+                  "deletedTime",
+                  "email",
+                  "href",
+                  "id",
+                  "inviteSent",
+                  "isOwner",
+                  "merchant",
+                  "name",
+                  "nickname",
+                  "orders",
+                  "pin",
+                  "role",
+                  "unhashedPin"
+                ]
+              },
+              "total": {
+                "type": "integer"
+              },
+              "externalReferenceId": {
+                "type": "string"
+              },
+              "unpaidBalance": {
+                "type": "null"
+              },
+              "paymentState": {
+                "type": "null"
+              },
+              "title": {
+                "type": "string"
+              },
+              "note": {
+                "type": "null"
+              },
+              "orderType": {
+                "type": "null"
+              },
+              "taxRemoved": {
+                "type": "boolean"
+              },
+              "isVat": {
+                "type": "boolean"
+              },
+              "state": {
+                "type": "string"
+              },
+              "manualTransaction": {
+                "type": "boolean"
+              },
+              "groupLineItems": {
+                "type": "boolean"
+              },
+              "testMode": {
+                "type": "boolean"
+              },
+              "payType": {
+                "type": "string"
+              },
+              "createdTime": {
+                "type": "integer"
+              },
+              "clientCreatedTime": {
+                "type": "integer"
+              },
+              "modifiedTime": {
+                "type": "integer"
+              },
+              "deletedTimestamp": {
+                "type": "null"
+              },
+              "serviceCharge": {
+                "type": "null"
+              },
+              "device": {
+                "type": "object",
+                "properties": {
+                  "href": {
+                    "type": "string"
+                  },
+                  "id": {
+                    "type": "string"
+                  },
+                  "name": {
+                    "type": "null"
+                  },
+                  "model": {
+                    "type": "null"
+                  },
+                  "merchant": {
+                    "type": "null"
+                  },
+                  "orderPrefix": {
+                    "type": "null"
+                  },
+                  "terminalId": {
+                    "type": "null"
+                  },
+                  "terminalPrefix": {
+                    "type": "null"
+                  },
+                  "serial": {
+                    "type": "null"
+                  },
+                  "buildNumber": {
+                    "type": "null"
+                  },
+                  "secureId": {
+                    "type": "null"
+                  },
+                  "buildType": {
+                    "type": "null"
+                  },
+                  "cpuId": {
+                    "type": "null"
+                  },
+                  "imei": {
+                    "type": "null"
+                  },
+                  "imsi": {
+                    "type": "null"
+                  },
+                  "simIccid": {
+                    "type": "null"
+                  },
+                  "deviceCertificate": {
+                    "type": "null"
+                  },
+                  "pedCertificate": {
+                    "type": "null"
+                  },
+                  "deviceTypeName": {
+                    "type": "null"
+                  },
+                  "productName": {
+                    "type": "null"
+                  },
+                  "pinDisabled": {
+                    "type": "null"
+                  },
+                  "offlinePayments": {
+                    "type": "null"
+                  },
+                  "offlinePaymentsAll": {
+                    "type": "null"
+                  },
+                  "offlinePaymentsLimit": {
+                    "type": "null"
+                  },
+                  "offlinePaymentsPromptThreshold": {
+                    "type": "null"
+                  },
+                  "offlinePaymentsTotalPaymentsLimit": {
+                    "type": "null"
+                  },
+                  "offlinePaymentsLimitDefault": {
+                    "type": "null"
+                  },
+                  "offlinePaymentsPromptThresholdDefault": {
+                    "type": "null"
+                  },
+                  "offlinePaymentsTotalPaymentsLimitDefault": {
+                    "type": "null"
+                  },
+                  "offlinePaymentsMaxLimit": {
+                    "type": "null"
+                  },
+                  "offlinePaymentsMaxTotalPaymentsLimit": {
+                    "type": "null"
+                  },
+                  "showOfflinePayments": {
+                    "type": "null"
+                  },
+                  "maxOfflineDays": {
+                    "type": "null"
+                  },
+                  "allowStoreAndForward": {
+                    "type": "null"
+                  },
+                  "bundleIndicator": {
+                    "type": "null"
+                  }
+                },
+                "required": [
+                  "allowStoreAndForward",
+                  "buildNumber",
+                  "buildType",
+                  "bundleIndicator",
+                  "cpuId",
+                  "deviceCertificate",
+                  "deviceTypeName",
+                  "href",
+                  "id",
+                  "imei",
+                  "imsi",
+                  "maxOfflineDays",
+                  "merchant",
+                  "model",
+                  "name",
+                  "offlinePayments",
+                  "offlinePaymentsAll",
+                  "offlinePaymentsLimit",
+                  "offlinePaymentsLimitDefault",
+                  "offlinePaymentsMaxLimit",
+                  "offlinePaymentsMaxTotalPaymentsLimit",
+                  "offlinePaymentsPromptThreshold",
+                  "offlinePaymentsPromptThresholdDefault",
+                  "offlinePaymentsTotalPaymentsLimit",
+                  "offlinePaymentsTotalPaymentsLimitDefault",
+                  "orderPrefix",
+                  "pedCertificate",
+                  "pinDisabled",
+                  "productName",
+                  "secureId",
+                  "serial",
+                  "showOfflinePayments",
+                  "simIccid",
+                  "terminalId",
+                  "terminalPrefix"
+                ]
+              },
+              "merchant": {
+                "type": "null"
+              },
+              "onlineOrder": {
+                "type": "null"
+              }
+            },
+            "required": [
+              "clientCreatedTime",
+              "createdTime",
+              "currency",
+              "deletedTimestamp",
+              "device",
+              "employee",
+              "externalReferenceId",
+              "groupLineItems",
+              "href",
+              "id",
+              "isVat",
+              "manualTransaction",
+              "merchant",
+              "modifiedTime",
+              "note",
+              "onlineOrder",
+              "orderType",
+              "payType",
+              "paymentState",
+              "serviceCharge",
+              "state",
+              "taxRemoved",
+              "testMode",
+              "title",
+              "total",
+              "unpaidBalance"
+            ]
+          },
+          "device": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "id"
+            ]
+          },
+          "amount": {
+            "type": "integer"
+          },
+          "taxAmount": {
+            "type": "integer"
+          },
+          "tipAmount": {
+            "type": "integer"
+          },
+          "createdTime": {
+            "type": "integer"
+          },
+          "clientCreatedTime": {
+            "type": "integer"
+          },
+          "payment": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "order": {
+                "type": "object",
+                "properties": {
+                  "id": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "id"
+                ]
+              },
+              "device": {
+                "type": "object",
+                "properties": {
+                  "href": {
+                    "type": "string"
+                  },
+                  "id": {
+                    "type": "string"
+                  },
+                  "name": {
+                    "type": "null"
+                  },
+                  "model": {
+                    "type": "null"
+                  },
+                  "merchant": {
+                    "type": "null"
+                  },
+                  "orderPrefix": {
+                    "type": "null"
+                  },
+                  "terminalId": {
+                    "type": "null"
+                  },
+                  "terminalPrefix": {
+                    "type": "null"
+                  },
+                  "serial": {
+                    "type": "null"
+                  },
+                  "buildNumber": {
+                    "type": "null"
+                  },
+                  "secureId": {
+                    "type": "null"
+                  },
+                  "buildType": {
+                    "type": "null"
+                  },
+                  "cpuId": {
+                    "type": "null"
+                  },
+                  "imei": {
+                    "type": "null"
+                  },
+                  "imsi": {
+                    "type": "null"
+                  },
+                  "simIccid": {
+                    "type": "null"
+                  },
+                  "deviceCertificate": {
+                    "type": "null"
+                  },
+                  "pedCertificate": {
+                    "type": "null"
+                  },
+                  "deviceTypeName": {
+                    "type": "null"
+                  },
+                  "productName": {
+                    "type": "null"
+                  },
+                  "pinDisabled": {
+                    "type": "null"
+                  },
+                  "offlinePayments": {
+                    "type": "null"
+                  },
+                  "offlinePaymentsAll": {
+                    "type": "null"
+                  },
+                  "offlinePaymentsLimit": {
+                    "type": "null"
+                  },
+                  "offlinePaymentsPromptThreshold": {
+                    "type": "null"
+                  },
+                  "offlinePaymentsTotalPaymentsLimit": {
+                    "type": "null"
+                  },
+                  "offlinePaymentsLimitDefault": {
+                    "type": "null"
+                  },
+                  "offlinePaymentsPromptThresholdDefault": {
+                    "type": "null"
+                  },
+                  "offlinePaymentsTotalPaymentsLimitDefault": {
+                    "type": "null"
+                  },
+                  "offlinePaymentsMaxLimit": {
+                    "type": "null"
+                  },
+                  "offlinePaymentsMaxTotalPaymentsLimit": {
+                    "type": "null"
+                  },
+                  "showOfflinePayments": {
+                    "type": "null"
+                  },
+                  "maxOfflineDays": {
+                    "type": "null"
+                  },
+                  "allowStoreAndForward": {
+                    "type": "null"
+                  },
+                  "bundleIndicator": {
+                    "type": "null"
+                  }
+                },
+                "required": [
+                  "allowStoreAndForward",
+                  "buildNumber",
+                  "buildType",
+                  "bundleIndicator",
+                  "cpuId",
+                  "deviceCertificate",
+                  "deviceTypeName",
+                  "href",
+                  "id",
+                  "imei",
+                  "imsi",
+                  "maxOfflineDays",
+                  "merchant",
+                  "model",
+                  "name",
+                  "offlinePayments",
+                  "offlinePaymentsAll",
+                  "offlinePaymentsLimit",
+                  "offlinePaymentsLimitDefault",
+                  "offlinePaymentsMaxLimit",
+                  "offlinePaymentsMaxTotalPaymentsLimit",
+                  "offlinePaymentsPromptThreshold",
+                  "offlinePaymentsPromptThresholdDefault",
+                  "offlinePaymentsTotalPaymentsLimit",
+                  "offlinePaymentsTotalPaymentsLimitDefault",
+                  "orderPrefix",
+                  "pedCertificate",
+                  "pinDisabled",
+                  "productName",
+                  "secureId",
+                  "serial",
+                  "showOfflinePayments",
+                  "simIccid",
+                  "terminalId",
+                  "terminalPrefix"
+                ]
+              },
+              "tender": {
+                "type": "object",
+                "properties": {
+                  "href": {
+                    "type": "string"
+                  },
+                  "id": {
+                    "type": "string"
+                  },
+                  "editable": {
+                    "type": "null"
+                  },
+                  "labelKey": {
+                    "type": "null"
+                  },
+                  "label": {
+                    "type": "null"
+                  },
+                  "opensCashDrawer": {
+                    "type": "null"
+                  },
+                  "supportsTipping": {
+                    "type": "null"
+                  },
+                  "enabled": {
+                    "type": "null"
+                  },
+                  "visible": {
+                    "type": "null"
+                  },
+                  "instructions": {
+                    "type": "null"
+                  }
+                },
+                "required": [
+                  "editable",
+                  "enabled",
+                  "href",
+                  "id",
+                  "instructions",
+                  "label",
+                  "labelKey",
+                  "opensCashDrawer",
+                  "supportsTipping",
+                  "visible"
+                ]
+              },
+              "amount": {
+                "type": "integer"
+              },
+              "tipAmount": {
+                "type": "integer"
+              },
+              "taxAmount": {
+                "type": "integer"
+              },
+              "cashbackAmount": {
+                "type": "integer"
+              },
+              "cashTendered": {
+                "type": "integer"
+              },
+              "externalPaymentId": {
+                "type": "null"
+              },
+              "employee": {
+                "type": "object",
+                "properties": {
+                  "href": {
+                    "type": "string"
+                  },
+                  "id": {
+                    "type": "string"
+                  },
+                  "name": {
+                    "type": "null"
+                  },
+                  "nickname": {
+                    "type": "null"
+                  },
+                  "customId": {
+                    "type": "null"
+                  },
+                  "email": {
+                    "type": "null"
+                  },
+                  "inviteSent": {
+                    "type": "null"
+                  },
+                  "claimedTime": {
+                    "type": "null"
+                  },
+                  "deletedTime": {
+                    "type": "null"
+                  },
+                  "pin": {
+                    "type": "null"
+                  },
+                  "unhashedPin": {
+                    "type": "null"
+                  },
+                  "role": {
+                    "type": "null"
+                  },
+                  "isOwner": {
+                    "type": "null"
+                  },
+                  "orders": {
+                    "type": "object",
+                    "properties": {
+                      "href": {
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "href"
+                    ]
+                  },
+                  "merchant": {
+                    "type": "null"
+                  }
+                },
+                "required": [
+                  "claimedTime",
+                  "customId",
+                  "deletedTime",
+                  "email",
+                  "href",
+                  "id",
+                  "inviteSent",
+                  "isOwner",
+                  "merchant",
+                  "name",
+                  "nickname",
+                  "orders",
+                  "pin",
+                  "role",
+                  "unhashedPin"
+                ]
+              },
+              "createdTime": {
+                "type": "integer"
+              },
+              "clientCreatedTime": {
+                "type": "integer"
+              },
+              "modifiedTime": {
+                "type": "integer"
+              },
+              "offline": {
+                "type": "boolean"
+              },
+              "result": {
+                "type": "string"
+              },
+              "cardTransaction": {
+                "type": "null"
+              },
+              "serviceCharge": {
+                "type": "null"
+              },
+              "attributes": {
+                "type": "null"
+              },
+              "note": {
+                "type": "null"
+              },
+              "authorization": {
+                "type": "null"
+              },
+              "voidPaymentRef": {
+                "type": "null"
+              },
+              "voidReason": {
+                "type": "null"
+              },
+              "dccInfo": {
+                "type": "null"
+              },
+              "transactionSettings": {
+                "type": "null"
+              },
+              "germanInfo": {
+                "type": "null"
+              },
+              "appTracking": {
+                "type": "null"
+              },
+              "cashAdvanceExtra": {
+                "type": "null"
+              },
+              "transactionInfo": {
+                "type": "null"
+              },
+              "signatureDisclaimer": {
+                "type": "null"
+              },
+              "externalReferenceId": {
+                "type": "null"
+              },
+              "merchant": {
+                "type": "null"
+              },
+              "purchaseCardL2": {
+                "type": "null"
+              }
+            },
+            "required": [
+              "amount",
+              "appTracking",
+              "attributes",
+              "authorization",
+              "cardTransaction",
+              "cashAdvanceExtra",
+              "cashTendered",
+              "cashbackAmount",
+              "clientCreatedTime",
+              "createdTime",
+              "dccInfo",
+              "device",
+              "employee",
+              "externalPaymentId",
+              "externalReferenceId",
+              "germanInfo",
+              "id",
+              "merchant",
+              "modifiedTime",
+              "note",
+              "offline",
+              "order",
+              "purchaseCardL2",
+              "result",
+              "serviceCharge",
+              "signatureDisclaimer",
+              "taxAmount",
+              "tender",
+              "tipAmount",
+              "transactionInfo",
+              "transactionSettings",
+              "voidPaymentRef",
+              "voidReason"
+            ]
+          },
+          "employee": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "id"
+            ]
+          },
+          "overrideMerchantTender": {
+            "type": "null"
+          },
+          "serviceChargeAmount": {
+            "type": "null"
+          },
+          "germanInfo": {
+            "type": "null"
+          },
+          "appTracking": {
+            "type": "null"
+          },
+          "voided": {
+            "type": "boolean"
+          },
+          "voidReason": {
+            "type": "null"
+          },
+          "cardTransaction": {
+            "type": "null"
+          },
+          "transactionInfo": {
+            "type": "null"
+          },
+          "merchant": {
+            "type": "null"
+          },
+          "externalReferenceId": {
+            "type": "null"
+          }
+        },
+        "required": [
+          "amount",
+          "appTracking",
+          "cardTransaction",
+          "clientCreatedTime",
+          "createdTime",
+          "device",
+          "employee",
+          "externalReferenceId",
+          "germanInfo",
+          "id",
+          "merchant",
+          "orderRef",
+          "overrideMerchantTender",
+          "payment",
+          "serviceChargeAmount",
+          "taxAmount",
+          "tipAmount",
+          "transactionInfo",
+          "voidReason",
+          "voided"
+        ]
+      },
+      "metadata": [
+        {
+          "breadcrumb": [],
+          "metadata": {
+            "forced-replication-method": "FULL_TABLE",
+            "valid-replication-keys": [
+              "updated_at"
+            ],
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "id"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "orderRef"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "device"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "amount"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "taxAmount"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "tipAmount"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "createdTime"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "clientCreatedTime"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "payment"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "employee"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "overrideMerchantTender"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "serviceChargeAmount"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "germanInfo"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "appTracking"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "voided"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "voidReason"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "cardTransaction"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "transactionInfo"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "merchant"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "externalReferenceId"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        }
+      ]
+    },
+    {
+      "stream": "Payments",
+      "tap_stream_id": "Payments",
+      "schema": {
+        "type": "object",
+        "selected": false,
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "order": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "id"
+            ]
+          },
+          "device": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "id"
+            ]
+          },
+          "tender": {
+            "type": "object",
+            "properties": {
+              "href": {
+                "type": "string"
+              },
+              "id": {
+                "type": "string"
+              },
+              "editable": {
+                "type": "boolean"
+              },
+              "labelKey": {
+                "type": "string"
+              },
+              "label": {
+                "type": "string"
+              },
+              "opensCashDrawer": {
+                "type": "boolean"
+              },
+              "supportsTipping": {
+                "type": "boolean"
+              },
+              "enabled": {
+                "type": "boolean"
+              },
+              "visible": {
+                "type": "boolean"
+              },
+              "instructions": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "editable",
+              "enabled",
+              "href",
+              "id",
+              "instructions",
+              "label",
+              "labelKey",
+              "opensCashDrawer",
+              "supportsTipping",
+              "visible"
+            ]
+          },
+          "amount": {
+            "type": "integer"
+          },
+          "tipAmount": {
+            "type": "integer"
+          },
+          "taxAmount": {
+            "type": "integer"
+          },
+          "cashbackAmount": {
+            "type": "integer"
+          },
+          "cashTendered": {
+            "type": "integer"
+          },
+          "externalPaymentId": {
+            "type": "string"
+          },
+          "employee": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "id"
+            ]
+          },
+          "createdTime": {
+            "type": "integer"
+          },
+          "clientCreatedTime": {
+            "type": "integer"
+          },
+          "modifiedTime": {
+            "type": "integer"
+          },
+          "offline": {
+            "type": "boolean"
+          },
+          "result": {
+            "type": "string"
+          },
+          "cardTransaction": {
+            "type": "null"
+          },
+          "serviceCharge": {
+            "type": "null"
+          },
+          "attributes": {
+            "type": "null"
+          },
+          "note": {
+            "type": "null"
+          },
+          "authorization": {
+            "type": "null"
+          },
+          "voidPaymentRef": {
+            "type": "null"
+          },
+          "voidReason": {
+            "type": "null"
+          },
+          "dccInfo": {
+            "type": "null"
+          },
+          "transactionSettings": {
+            "type": "null"
+          },
+          "germanInfo": {
+            "type": "null"
+          },
+          "appTracking": {
+            "type": "null"
+          },
+          "cashAdvanceExtra": {
+            "type": "null"
+          },
+          "transactionInfo": {
+            "type": "null"
+          },
+          "signatureDisclaimer": {
+            "type": "null"
+          },
+          "externalReferenceId": {
+            "type": "null"
+          },
+          "merchant": {
+            "type": "null"
+          },
+          "purchaseCardL2": {
+            "type": "null"
+          }
+        },
+        "required": [
+          "amount",
+          "appTracking",
+          "attributes",
+          "authorization",
+          "cardTransaction",
+          "cashAdvanceExtra",
+          "cashTendered",
+          "cashbackAmount",
+          "clientCreatedTime",
+          "createdTime",
+          "dccInfo",
+          "device",
+          "employee",
+          "externalPaymentId",
+          "externalReferenceId",
+          "germanInfo",
+          "id",
+          "merchant",
+          "modifiedTime",
+          "note",
+          "offline",
+          "order",
+          "purchaseCardL2",
+          "result",
+          "serviceCharge",
+          "signatureDisclaimer",
+          "taxAmount",
+          "tender",
+          "tipAmount",
+          "transactionInfo",
+          "transactionSettings",
+          "voidPaymentRef",
+          "voidReason"
+        ]
+      },
+      "metadata": [
+        {
+          "breadcrumb": [],
+          "metadata": {
+            "forced-replication-method": "FULL_TABLE",
+            "valid-replication-keys": [
+              "updated_at"
+            ],
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "id"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "order"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "device"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "tender"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "amount"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "tipAmount"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "taxAmount"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "cashbackAmount"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "cashTendered"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "externalPaymentId"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "employee"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "createdTime"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "clientCreatedTime"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "modifiedTime"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "offline"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "result"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "cardTransaction"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "serviceCharge"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "attributes"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "note"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "authorization"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "voidPaymentRef"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "voidReason"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "dccInfo"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "transactionSettings"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "germanInfo"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "appTracking"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "cashAdvanceExtra"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "transactionInfo"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "signatureDisclaimer"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "externalReferenceId"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "merchant"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "purchaseCardL2"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        }
+      ]
+    },
+    {
+      "stream": "Merchants_gateway",
+      "tap_stream_id": "Merchants_gateway",
+      "schema": {
+        "type": "object",
+        "selected": false,
+        "properties": {
+          "paymentProcessorName": {
+            "type": "null"
+          },
+          "authorizationFrontEnd": {
+            "type": "string"
+          },
+          "acquiringBackEnd": {
+            "type": "string"
+          },
+          "paymentGatewayApi": {
+            "type": "string"
+          },
+          "accountName": {
+            "type": "string"
+          },
+          "altMid": {
+            "type": "null"
+          },
+          "mid": {
+            "type": "string"
+          },
+          "fns": {
+            "type": "null"
+          },
+          "tid": {
+            "type": "string"
+          },
+          "storeId": {
+            "type": "null"
+          },
+          "supportsTipping": {
+            "type": "boolean"
+          },
+          "frontendMid": {
+            "type": "string"
+          },
+          "backendMid": {
+            "type": "string"
+          },
+          "mcc": {
+            "type": "string"
+          },
+          "tokenType": {
+            "type": "string"
+          },
+          "groupId": {
+            "type": "string"
+          },
+          "debitKeyCode": {
+            "type": "string"
+          },
+          "sredCode": {
+            "type": "null"
+          },
+          "supportsTipAdjust": {
+            "type": "boolean"
+          },
+          "supportsNakedCredit": {
+            "type": "boolean"
+          },
+          "supportsMultiPayToken": {
+            "type": "boolean"
+          },
+          "supportsPreauthOverage": {
+            "type": "boolean"
+          },
+          "keyPrefix": {
+            "type": "null"
+          },
+          "keyInfo": {
+            "type": "null"
+          },
+          "closingTime": {
+            "type": "string"
+          },
+          "newBatchCloseEnabled": {
+            "type": "boolean"
+          },
+          "production": {
+            "type": "boolean"
+          }
+        },
+        "required": [
+          "accountName",
+          "acquiringBackEnd",
+          "altMid",
+          "authorizationFrontEnd",
+          "backendMid",
+          "closingTime",
+          "debitKeyCode",
+          "fns",
+          "frontendMid",
+          "groupId",
+          "keyInfo",
+          "keyPrefix",
+          "mcc",
+          "mid",
+          "newBatchCloseEnabled",
+          "paymentGatewayApi",
+          "paymentProcessorName",
+          "production",
+          "sredCode",
+          "storeId",
+          "supportsMultiPayToken",
+          "supportsNakedCredit",
+          "supportsPreauthOverage",
+          "supportsTipAdjust",
+          "supportsTipping",
+          "tid",
+          "tokenType"
+        ]
+      },
+      "metadata": [
+        {
+          "breadcrumb": [],
+          "metadata": {
+            "forced-replication-method": "FULL_TABLE",
+            "valid-replication-keys": [
+              "updated_at"
+            ],
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "paymentProcessorName"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "authorizationFrontEnd"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "acquiringBackEnd"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "paymentGatewayApi"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "accountName"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "altMid"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "mid"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "fns"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "tid"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "storeId"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "supportsTipping"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "frontendMid"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "backendMid"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "mcc"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "tokenType"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "groupId"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "debitKeyCode"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "sredCode"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "supportsTipAdjust"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "supportsNakedCredit"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "supportsMultiPayToken"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "supportsPreauthOverage"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "keyPrefix"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "keyInfo"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "closingTime"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "newBatchCloseEnabled"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "production"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        }
+      ]
+    },
+    {
+      "stream": "Employees_shifts",
+      "tap_stream_id": "Employees_shifts",
+      "schema": {
+        "type": "object",
+        "selected": false,
+        "properties": {
+          "href": {
+            "type": "string"
+          },
+          "id": {
+            "type": "string"
+          },
+          "employee": {
+            "type": "object",
+            "properties": {
+              "href": {
+                "type": "string"
+              },
+              "id": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              },
+              "nickname": {
+                "type": "string"
+              },
+              "customId": {
+                "type": "string"
+              },
+              "email": {
+                "type": "string"
+              },
+              "inviteSent": {
+                "type": "boolean"
+              },
+              "claimedTime": {
+                "type": "integer"
+              },
+              "deletedTime": {
+                "type": "integer"
+              },
+              "pin": {
+                "type": "string"
+              },
+              "unhashedPin": {
+                "type": "string"
+              },
+              "role": {
+                "type": "null"
+              },
+              "isOwner": {
+                "type": "null"
+              },
+              "orders": {
+                "type": "object",
+                "properties": {
+                  "href": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "href"
+                ]
+              },
+              "merchant": {
+                "type": "null"
+              }
+            },
+            "required": [
+              "claimedTime",
+              "customId",
+              "deletedTime",
+              "email",
+              "href",
+              "id",
+              "inviteSent",
+              "isOwner",
+              "merchant",
+              "name",
+              "nickname",
+              "orders",
+              "pin",
+              "role",
+              "unhashedPin"
+            ]
+          },
+          "cashTipsCollected": {
+            "type": "integer"
+          },
+          "serverBanking": {
+            "type": "boolean"
+          },
+          "inTime": {
+            "type": "integer"
+          },
+          "overrideInTime": {
+            "type": "integer"
+          },
+          "overrideInEmployee": {
+            "type": "null"
+          },
+          "outTime": {
+            "type": "integer"
+          },
+          "overrideOutTime": {
+            "type": "inTime"
+          },
+          "overrideOutEmployee": {
+            "type": "null"
+          }
+        },
+        "required": [
+          "cashTipsCollected",
+          "employee",
+          "href",
+          "id",
+          "inTime",
+          "outTime",
+          "overrideInEmployee",
+          "overrideInTime",
+          "overrideOutEmployee",
+          "overrideOutTime",
+          "serverBanking"
+        ]
+      },
+      "metadata": [
+        {
+          "breadcrumb": [],
+          "metadata": {
+            "forced-replication-method": "FULL_TABLE",
+            "valid-replication-keys": [
+              "updated_at"
+            ],
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "href"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "id"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "employee"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "cashTipsCollected"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "serverBanking"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "inTime"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "overrideInTime"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "overrideInEmployee"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "outTime"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "overrideOutTime"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "overrideOutEmployee"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        }
+      ]
+    },
+    {
+      "stream": "Inventory_discounts",
+      "tap_stream_id": "Inventory_discounts",
+      "schema": {
+        "type": "object",
+        "selected": false,
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "amount": {
+            "type": "integer"
+          },
+          "percentage": {
+            "type": "integer"
+          }
+        },
+        "required": [
+          "amount",
+          "id",
+          "name",
+          "percentage"
+        ]
+      },
+      "metadata": [
+        {
+          "breadcrumb": [],
+          "metadata": {
+            "forced-replication-method": "FULL_TABLE",
+            "valid-replication-keys": [
+              "updated_at"
+            ],
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "id"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "name"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "amount"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "percentage"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        }
+      ]
+    },
+    {
+      "stream": "Merchant_devices",
+      "tap_stream_id": "Merchant_devices",
+      "schema": {
+        "type": "object",
+        "selected": false,
+        "properties": {
+          "href": {
+            "type": "string"
+          },
+          "id": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "model": {
+            "type": "string"
+          },
+          "merchant": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "id"
+            ]
+          },
+          "orderPrefix": {
+            "type": "string"
+          },
+          "terminalId": {
+            "type": "string"
+          },
+          "terminalPrefix": {
+            "type": "integer"
+          },
+          "serial": {
+            "type": "string"
+          },
+          "buildNumber": {
+            "type": "null"
+          },
+          "secureId": {
+            "type": "null"
+          },
+          "buildType": {
+            "type": "string"
+          },
+          "cpuId": {
+            "type": "null"
+          },
+          "imei": {
+            "type": "null"
+          },
+          "imsi": {
+            "type": "null"
+          },
+          "simIccid": {
+            "type": "null"
+          },
+          "deviceCertificate": {
+            "type": "null"
+          },
+          "pedCertificate": {
+            "type": "null"
+          },
+          "deviceTypeName": {
+            "type": "string"
+          },
+          "productName": {
+            "type": "null"
+          },
+          "pinDisabled": {
+            "type": "null"
+          },
+          "offlinePayments": {
+            "type": "null"
+          },
+          "offlinePaymentsAll": {
+            "type": "null"
+          },
+          "offlinePaymentsLimit": {
+            "type": "null"
+          },
+          "offlinePaymentsPromptThreshold": {
+            "type": "null"
+          },
+          "offlinePaymentsTotalPaymentsLimit": {
+            "type": "null"
+          },
+          "offlinePaymentsLimitDefault": {
+            "type": "null"
+          },
+          "offlinePaymentsPromptThresholdDefault": {
+            "type": "null"
+          },
+          "offlinePaymentsTotalPaymentsLimitDefault": {
+            "type": "null"
+          },
+          "offlinePaymentsMaxLimit": {
+            "type": "null"
+          },
+          "offlinePaymentsMaxTotalPaymentsLimit": {
+            "type": "null"
+          },
+          "showOfflinePayments": {
+            "type": "null"
+          },
+          "maxOfflineDays": {
+            "type": "null"
+          },
+          "allowStoreAndForward": {
+            "type": "null"
+          },
+          "bundleIndicator": {
+            "type": "null"
+          }
+        },
+        "required": [
+          "allowStoreAndForward",
+          "buildNumber",
+          "buildType",
+          "bundleIndicator",
+          "cpuId",
+          "deviceCertificate",
+          "deviceTypeName",
+          "href",
+          "id",
+          "imei",
+          "imsi",
+          "maxOfflineDays",
+          "merchant",
+          "model",
+          "name",
+          "offlinePayments",
+          "offlinePaymentsAll",
+          "offlinePaymentsLimit",
+          "offlinePaymentsLimitDefault",
+          "offlinePaymentsMaxLimit",
+          "offlinePaymentsMaxTotalPaymentsLimit",
+          "offlinePaymentsPromptThreshold",
+          "offlinePaymentsPromptThresholdDefault",
+          "offlinePaymentsTotalPaymentsLimit",
+          "offlinePaymentsTotalPaymentsLimitDefault",
+          "orderPrefix",
+          "pedCertificate",
+          "pinDisabled",
+          "productName",
+          "secureId",
+          "serial",
+          "showOfflinePayments",
+          "simIccid",
+          "terminalId",
+          "terminalPrefix"
+        ]
+      },
+      "metadata": [
+        {
+          "breadcrumb": [],
+          "metadata": {
+            "forced-replication-method": "FULL_TABLE",
+            "valid-replication-keys": [
+              "updated_at"
+            ],
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "href"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "id"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "name"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "model"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "merchant"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "orderPrefix"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "terminalId"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "terminalPrefix"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "serial"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "buildNumber"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "secureId"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "buildType"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "cpuId"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "imei"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "imsi"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "simIccid"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "deviceCertificate"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "pedCertificate"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "deviceTypeName"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "productName"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "pinDisabled"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "offlinePayments"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "offlinePaymentsAll"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "offlinePaymentsLimit"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "offlinePaymentsPromptThreshold"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "offlinePaymentsTotalPaymentsLimit"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "offlinePaymentsLimitDefault"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "offlinePaymentsPromptThresholdDefault"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "offlinePaymentsTotalPaymentsLimitDefault"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "offlinePaymentsMaxLimit"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "offlinePaymentsMaxTotalPaymentsLimit"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "showOfflinePayments"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "maxOfflineDays"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "allowStoreAndForward"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "bundleIndicator"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        }
+      ]
+    },
+    {
+      "stream": "Merchant_properties",
+      "tap_stream_id": "Merchant_properties",
+      "schema": {
+        "type": "object",
+        "selected": false,
+        "properties": {
+          "href": {
+            "type": "string"
+          },
+          "merchantRef": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "id"
+            ]
+          },
+          "defaultCurrency": {
+            "type": "string"
+          },
+          "tipsEnabled": {
+            "type": "boolean"
+          },
+          "maxTipPercentage": {
+            "type": "null"
+          },
+          "receiptProperties": {
+            "type": "string"
+          },
+          "summaryHour": {
+            "type": "integer"
+          },
+          "signatureThreshold": {
+            "type": "integer"
+          },
+          "hasDefaultEmployee": {
+            "type": "boolean"
+          },
+          "tipRateDefault": {
+            "type": "integer"
+          },
+          "onPaperTipSignatures": {
+            "type": "boolean"
+          },
+          "noSignatureProgramEligible": {
+            "type": "null"
+          },
+          "autoLogout": {
+            "type": "boolean"
+          },
+          "orderTitle": {
+            "type": "string"
+          },
+          "orderTitleMax": {
+            "type": "integer"
+          },
+          "resetOnReportingTime": {
+            "type": "boolean"
+          },
+          "notesOnOrders": {
+            "type": "boolean"
+          },
+          "deleteOrders": {
+            "type": "boolean"
+          },
+          "removeTaxEnabled": {
+            "type": "boolean"
+          },
+          "groupLineItems": {
+            "type": "boolean"
+          },
+          "alternateInventoryNames": {
+            "type": "boolean"
+          },
+          "autoPrint": {
+            "type": "boolean"
+          },
+          "hardwareProfile": {
+            "type": "null"
+          },
+          "infoleaseSuppressBilling": {
+            "type": "boolean"
+          },
+          "infoleaseSuppressPlanBilling": {
+            "type": "boolean"
+          },
+          "shippingAddress": {
+            "type": "string"
+          },
+          "marketingEnabled": {
+            "type": "boolean"
+          },
+          "marketingPreferenceText": {
+            "type": "null"
+          },
+          "bankMarker": {
+            "type": "integer"
+          },
+          "supportPhone": {
+            "type": "string"
+          },
+          "supportEmail": {
+            "type": "string"
+          },
+          "manualCloseout": {
+            "type": "boolean"
+          },
+          "manualCloseoutPerDevice": {
+            "type": "boolean"
+          },
+          "autoCloseoutTimezone": {
+            "type": "string"
+          },
+          "showCloseoutOrders": {
+            "type": "boolean"
+          },
+          "sendCloseoutEmail": {
+            "type": "boolean"
+          },
+          "stayInCategory": {
+            "type": "boolean"
+          },
+          "locale": {
+            "type": "string"
+          },
+          "timezone": {
+            "type": "string"
+          },
+          "vat": {
+            "type": "boolean"
+          },
+          "vatTaxName": {
+            "type": "string"
+          },
+          "appBillingSystem": {
+            "type": "string"
+          },
+          "abaAccountNumber": {
+            "type": "string"
+          },
+          "ddaAccountNumber": {
+            "type": "string"
+          },
+          "trackStock": {
+            "type": "boolean"
+          },
+          "updateStock": {
+            "type": "boolean"
+          },
+          "allowClockOutWithOpenOrders": {
+            "type": "boolean"
+          },
+          "logInClockInPrompt": {
+            "type": "boolean"
+          },
+          "accountType": {
+            "type": "null"
+          },
+          "businessTypeCode": {
+            "type": "null"
+          },
+          "pinLength": {
+            "type": "integer"
+          },
+          "cashBackEnabled": {
+            "type": "boolean"
+          },
+          "cashBackOptions": {
+            "type": "string"
+          },
+          "maxCashBack": {
+            "type": "null"
+          },
+          "hierarchy": {
+            "type": "string"
+          },
+          "hasConsented": {
+            "type": "boolean"
+          },
+          "merchantBoardingStatus": {
+            "type": "string"
+          },
+          "alwaysRequireSignature": {
+            "type": "null"
+          },
+          "printedFirstDataReceiptLogoEnabled": {
+            "type": "boolean"
+          },
+          "privacyPolicyMode": {
+            "type": "null"
+          },
+          "merchantPrivacyPolicyUrl": {
+            "type": "null"
+          },
+          "disablePrintTaxesPaymentOnReceipts": {
+            "type": "boolean"
+          },
+          "processingRestrictions": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "abaAccountNumber",
+          "accountType",
+          "allowClockOutWithOpenOrders",
+          "alternateInventoryNames",
+          "alwaysRequireSignature",
+          "appBillingSystem",
+          "autoCloseoutTimezone",
+          "autoLogout",
+          "autoPrint",
+          "bankMarker",
+          "businessTypeCode",
+          "cashBackEnabled",
+          "cashBackOptions",
+          "ddaAccountNumber",
+          "defaultCurrency",
+          "deleteOrders",
+          "disablePrintTaxesPaymentOnReceipts",
+          "groupLineItems",
+          "hardwareProfile",
+          "hasConsented",
+          "hasDefaultEmployee",
+          "hierarchy",
+          "href",
+          "infoleaseSuppressBilling",
+          "infoleaseSuppressPlanBilling",
+          "locale",
+          "logInClockInPrompt",
+          "manualCloseout",
+          "manualCloseoutPerDevice",
+          "marketingEnabled",
+          "marketingPreferenceText",
+          "maxCashBack",
+          "maxTipPercentage",
+          "merchantBoardingStatus",
+          "merchantPrivacyPolicyUrl",
+          "merchantRef",
+          "noSignatureProgramEligible",
+          "notesOnOrders",
+          "onPaperTipSignatures",
+          "orderTitle",
+          "orderTitleMax",
+          "pinLength",
+          "printedFirstDataReceiptLogoEnabled",
+          "privacyPolicyMode",
+          "processingRestrictions",
+          "receiptProperties",
+          "removeTaxEnabled",
+          "resetOnReportingTime",
+          "sendCloseoutEmail",
+          "shippingAddress",
+          "showCloseoutOrders",
+          "signatureThreshold",
+          "stayInCategory",
+          "summaryHour",
+          "supportEmail",
+          "supportPhone",
+          "timezone",
+          "tipRateDefault",
+          "tipsEnabled",
+          "trackStock",
+          "updateStock",
+          "vat",
+          "vatTaxName"
+        ]
+      },
+      "metadata": [
+        {
+          "breadcrumb": [],
+          "metadata": {
+            "forced-replication-method": "FULL_TABLE",
+            "valid-replication-keys": [
+              "updated_at"
+            ],
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "href"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "merchantRef"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "defaultCurrency"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "tipsEnabled"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "maxTipPercentage"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "receiptProperties"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "summaryHour"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "signatureThreshold"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "hasDefaultEmployee"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "tipRateDefault"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "onPaperTipSignatures"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "noSignatureProgramEligible"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "autoLogout"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "orderTitle"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "orderTitleMax"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "resetOnReportingTime"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "notesOnOrders"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "deleteOrders"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "removeTaxEnabled"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "groupLineItems"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "alternateInventoryNames"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "autoPrint"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "hardwareProfile"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "infoleaseSuppressBilling"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "infoleaseSuppressPlanBilling"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "shippingAddress"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "marketingEnabled"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "marketingPreferenceText"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "bankMarker"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "supportPhone"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "supportEmail"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "manualCloseout"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "manualCloseoutPerDevice"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "autoCloseoutTimezone"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "showCloseoutOrders"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "sendCloseoutEmail"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "stayInCategory"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "locale"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "timezone"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "vat"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "vatTaxName"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "appBillingSystem"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "abaAccountNumber"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "ddaAccountNumber"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "trackStock"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "updateStock"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "allowClockOutWithOpenOrders"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "logInClockInPrompt"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "accountType"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "businessTypeCode"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "pinLength"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "cashBackEnabled"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "cashBackOptions"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "maxCashBack"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "hierarchy"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "hasConsented"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "merchantBoardingStatus"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "alwaysRequireSignature"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "printedFirstDataReceiptLogoEnabled"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "privacyPolicyMode"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "merchantPrivacyPolicyUrl"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "disablePrintTaxesPaymentOnReceipts"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "processingRestrictions"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        }
+      ]
+    },
+    {
+      "stream": "Merchant_default_service_charge",
+      "tap_stream_id": "Merchant_default_service_charge",
+      "schema": {
+        "type": "object",
+        "selected": false,
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "orderRef": {
+            "type": "null"
+          },
+          "name": {
+            "type": "string"
+          },
+          "enabled": {
+            "type": "boolean"
+          },
+          "percentage": {
+            "type": "integer"
+          },
+          "percentageDecimal": {
+            "type": "integer"
+          }
+        },
+        "required": [
+          "enabled",
+          "id",
+          "name",
+          "orderRef",
+          "percentage",
+          "percentageDecimal"
+        ]
+      },
+      "metadata": [
+        {
+          "breadcrumb": [],
+          "metadata": {
+            "forced-replication-method": "FULL_TABLE",
+            "valid-replication-keys": [
+              "updated_at"
+            ],
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "id"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "orderRef"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "name"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "enabled"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "percentage"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "percentageDecimal"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        }
+      ]
+    },
+    {
+      "stream": "Merchant_tip_suggestions",
+      "tap_stream_id": "Merchant_tip_suggestions",
+      "schema": {
+        "type": "object",
+        "selected": false,
+        "properties": {
+          "elements": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "percentage": {
+                  "type": "integer"
+                },
+                "amount": {
+                  "type": "null"
+                },
+                "isEnabled": {
+                  "type": "boolean"
+                }
+              },
+              "required": [
+                "amount",
+                "id",
+                "isEnabled",
+                "name",
+                "percentage"
+              ]
+            }
+          },
+          "href": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "elements",
+          "href"
+        ]
+      },
+      "metadata": [
+        {
+          "breadcrumb": [],
+          "metadata": {
+            "forced-replication-method": "FULL_TABLE",
+            "valid-replication-keys": [
+              "updated_at"
+            ],
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "elements"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "href"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        }
+      ]
+    },
+    {
+      "stream": "Merchant_order_types",
+      "tap_stream_id": "Merchant_order_types",
+      "schema": {
+        "type": "object",
+        "selected": false,
+        "properties": {
+          "elements": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "labelKey": {
+                  "type": "string"
+                },
+                "label": {
+                  "type": "string"
+                },
+                "taxable": {
+                  "type": "boolean"
+                },
+                "isDefault": {
+                  "type": "boolean"
+                },
+                "filterCategories": {
+                  "type": "boolean"
+                },
+                "isHidden": {
+                  "type": "boolean"
+                },
+                "fee": {
+                  "type": "integer"
+                },
+                "minOrderAmount": {
+                  "type": "integer"
+                },
+                "maxOrderAmount": {
+                  "type": "integer"
+                },
+                "maxRadius": {
+                  "type": "integer"
+                },
+                "avgOrderTime": {
+                  "type": "integer"
+                },
+                "hoursAvailable": {
+                  "type": "string"
+                },
+                "isDeleted": {
+                  "type": "boolean"
+                },
+                "systemOrderTypeId": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "avgOrderTime",
+                "fee",
+                "filterCategories",
+                "hoursAvailable",
+                "id",
+                "isDefault",
+                "isDeleted",
+                "isHidden",
+                "label",
+                "labelKey",
+                "maxOrderAmount",
+                "maxRadius",
+                "minOrderAmount",
+                "systemOrderTypeId",
+                "taxable"
+              ]
+            }
+          },
+          "href": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "elements",
+          "href"
+        ]
+      },
+      "metadata": [
+        {
+          "breadcrumb": [],
+          "metadata": {
+            "forced-replication-method": "FULL_TABLE",
+            "valid-replication-keys": [
+              "id"
+            ],
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "elements"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "href"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        }
+      ]
+    },
+    {
+      "stream": "Merchant_roles",
+      "tap_stream_id": "Merchant_roles",
+      "schema": {
+        "type": "object",
+        "selected": false,
+        "properties": {
+          "elements": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "href": {
+                  "type": "string"
+                },
+                "id": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "systemRole": {
+                  "type": "string"
+                },
+                "merchant": {
+                  "type": "object"
+                }
+              },
+              "required": [
+                "href",
+                "id",
+                "merchant",
+                "name",
+                "systemRole"
+              ]
+            }
+          },
+          "href": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "elements",
+          "href"
+        ]
+      },
+      "metadata": [
+        {
+          "breadcrumb": [],
+          "metadata": {
+            "forced-replication-method": "FULL_TABLE",
+            "valid-replication-keys": [
+              "id"
+            ],
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "elements"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "href"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        }
+      ]
+    },
+    {
+      "stream": "Merchant_tenders",
+      "tap_stream_id": "Merchant_tenders",
+      "schema": {
+        "type": "object",
+        "selected": false,
+        "properties": {
+          "elements": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "href": {
+                  "type": "string"
+                },
+                "id": {
+                  "type": "string"
+                },
+                "editable": {
+                  "type": "boolean"
+                },
+                "labelKey": {
+                  "type": [
+                    "null",
+                    "string"
+                  ]
+                },
+                "label": {
+                  "type": "string"
+                },
+                "opensCashDrawer": {
+                  "type": "boolean"
+                },
+                "supportsTipping": {
+                  "type": "null"
+                },
+                "enabled": {
+                  "type": "boolean"
+                },
+                "visible": {
+                  "type": "boolean"
+                },
+                "instructions": {
+                  "type": "null"
+                }
+              },
+              "required": [
+                "editable",
+                "enabled",
+                "href",
+                "id",
+                "instructions",
+                "label",
+                "labelKey",
+                "opensCashDrawer",
+                "supportsTipping",
+                "visible"
+              ]
+            }
+          },
+          "href": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "elements",
+          "href"
+        ]
+      },
+      "metadata": [
+        {
+          "breadcrumb": [],
+          "metadata": {
+            "forced-replication-method": "FULL_TABLE",
+            "valid-replication-keys": [
+              "updated_at"
+            ],
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "elements"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "href"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        }
+      ]
+    },
+    {
+      "stream": "Orders_line_items",
+      "tap_stream_id": "Orders_line_items",
+      "schema": {
+        "type": "object",
+        "selected": false,
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "orderRef": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "id"
+            ]
+          },
+          "item": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "id"
+            ]
+          },
+          "name": {
+            "type": "string"
+          },
+          "alternateName": {
+            "type": "string"
+          },
+          "price": {
+            "type": "integer"
+          },
+          "priceWithModifiers": {
+            "type": "string"
+          },
+          "priceWithModifiersAndItemAndOrderDiscounts": {
+            "type": "string"
+          },
+          "unitQty": {
+            "type": "string"
+          },
+          "unitName": {
+            "type": "string"
+          },
+          "itemCode": {
+            "type": "string"
+          },
+          "note": {
+            "type": "string"
+          },
+          "printed": {
+            "type": "string"
+          },
+          "exchangedLineItem": {
+            "type": "string"
+          },
+          "binName": {
+            "type": "string"
+          },
+          "userData": {
+            "type": "string"
+          },
+          "createdTime": {
+            "type": "integer"
+          },
+          "orderClientCreatedTime": {
+            "type": "integer"
+          },
+          "discountAmount": {
+            "type": "string"
+          },
+          "orderLevelDiscountAmount": {
+            "type": "string"
+          },
+          "exchanged": {
+            "type": "string"
+          },
+          "refunded": {
+            "type": "string"
+          },
+          "refund": {
+            "type": "string"
+          },
+          "isRevenue": {
+            "type": "string"
+          },
+          "revenueAmount": {
+            "type": "string"
+          },
+          "quantitySold": {
+            "type": "string"
+          },
+          "printGroup": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "alternateName",
+          "binName",
+          "createdTime",
+          "discountAmount",
+          "exchanged",
+          "exchangedLineItem",
+          "id",
+          "isRevenue",
+          "item",
+          "itemCode",
+          "name",
+          "note",
+          "orderClientCreatedTime",
+          "orderLevelDiscountAmount",
+          "orderRef",
+          "price",
+          "priceWithModifiers",
+          "priceWithModifiersAndItemAndOrderDiscounts",
+          "printGroup",
+          "printed",
+          "quantitySold",
+          "refund",
+          "refunded",
+          "revenueAmount",
+          "unitName",
+          "unitQty",
+          "userData"
+        ]
+      },
+      "metadata": [
+        {
+          "breadcrumb": [],
+          "metadata": {
+            "forced-replication-method": "FULL_TABLE",
+            "valid-replication-keys": [
+              "updated_at"
+            ],
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "id"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "orderRef"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "item"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "name"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "alternateName"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "price"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "priceWithModifiers"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "priceWithModifiersAndItemAndOrderDiscounts"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "unitQty"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "unitName"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "itemCode"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "note"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "printed"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "exchangedLineItem"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "binName"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "userData"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "createdTime"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "orderClientCreatedTime"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "discountAmount"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "orderLevelDiscountAmount"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "exchanged"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "refunded"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "refund"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "isRevenue"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "revenueAmount"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "quantitySold"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "printGroup"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        }
+      ]
+    },
+    {
+      "stream": "Merchants",
+      "tap_stream_id": "Merchants",
+      "schema": {
+        "type": "object",
+        "selected": false,
+        "properties": {
+          "href": {
+            "type": "string"
+          },
+          "id": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "owner": {
+            "type": "object",
+            "properties": {
+              "href": {
+                "type": "string"
+              },
+              "id": {
+                "type": "string"
+              },
+              "name": {
+                "type": "null"
+              },
+              "nickname": {
+                "type": "null"
+              },
+              "customId": {
+                "type": "null"
+              },
+              "email": {
+                "type": "null"
+              },
+              "inviteSent": {
+                "type": "null"
+              },
+              "claimedTime": {
+                "type": "null"
+              },
+              "deletedTime": {
+                "type": "null"
+              },
+              "pin": {
+                "type": "null"
+              },
+              "unhashedPin": {
+                "type": "null"
+              },
+              "role": {
+                "type": "null"
+              },
+              "isOwner": {
+                "type": "null"
+              },
+              "orders": {
+                "type": "object",
+                "properties": {
+                  "href": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "href"
+                ]
+              },
+              "merchant": {
+                "type": "null"
+              }
+            },
+            "required": [
+              "claimedTime",
+              "customId",
+              "deletedTime",
+              "email",
+              "href",
+              "id",
+              "inviteSent",
+              "isOwner",
+              "merchant",
+              "name",
+              "nickname",
+              "orders",
+              "pin",
+              "role",
+              "unhashedPin"
+            ]
+          },
+          "address": {
+            "type": "object",
+            "properties": {
+              "href": {
+                "type": "string"
+              },
+              "address1": {
+                "type": "null"
+              },
+              "address2": {
+                "type": "null"
+              },
+              "address3": {
+                "type": "null"
+              },
+              "city": {
+                "type": "null"
+              },
+              "country": {
+                "type": "null"
+              },
+              "phoneNumber": {
+                "type": "null"
+              },
+              "state": {
+                "type": "null"
+              },
+              "zip": {
+                "type": "null"
+              }
+            },
+            "required": [
+              "address1",
+              "address2",
+              "address3",
+              "city",
+              "country",
+              "href",
+              "phoneNumber",
+              "state",
+              "zip"
+            ]
+          },
+          "merchantPlan": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "name": {
+                "type": "null"
+              },
+              "description": {
+                "type": "null"
+              },
+              "price": {
+                "type": "null"
+              },
+              "trialDays": {
+                "type": "null"
+              },
+              "trialExpirationTime": {
+                "type": "null"
+              },
+              "appBundle": {
+                "type": "null"
+              },
+              "defaultPlan": {
+                "type": "null"
+              },
+              "recommended": {
+                "type": "null"
+              },
+              "pricingModel": {
+                "type": "null"
+              },
+              "bogo": {
+                "type": "null"
+              },
+              "weight": {
+                "type": "null"
+              },
+              "billToMid": {
+                "type": "null"
+              },
+              "type": {
+                "type": "null"
+              },
+              "planCode": {
+                "type": "null"
+              },
+              "activationTime": {
+                "type": "null"
+              },
+              "deactivationTime": {
+                "type": "null"
+              },
+              "reseller": {
+                "type": "null"
+              },
+              "merchantPlanGroup": {
+                "type": "null"
+              },
+              "createdTime": {
+                "type": "null"
+              },
+              "modifiedTime": {
+                "type": "null"
+              }
+            },
+            "required": [
+              "activationTime",
+              "appBundle",
+              "billToMid",
+              "bogo",
+              "createdTime",
+              "deactivationTime",
+              "defaultPlan",
+              "description",
+              "id",
+              "merchantPlanGroup",
+              "modifiedTime",
+              "name",
+              "planCode",
+              "price",
+              "pricingModel",
+              "recommended",
+              "reseller",
+              "trialDays",
+              "trialExpirationTime",
+              "type",
+              "weight"
+            ]
+          },
+          "defaultCurrency": {
+            "type": "null"
+          },
+          "phoneNumber": {
+            "type": "null"
+          },
+          "website": {
+            "type": "null"
+          },
+          "customerContactEmail": {
+            "type": "null"
+          },
+          "createdTime": {
+            "type": "integer"
+          },
+          "properties": {
+            "type": "null"
+          },
+          "gateway": {
+            "type": "object",
+            "properties": {
+              "paymentProcessorName": {
+                "type": "null"
+              },
+              "authorizationFrontEnd": {
+                "type": "null"
+              },
+              "acquiringBackEnd": {
+                "type": "null"
+              },
+              "paymentGatewayApi": {
+                "type": "null"
+              },
+              "accountName": {
+                "type": "null"
+              },
+              "altMid": {
+                "type": "null"
+              },
+              "mid": {
+                "type": "null"
+              },
+              "fns": {
+                "type": "null"
+              },
+              "tid": {
+                "type": "null"
+              },
+              "storeId": {
+                "type": "null"
+              },
+              "supportsTipping": {
+                "type": "null"
+              },
+              "frontendMid": {
+                "type": "null"
+              },
+              "backendMid": {
+                "type": "null"
+              },
+              "mcc": {
+                "type": "null"
+              },
+              "tokenType": {
+                "type": "null"
+              },
+              "groupId": {
+                "type": "null"
+              },
+              "debitKeyCode": {
+                "type": "null"
+              },
+              "sredCode": {
+                "type": "null"
+              },
+              "supportsTipAdjust": {
+                "type": "null"
+              },
+              "supportsNakedCredit": {
+                "type": "null"
+              },
+              "supportsMultiPayToken": {
+                "type": "null"
+              },
+              "supportsPreauthOverage": {
+                "type": "null"
+              },
+              "keyPrefix": {
+                "type": "null"
+              },
+              "keyInfo": {
+                "type": "null"
+              },
+              "closingTime": {
+                "type": "null"
+              },
+              "newBatchCloseEnabled": {
+                "type": "null"
+              },
+              "production": {
+                "type": "null"
+              }
+            },
+            "required": [
+              "accountName",
+              "acquiringBackEnd",
+              "altMid",
+              "authorizationFrontEnd",
+              "backendMid",
+              "closingTime",
+              "debitKeyCode",
+              "fns",
+              "frontendMid",
+              "groupId",
+              "keyInfo",
+              "keyPrefix",
+              "mcc",
+              "mid",
+              "newBatchCloseEnabled",
+              "paymentGatewayApi",
+              "paymentProcessorName",
+              "production",
+              "sredCode",
+              "storeId",
+              "supportsMultiPayToken",
+              "supportsNakedCredit",
+              "supportsPreauthOverage",
+              "supportsTipAdjust",
+              "supportsTipping",
+              "tid",
+              "tokenType"
+            ]
+          },
+          "tenders": {
+            "type": "object",
+            "properties": {
+              "href": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "href"
+            ]
+          },
+          "shifts": {
+            "type": "object",
+            "properties": {
+              "href": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "href"
+            ]
+          },
+          "orders": {
+            "type": "object",
+            "properties": {
+              "href": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "href"
+            ]
+          },
+          "payments": {
+            "type": "object",
+            "properties": {
+              "href": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "href"
+            ]
+          },
+          "taxRates": {
+            "type": "object",
+            "properties": {
+              "href": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "href"
+            ]
+          },
+          "printers": {
+            "type": "object",
+            "properties": {
+              "href": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "href"
+            ]
+          },
+          "modifierGroups": {
+            "type": "object",
+            "properties": {
+              "href": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "href"
+            ]
+          },
+          "orderTypes": {
+            "type": "object",
+            "properties": {
+              "href": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "href"
+            ]
+          },
+          "reseller": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "id"
+            ]
+          },
+          "opening_hours": {
+            "type": "object",
+            "properties": {
+              "href": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "href"
+            ]
+          },
+          "billingInfo": {
+            "type": "null"
+          },
+          "isBillable": {
+            "type": "null"
+          },
+          "partnerApp": {
+            "type": "null"
+          },
+          "accountType": {
+            "type": "null"
+          },
+          "bankProcessing": {
+            "type": "null"
+          },
+          "merchantBoarding": {
+            "type": "null"
+          },
+          "hierarchy": {
+            "type": "null"
+          },
+          "selfBoardingApplication": {
+            "type": "null"
+          }
+        },
+        "required": [
+          "accountType",
+          "address",
+          "bankProcessing",
+          "billingInfo",
+          "createdTime",
+          "customerContactEmail",
+          "defaultCurrency",
+          "gateway",
+          "hierarchy",
+          "href",
+          "id",
+          "isBillable",
+          "merchantBoarding",
+          "merchantPlan",
+          "modifierGroups",
+          "name",
+          "opening_hours",
+          "orderTypes",
+          "orders",
+          "owner",
+          "partnerApp",
+          "payments",
+          "phoneNumber",
+          "printers",
+          "properties",
+          "reseller",
+          "selfBoardingApplication",
+          "shifts",
+          "taxRates",
+          "tenders",
+          "website"
+        ]
+      },
+      "metadata": [
+        {
+          "breadcrumb": [],
+          "metadata": {
+            "forced-replication-method": "FULL_TABLE",
+            "valid-replication-keys": [
+              "updated_at"
+            ],
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "href"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "id"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "name"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "owner"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "address"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "merchantPlan"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "defaultCurrency"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "phoneNumber"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "website"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "customerContactEmail"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "createdTime"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "properties"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "gateway"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "tenders"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "shifts"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "orders"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "payments"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "taxRates"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "printers"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "modifierGroups"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "orderTypes"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "reseller"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "opening_hours"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "billingInfo"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "isBillable"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "partnerApp"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "accountType"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "bankProcessing"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "merchantBoarding"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "hierarchy"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "selfBoardingApplication"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        }
+      ]
+    }
+  ]
+}

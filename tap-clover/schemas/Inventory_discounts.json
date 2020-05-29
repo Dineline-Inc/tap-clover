@@ -1,0 +1,24 @@
+{
+   "type":"object",
+   "selected": false,
+   "properties":{
+      "id":{
+         "type":"string"
+      },
+      "name":{
+         "type":"string"
+      },
+      "amount":{
+         "type":"integer"
+      },
+      "percentage":{
+         "type":"integer"
+      }
+   },
+   "required":[
+      "amount",
+      "id",
+      "name",
+      "percentage"
+   ]
+}

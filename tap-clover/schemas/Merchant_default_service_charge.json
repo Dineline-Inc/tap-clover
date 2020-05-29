@@ -1,0 +1,32 @@
+{
+   "type":"object",
+   "selected": false,
+   "properties":{
+      "id":{
+         "type":"string"
+      },
+      "orderRef":{
+         "type":"null"
+      },
+      "name":{
+         "type":"string"
+      },
+      "enabled":{
+         "type":"boolean"
+      },
+      "percentage":{
+         "type":"integer"
+      },
+      "percentageDecimal":{
+         "type":"integer"
+      }
+   },
+   "required":[
+      "enabled",
+      "id",
+      "name",
+      "orderRef",
+      "percentage",
+      "percentageDecimal"
+   ]
+}

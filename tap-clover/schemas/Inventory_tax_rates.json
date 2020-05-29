@@ -1,0 +1,44 @@
+{
+   "type":"object",
+   "selected": false,
+   "properties":{
+      "id":{
+         "type":"string"
+      },
+      "lineItemRef":{
+         "type":"null"
+      },
+      "name":{
+         "type":"string"
+      },
+      "taxType":{
+         "type":"string"
+      },
+      "rate":{
+         "type":"integer"
+      },
+      "isDefault":{
+         "type":"boolean"
+      },
+      "taxAmount":{
+         "type":"integer"
+      },
+      "deletedTime":{
+         "type":"integer"
+      },
+      "modifiedTime":{
+         "type":"integer"
+      }
+   },
+   "required":[
+      "deletedTime",
+      "id",
+      "isDefault",
+      "lineItemRef",
+      "modifiedTime",
+      "name",
+      "rate",
+      "taxAmount",
+      "taxType"
+   ]
+}

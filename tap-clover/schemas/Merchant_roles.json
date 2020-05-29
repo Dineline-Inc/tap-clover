@@ -1,0 +1,28 @@
+{
+   "type":"object",
+   "selected": false,
+   "properties":{
+      "href":{
+         "type":"string"
+      },
+      "id":{
+         "type":"string"
+      },
+      "name":{
+         "type":"string"
+      },
+      "systemRole":{
+         "type":"string"
+      },
+      "merchant":{
+         "type":"object"
+      }
+   },
+   "required":[
+      "href",
+      "id",
+      "merchant",
+      "name",
+      "systemRole"
+   ]
+}

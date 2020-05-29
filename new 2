@@ -1,0 +1,26 @@
+
+import pandas as pd
+df1 = pd.read_csv("H:\\0_1589950246114.csv")
+
+reshaped = \
+(df1.set_index(df1.columns.drop('location_ids',1).tolist())
+   .location_ids.str.split(',', expand=True)
+   .stack()
+   .reset_index()
+   .rename(columns={0:'location_ids'})
+   .loc[:, df1.columns]
+)
+
+
+
+
+data = []
+
+for i in df1.itertuples():
+ 
+  lst = i[12].replace('[','').replace(']', '').split(',')
+  for col2 in lst:
+    data.append([i[9], col2])
+
+df_output = pd.DataFrame(data=data, columns=['id','location_ids'])
+df_output 
