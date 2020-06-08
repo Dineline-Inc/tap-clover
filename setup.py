@@ -11,7 +11,7 @@ setup(
     py_modules=["tap-clover"],
     install_requires=[
         "singer-python>=5.0.12",
-        "requests", 'genson'
+        "requests", 'genson', 'pandas'
     ],
     entry_points="""
     [console_scripts]
