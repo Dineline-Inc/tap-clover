@@ -4,8 +4,10 @@ import json
 import singer
 import requests
 from singer import utils
+import pandas as pd
 from schemas import get_schemas, STREAMS
 import custom_functions as cf
+
 
 REQUIRED_CONFIG_KEYS = ["host", "access_token", "merchant_id"]
 LOGGER = singer.get_logger()
@@ -41,7 +43,7 @@ def sync_merchants_api_get(config, api):
 
     """ get the direct api data get method"""
 
-    flatted_rows = []
+    final_rows = []
     schemas = {}
     host = config['host']
     api = api.format(mId=config['merchant_id'])
@@ -55,13 +57,12 @@ def sync_merchants_api_get(config, api):
     response = responses.json()
 
     if bool(response):
+        final_rows, schemas = cf.clean_api_data({"response": [response]})
         is_sync = True
-        flatted_rows.append(cf.flatten(response))
-        schemas = cf.get_json_schemas(flatted_rows)
     else:
         is_sync = False
 
-    return flatted_rows, schemas, is_sync
+    return final_rows, schemas, is_sync
 
 
 def get_order_ids(host, access_token, mid):
@@ -89,32 +90,34 @@ def sync_orders_line_items(config, api):
     """ get the direct api data get method"""
 
     host = config['host']
-    access_token = config['access_token']
-    order_ids = get_order_ids(host, access_token, config['merchant_id'])
+    order_ids = get_order_ids(host, config['access_token'], config['merchant_id'])
     final_rows = []
 
     for order_id in order_ids:
-
-        api = api.format(mId=config['merchant_id'], orderId=order_id)
+        api_url = api
+        api_url = api_url.format(mId=config['merchant_id'], orderId=order_id)
         url = "{host}{api}?access_token={access_token}&return_null_fields=true"\
-              .format(host=host, api=api, access_token=access_token)
+              .format(host=host, api=api_url, access_token=config['access_token'])
 
         responses = requests.get(url)
         responses.raise_for_status()
         response = responses.json()
 
         if bool(response):
-            rows, schemas = cf.clean_api_data(response)
+            key = [*response][0]
+            data_frame = pd.json_normalize(response[key])
+            rows = json.loads(data_frame.to_json(orient='records'))
             final_rows = final_rows + rows
 
     if len(final_rows) > 0:
         is_sync = True
-        schemas = cf.get_json_schemas(final_rows)
+        rows, schemas = cf.clean_api_data({"response": final_rows})
     else:
         schemas = {}
+        rows = []
         is_sync = False
 
-    return final_rows, schemas, is_sync
+    return rows, schemas, is_sync
 
 
 SYNC_FUNCTIONS = {
