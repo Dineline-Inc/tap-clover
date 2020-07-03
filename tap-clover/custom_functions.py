@@ -6,12 +6,13 @@ from genson import SchemaBuilder
 import pandas as pd
 
 
-def clean_api_data(response):
+def clean_api_data(response, merchant_id):
 
     """ To maintain same schema in json, flatting and merging the schema for all rows """
 
     key = [*response][0]
     data_frame = pd.json_normalize(response[key])
+    data_frame['merchant__id'] = merchant_id
     df_final = data_frame.fillna('None')
     final_rows = json.loads(df_final.to_json(orient='records'))
     schemas = get_json_schemas(final_rows)
