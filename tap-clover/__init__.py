@@ -31,7 +31,7 @@ def sync_direct_api_get(config, api):
 
     if bool(response):
         is_sync = True
-        final_rows, schemas = cf.clean_api_data(response)
+        final_rows, schemas = cf.clean_api_data(response, config['merchant_id'])
     else:
         is_sync = False
         final_rows = []
@@ -57,7 +57,7 @@ def sync_merchants_api_get(config, api):
     response = responses.json()
 
     if bool(response):
-        final_rows, schemas = cf.clean_api_data({"response": [response]})
+        final_rows, schemas = cf.clean_api_data({"response": [response]}, config['merchant_id'])
         is_sync = True
     else:
         is_sync = False
@@ -111,7 +111,7 @@ def sync_orders_line_items(config, api):
 
     if len(final_rows) > 0:
         is_sync = True
-        rows, schemas = cf.clean_api_data({"response": final_rows})
+        rows, schemas = cf.clean_api_data({"response": final_rows}, config['merchant_id'])
     else:
         schemas = {}
         rows = []
