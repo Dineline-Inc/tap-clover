@@ -1,482 +1,136 @@
-#tap-clover
-This is a [Singer](https://singer.io) tap that reads data from Clover API's and produces JSON-formatted data following the [Singer spec](https://github.com/singer-io/getting-started/blob/master/SPEC.md).
+# tap-clover
 
-## How to use it
-[Singer](https://www.singer.io/) tap that extracts data from a [clover](https://docs.clover.com/clover-platform/reference) and produces JSON-formatted data following the [Singer spec](https://github.com/singer-io/getting-started/blob/master/docs/SPEC.md).
+`tap-clover` is a Singer tap for Clover.
 
+Built with the [Meltano Tap SDK](https://sdk.meltano.com) for Singer Taps.
 
-### Install
+<!--
 
-```bash
-$ mkvirtualenv -p python3 tap-clover
-$ pip install tap-clover
-```
+Developer TODO: Update the below as needed to correctly describe the install procedure. For instance, if you do not have a PyPI repo, or if you want users to directly install from your git repo, you can modify this step as appropriate.
 
-### Configuration
-Here is an example of basic config file containing the clover connection credentials, e.g.:
+## Installation
 
-```
-{
-  "host": "https://api.clover.com",
-  "access_token": "d6qw038-c9s0-24c8-d3c8-60863261",
-  "merchant_id": "U8KGR88CGX34"
-}
-```
-
-
-- **host**:This is clover host name.
-- **access_token**:This is the clover access_token which is unique for each and every account.
-- **merchant_id**:This is the clover merchant_id which is unique for each and every account.
-
-### Discovery mode
-
-The tap can be invoked in discovery mode to find the available API's and
-schema of the respective clover API data:
+Install from PyPI:
 
 ```bash
-$ tap-clover --config config.json --discover
-
-```
-A discovered catalog is output, with a JSON-schema description of each API's.
-
-```json
-    {
-      "stream": "Customers",
-      "tap_stream_id": "Customers",
-      "schema": {
-        "type": "object",
-        "selected": false,
-        "properties": {
-          "href": {
-            "type": "string"
-          },
-          "id": {
-            "type": "string"
-          },
-          "orderRef": {
-            "type": "null"
-          },
-          "merchant": {
-            "type": "null"
-          },
-          "firstName": {
-            "type": "string"
-          },
-          "lastName": {
-            "type": "string"
-          },
-          "marketingAllowed": {
-            "type": "boolean"
-          },
-          "customerSince": {
-            "type": "integer"
-          },
-          "metadata": {
-            "type": "null"
-          }
-        },
-        "required": [
-          "customerSince",
-          "firstName",
-          "href",
-          "id",
-          "lastName",
-          "marketingAllowed",
-          "merchant",
-          "metadata",
-          "orderRef"
-        ]
-      },
-      "metadata": [
-        {
-          "breadcrumb": [],
-          "metadata": {
-            "forced-replication-method": "FULL_TABLE",
-            "valid-replication-keys": [
-              "id"
-            ],
-            "inclusion": "available"
-          }
-        },
-        {
-          "breadcrumb": [
-            "properties",
-            "href"
-          ],
-          "metadata": {
-            "inclusion": "available"
-          }
-        },
-        {
-          "breadcrumb": [
-            "properties",
-            "id"
-          ],
-          "metadata": {
-            "inclusion": "available"
-          }
-        }
-      ]
-    },
-    {
-      "stream": "Employees",
-      "tap_stream_id": "Employees",
-      "schema": {
-        "type": "object",
-        "selected": false,
-        "properties": {
-          "href": {
-            "type": "string"
-          },
-          "id": {
-            "type": "string"
-          },
-          "name": {
-            "type": "string"
-          },
-          "nickname": {
-            "type": "string"
-          },
-          "customId": {
-            "type": "string"
-          },
-          "email": {
-            "type": "string"
-          },
-          "inviteSent": {
-            "type": "boolean"
-          },
-          "claimedTime": {
-            "type": "integer"
-          },
-          "deletedTime": {
-            "type": "integer"
-          },
-          "pin": {
-            "type": "string"
-          },
-          "unhashedPin": {
-            "type": "string"
-          },
-          "role": {
-            "type": "string"
-          },
-          "isOwner": {
-            "type": "boolean"
-          },
-          "orders": {
-            "type": "object",
-            "properties": {
-              "href": {
-                "type": "string"
-              }
-            },
-            "required": [
-              "href"
-            ]
-          },
-          "merchant": {
-            "type": "null"
-          }
-        },
-        "required": [
-          "claimedTime",
-          "customId",
-          "deletedTime",
-          "email",
-          "href",
-          "id",
-          "inviteSent",
-          "isOwner",
-          "merchant",
-          "name",
-          "nickname",
-          "orders",
-          "pin",
-          "role",
-          "unhashedPin"
-        ]
-      },
-      "metadata": [
-        {
-          "breadcrumb": [],
-          "metadata": {
-            "forced-replication-method": "FULL_TABLE",
-            "valid-replication-keys": [
-              "id"
-            ],
-            "inclusion": "available"
-          }
-        },
-        {
-          "breadcrumb": [
-            "properties",
-            "deletedTime"
-          ],
-          "metadata": {
-            "inclusion": "available"
-          }
-        },
-        {
-          "breadcrumb": [
-            "properties",
-            "merchant"
-          ],
-          "metadata": {
-            "inclusion": "available"
-          }
-        }
-      ]
-    }
+pipx install tap-clover
 ```
 
-### Property file Creation
-
-In API selection, `tap-clover` consumes the property and looks for API's and fields
-have been marked as _selected_ in their associated metadata entries.
-
-Redirect output from the tap's discovery mode to a properties file so that it can be
-modified
+Install from GitHub:
 
 ```bash
-$ tap-clover --config config.json --discover > properties.json
+pipx install git+https://github.com/ORG_NAME/tap-clover.git@main
 ```
 
+-->
 
-```json
-    {
-      "stream": "Customers",
-      "tap_stream_id": "Customers",
-      "schema": {
-        "type": "object",
-        "selected": false,
-        "properties": {
-          "href": {
-            "type": "string"
-          },
-          "id": {
-            "type": "string"
-          },
-          "orderRef": {
-            "type": "null"
-          },
-          "merchant": {
-            "type": "null"
-          },
-          "firstName": {
-            "type": "string"
-          },
-          "lastName": {
-            "type": "string"
-          },
-          "marketingAllowed": {
-            "type": "boolean"
-          },
-          "customerSince": {
-            "type": "integer"
-          },
-          "metadata": {
-            "type": "null"
-          }
-        },
-        "required": [
-          "customerSince",
-          "firstName",
-          "href",
-          "id",
-          "lastName",
-          "marketingAllowed",
-          "merchant",
-          "metadata",
-          "orderRef"
-        ]
-      },
-      "metadata": [
-        {
-          "breadcrumb": [],
-          "metadata": {
-            "forced-replication-method": "FULL_TABLE",
-            "valid-replication-keys": [
-              "id"
-            ],
-            "inclusion": "available"
-          }
-        },
-        {
-          "breadcrumb": [
-            "properties",
-            "href"
-          ],
-          "metadata": {
-            "inclusion": "available"
-          }
-        },
-        {
-          "breadcrumb": [
-            "properties",
-            "id"
-          ],
-          "metadata": {
-            "inclusion": "available"
-          }
-        }
-      ]
-    },
-    {
-      "stream": "Employees",
-      "tap_stream_id": "Employees",
-      "schema": {
-        "type": "object",
-        "selected": false,
-        "properties": {
-          "href": {
-            "type": "string"
-          },
-          "id": {
-            "type": "string"
-          },
-          "name": {
-            "type": "string"
-          },
-          "nickname": {
-            "type": "string"
-          },
-          "customId": {
-            "type": "string"
-          },
-          "email": {
-            "type": "string"
-          },
-          "inviteSent": {
-            "type": "boolean"
-          },
-          "claimedTime": {
-            "type": "integer"
-          },
-          "deletedTime": {
-            "type": "integer"
-          },
-          "pin": {
-            "type": "string"
-          },
-          "unhashedPin": {
-            "type": "string"
-          },
-          "role": {
-            "type": "string"
-          },
-          "isOwner": {
-            "type": "boolean"
-          },
-          "orders": {
-            "type": "object",
-            "properties": {
-              "href": {
-                "type": "string"
-              }
-            },
-            "required": [
-              "href"
-            ]
-          },
-          "merchant": {
-            "type": "null"
-          }
-        },
-        "required": [
-          "claimedTime",
-          "customId",
-          "deletedTime",
-          "email",
-          "href",
-          "id",
-          "inviteSent",
-          "isOwner",
-          "merchant",
-          "name",
-          "nickname",
-          "orders",
-          "pin",
-          "role",
-          "unhashedPin"
-        ]
-      },
-      "metadata": [
-        {
-          "breadcrumb": [],
-          "metadata": {
-            "forced-replication-method": "FULL_TABLE",
-            "valid-replication-keys": [
-              "id"
-            ],
-            "inclusion": "available"
-          }
-        },
-        {
-          "breadcrumb": [
-            "properties",
-            "deletedTime"
-          ],
-          "metadata": {
-            "inclusion": "available"
-          }
-        },
-        {
-          "breadcrumb": [
-            "properties",
-            "merchant"
-          ],
-          "metadata": {
-            "inclusion": "available"
-          }
-        }
-      ]
-    }
+## Configuration
+
+### Accepted Config Options
+
+<!--
+Developer TODO: Provide a list of config options accepted by the tap.
+
+This section can be created by copy-pasting the CLI output from:
+
 ```
-### API's Selection on properties.jon file
-
-In properties file mark the required API as ` "selected": true` to retrieve the specific API data.
-If we mark ` "selected": false` then that API will not return data.
-
-
-```json
-{
-      "stream": "Customers",
-      "tap_stream_id": "Customers",
-      "schema": {
-        "type": "object",
-        "selected": true,
-        "properties": {
-          "href": {
-            "type": "string"
-          },
-          "id": {
-            "type": "string"
-          },
+tap-clover --about --format=markdown
 ```
+-->
 
-### How to run singer tap with property file.
-
-With a properties catalog that describes field and API selections the tap can be invoked:
+A full list of supported settings and capabilities for this
+tap is available by running:
 
 ```bash
-$ tap-clover --config config.json --properties properties.json
+tap-clover --about
 ```
 
-Messages are written to standard output following the Singer specification. The
-resultant stream of JSON data can be consumed by a Singer target.
+### Configure using environment variables
 
+This Singer tap will automatically import any environment variables within the working directory's
+`.env` if the `--config=ENV` is provided, such that config values will be considered if a matching
+environment variable is set either in the terminal context or in the `.env` file.
 
+### Source Authentication and Authorization
 
-### How to run the singer tap with target
+<!--
+Developer TODO: If your tap requires special access on the source system, or any special authentication requirements, provide those here.
+-->
 
+## Usage
+
+You can easily run `tap-clover` by itself or in a pipeline using [Meltano](https://meltano.com/).
+
+### Executing the Tap Directly
 
 ```bash
-$ tap-clover --config config.json --properties properties.json | target-stich --config config.json
+tap-clover --version
+tap-clover --help
+tap-clover --config CONFIG --discover > ./catalog.json
 ```
 
-We can choose any of the singer target ,according to singer target specification we want to give the connection details in the config file.
+## Developer Resources
 
-### List of Square API"s
+Follow these instructions to contribute to this project.
 
-List of square API is available inside [Clover_API_list.md](Clover_API_list.md)
+### Initialize your Development Environment
+
+Prerequisites:
+
+- Python 3.9+
+- [uv](https://docs.astral.sh/uv/)
+
+```bash
+uv sync
+```
+
+### Create and Run Tests
+
+Create tests within the `tests` subfolder and
+  then run:
+
+```bash
+uv run pytest
+```
+
+You can also test the `tap-clover` CLI interface directly using `uv run`:
+
+```bash
+uv run tap-clover --help
+```
+
+### Testing with [Meltano](https://www.meltano.com)
+
+_**Note:** This tap will work in any Singer environment and does not require Meltano.
+Examples here are for convenience and to streamline end-to-end orchestration scenarios._
+
+<!--
+Developer TODO:
+Your project comes with a custom `meltano.yml` project file already created. Open the `meltano.yml` and follow any "TODO" items listed in
+the file.
+-->
+
+Next, install Meltano (if you haven't already) and any needed plugins:
+
+```bash
+# Install meltano
+pipx install meltano
+# Initialize meltano within this directory
+cd tap-clover
+meltano install
+```
+
+Now you can test and orchestrate using Meltano:
+
+```bash
+# Test invocation:
+meltano invoke tap-clover --version
+
+# OR run a test ELT pipeline:
+meltano run tap-clover target-jsonl
+```
+
+### SDK Dev Guide
+
+See the [dev guide](https://sdk.meltano.com/en/latest/dev_guide.html) for more instructions on how to use the SDK to
+develop your own taps and targets.

@@ -1,0 +1,261 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "owner_id": {
+      "type": "string"
+    },
+    "owner_name": {
+      "type": "string"
+    },
+    "owner_email": {
+      "type": "string"
+    },
+    "owner_inviteSent": {
+      "type": "boolean"
+    },
+    "owner_claimedTime": {
+      "type": "integer"
+    },
+    "owner_role": {
+      "type": "string"
+    },
+    "owner_isOwner": {
+      "type": "boolean"
+    },
+    "address_address1": {
+      "type": "string"
+    },
+    "address_city": {
+      "type": "string"
+    },
+    "address_country": {
+      "type": "string"
+    },
+    "address_phoneNumber": {
+      "type": "string"
+    },
+    "address_state": {
+      "type": "string"
+    },
+    "address_zip": {
+      "type": "string"
+    },
+    "merchantPlan_id": {
+      "type": "string"
+    },
+    "createdTime": {
+      "type": "integer"
+    },
+    "properties_merchantRef_id": {
+      "type": "string"
+    },
+    "properties_defaultCurrency": {
+      "type": "string"
+    },
+    "properties_tipsEnabled": {
+      "type": "boolean"
+    },
+    "properties_summaryHour": {
+      "type": "integer"
+    },
+    "properties_signatureThreshold": {
+      "type": "integer"
+    },
+    "properties_hasDefaultEmployee": {
+      "type": "boolean"
+    },
+    "properties_tipRateDefault": {
+      "type": "integer"
+    },
+    "properties_autoLogout": {
+      "type": "boolean"
+    },
+    "properties_orderTitle": {
+      "type": "string"
+    },
+    "properties_orderTitleMax": {
+      "type": "integer"
+    },
+    "properties_resetOnReportingTime": {
+      "type": "boolean"
+    },
+    "properties_notesOnOrders": {
+      "type": "boolean"
+    },
+    "properties_deleteOrders": {
+      "type": "boolean"
+    },
+    "properties_removeTaxEnabled": {
+      "type": "boolean"
+    },
+    "properties_groupLineItems": {
+      "type": "boolean"
+    },
+    "properties_alternateInventoryNames": {
+      "type": "boolean"
+    },
+    "properties_autoPrint": {
+      "type": "boolean"
+    },
+    "properties_marketingEnabled": {
+      "type": "boolean"
+    },
+    "properties_supportPhone": {
+      "type": "string"
+    },
+    "properties_supportEmail": {
+      "type": "string"
+    },
+    "properties_manualCloseout": {
+      "type": "boolean"
+    },
+    "properties_manualCloseoutPerDevice": {
+      "type": "boolean"
+    },
+    "properties_autoCloseoutTimezone": {
+      "type": "string"
+    },
+    "properties_locale": {
+      "type": "string"
+    },
+    "properties_timezone": {
+      "type": "string"
+    },
+    "properties_vat": {
+      "type": "boolean"
+    },
+    "properties_vatTaxName": {
+      "type": "string"
+    },
+    "properties_appBillingSystem": {
+      "type": "string"
+    },
+    "properties_trackStock": {
+      "type": "boolean"
+    },
+    "properties_updateStock": {
+      "type": "boolean"
+    },
+    "properties_allowClockOutWithOpenOrders": {
+      "type": "boolean"
+    },
+    "properties_logInClockInPrompt": {
+      "type": "boolean"
+    },
+    "properties_pinLength": {
+      "type": "integer"
+    },
+    "properties_cashBackEnabled": {
+      "type": "boolean"
+    },
+    "properties_hasConsented": {
+      "type": "boolean"
+    },
+    "properties_merchantBoardingStatus": {
+      "type": "string"
+    },
+    "gateway_authorizationFrontEnd": {
+      "type": "string"
+    },
+    "gateway_acquiringBackEnd": {
+      "type": "string"
+    },
+    "gateway_paymentGatewayApi": {
+      "type": "string"
+    },
+    "gateway_accountName": {
+      "type": "string"
+    },
+    "gateway_mid": {
+      "type": "string"
+    },
+    "gateway_tid": {
+      "type": "string"
+    },
+    "gateway_supportsTipping": {
+      "type": "boolean"
+    },
+    "gateway_frontendMid": {
+      "type": "string"
+    },
+    "gateway_backendMid": {
+      "type": "string"
+    },
+    "gateway_mcc": {
+      "type": "string"
+    },
+    "gateway_tokenType": {
+      "type": "string"
+    },
+    "gateway_groupId": {
+      "type": "string"
+    },
+    "gateway_debitKeyCode": {
+      "type": "string"
+    },
+    "gateway_supportsTipAdjust": {
+      "type": "boolean"
+    },
+    "gateway_supportsNakedCredit": {
+      "type": "boolean"
+    },
+    "gateway_supportsMultiPayToken": {
+      "type": "boolean"
+    },
+    "gateway_supportsPreauthOverage": {
+      "type": "boolean"
+    },
+    "gateway_closingTime": {
+      "type": "string"
+    },
+    "gateway_newBatchCloseEnabled": {
+      "type": "boolean"
+    },
+    "gateway_production": {
+      "type": "boolean"
+    },
+    "reseller_id": {
+      "type": "string"
+    },
+    "billingInfo_planBillable": {
+      "type": "boolean"
+    },
+    "billingInfo_appBillable": {
+      "type": "boolean"
+    },
+    "billingInfo_wmBillable": {
+      "type": "boolean"
+    },
+    "isBillable": {
+      "type": "boolean"
+    },
+    "merchantBoarding_translatedAccountStatus": {
+      "type": "string"
+    },
+    "merchantBoarding_createdTime": {
+      "type": "integer"
+    },
+    "merchantBoarding_modifiedTime": {
+      "type": "integer"
+    },
+    "merchantBoarding_creationSource": {
+      "type": "string"
+    },
+    "level3PreReqs_merchantHasTaxId": {
+      "type": "boolean"
+    },
+    "level3PreReqs_isNorthMerchant": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "id"
+  ]
+}

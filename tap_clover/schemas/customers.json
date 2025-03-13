@@ -1,0 +1,48 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "merchant_id": {
+      "type": "string"
+    },
+    "firstName": {
+      "type": "string"
+    },
+    "lastName": {
+      "type": "string"
+    },
+    "marketingAllowed": {
+      "type": "boolean"
+    },
+    "customerSince": {
+      "type": "integer"
+    },
+    "metadata_businessName": {
+      "type": "string"
+    },
+    "metadata_note": {
+      "type": "string"
+    },
+    "metadata_dobYear": {
+      "type": "integer"
+    },
+    "metadata_dobMonth": {
+      "type": "integer"
+    },
+    "metadata_dobDay": {
+      "type": "integer"
+    },
+    "metadata_modifiedTime": {
+      "type": "integer"
+    },
+    "metadata_customer_id": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "id"
+  ]
+}
