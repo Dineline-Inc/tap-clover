@@ -9,7 +9,7 @@ class CashEventsStream(CloverStream):
 
     name = "cash_events"
     primary_keys = ["id"]
-    replication_key = "timestamp"
+    replication_key = None
     expandable_keys = ["employee", "device"]
     parent_stream_type = MerchantsStream
 
