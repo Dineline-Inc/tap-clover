@@ -1,0 +1,183 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Order Line Items",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "merchant_id": {
+      "type": "string"
+    },
+    "item_id": {
+      "type": "string"
+    },
+    "colorCode": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "alternateName": {
+      "type": "string"
+    },
+    "price": {
+      "type": "integer"
+    },
+    "priceWithModifiers": {
+      "type": "integer"
+    },
+    "priceWithModifiersAndItemAndOrderDiscounts": {
+      "type": "integer"
+    },
+    "unitQty": {
+      "type": "integer"
+    },
+    "unitName": {
+      "type": "string"
+    },
+    "itemCode": {
+      "type": "string"
+    },
+    "note": {
+      "type": "string"
+    },
+    "printed": {
+      "type": "boolean"
+    },
+    "exchangedLineItem_id": {
+      "type": "string"
+    },
+    "binName": {
+      "type": "string"
+    },
+    "userData": {
+      "type": "string"
+    },
+    "createdTime": {
+      "type": "integer"
+    },
+    "orderClientCreatedTime": {
+      "type": "integer"
+    },
+    "discountAmount": {
+      "type": "integer"
+    },
+    "orderLevelDiscountAmount": {
+      "type": "integer"
+    },
+    "exchanged": {
+      "type": "boolean"
+    },
+    "refunded": {
+      "type": "boolean"
+    },
+    "refund_id": {
+      "type": "string"
+    },
+    "refund_orderRef": {
+      "type": "object",
+      "properties": {}
+    },
+    "refund_device": {
+      "type": "object",
+      "properties": {}
+    },
+    "refund_amount": {
+      "type": "integer"
+    },
+    "refund_taxAmount": {
+      "type": "integer"
+    },
+    "refund_tipAmount": {
+      "type": "integer"
+    },
+    "refund_createdTime": {
+      "type": "integer"
+    },
+    "refund_clientCreatedTime": {
+      "type": "integer"
+    },
+    "refund_gatewayProcessingTime": {
+      "type": "integer"
+    },
+    "refund_payment": {
+      "type": "object",
+      "properties": {}
+    },
+    "refund_employee": {
+      "type": "object",
+      "properties": {}
+    },
+    "refund_overrideMerchantTender": {
+      "type": "object",
+      "properties": {}
+    },
+    "refund_serviceChargeAmount": {
+      "type": "object",
+      "properties": {}
+    },
+    "refund_attributes": {
+      "type": "object",
+      "properties": {}
+    },
+    "refund_germanInfo": {
+      "type": "object",
+      "properties": {}
+    },
+    "refund_appTracking": {
+      "type": "object",
+      "properties": {}
+    },
+    "refund_voided": {
+      "type": "boolean"
+    },
+    "refund_voidReason": {
+      "type": "string"
+    },
+    "refund_cardTransaction": {
+      "type": "object",
+      "properties": {}
+    },
+    "refund_transactionInfo": {
+      "type": "object",
+      "properties": {}
+    },
+    "refund_merchant": {
+      "type": "object",
+      "properties": {}
+    },
+    "refund_externalReferenceId": {
+      "type": "string"
+    },
+    "refund_authCode": {
+      "type": "string"
+    },
+    "refund_status": {
+      "type": "string"
+    },
+    "refund_oceanGatewayInfo": {
+      "type": "object",
+      "properties": {}
+    },
+    "refund_reason": {
+      "type": "string"
+    },
+    "isRevenue": {
+      "type": "boolean"
+    },
+    "revenueAmount": {
+      "type": "integer"
+    },
+    "quantitySold": {
+      "type": "number"
+    },
+    "printGroup_id": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "id",
+    "merchant_id"
+  ]
+}

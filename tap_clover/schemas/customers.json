@@ -1,5 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Custombers",
   "type": "object",
   "properties": {
     "id": {
@@ -37,12 +38,10 @@
     },
     "metadata_modifiedTime": {
       "type": "integer"
-    },
-    "metadata_customer_id": {
-      "type": "string"
     }
   },
   "required": [
-    "id"
+    "id",
+    "merchant_id"
   ]
 }

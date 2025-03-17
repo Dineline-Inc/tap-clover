@@ -1,0 +1,71 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Merchant Order Types",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "merchant_id": {
+      "type": "string"
+    },
+    "labelKey": {
+      "type": "string"
+    },
+    "label": {
+      "type": "string"
+    },
+    "taxable": {
+      "type": "boolean"
+    },
+    "isDefault": {
+      "type": "boolean"
+    },
+    "filterCategories": {
+      "type": "boolean"
+    },
+    "isHidden": {
+      "type": "boolean"
+    },
+    "fee": {
+      "type": "integer"
+    },
+    "minOrderAmount": {
+      "type": "integer"
+    },
+    "maxOrderAmount": {
+      "type": "integer"
+    },
+    "maxRadius": {
+      "type": "integer"
+    },
+    "avgOrderTime": {
+      "type": "integer"
+    },
+    "hoursAvailable": {
+      "type": "string"
+    },
+    "customerIdMethod": {
+      "type": "string"
+    },
+    "isDeleted": {
+      "type": "boolean"
+    },
+    "systemOrderTypeId": {
+      "type": "string"
+    },
+    "hours_id": {
+      "type": "string"
+    },
+    "hours_name": {
+      "type": "string"
+    },
+    "hours_reference_id": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "id",
+    "merchant_id"
+  ]
+}

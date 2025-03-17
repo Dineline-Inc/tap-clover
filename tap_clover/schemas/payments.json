@@ -1,0 +1,185 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Payments",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "merchant_id": {
+      "type": "string"
+    },
+    "order_id": {
+      "type": "string"
+    },
+    "device_id": {
+      "type": "string"
+    },
+    "tender_id": {
+      "type": "string"
+    },
+    "tender_editable": {
+      "type": "boolean"
+    },
+    "tender_labelKey": {
+      "type": "string"
+    },
+    "tender_label": {
+      "type": "string"
+    },
+    "tender_opensCashDrawer": {
+      "type": "boolean"
+    },
+    "tender_supportsTipping": {
+      "type": "boolean"
+    },
+    "tender_enabled": {
+      "type": "boolean"
+    },
+    "tender_visible": {
+      "type": "boolean"
+    },
+    "tender_instructions": {
+      "type": "string"
+    },
+    "amount": {
+      "type": "integer"
+    },
+    "tipAmount": {
+      "type": "integer"
+    },
+    "taxAmount": {
+      "type": "integer"
+    },
+    "cashbackAmount": {
+      "type": "integer"
+    },
+    "cashTendered": {
+      "type": "integer"
+    },
+    "externalPaymentId": {
+      "type": "string"
+    },
+    "employee_id": {
+      "type": "string"
+    },
+    "createdTime": {
+      "type": "integer"
+    },
+    "clientCreatedTime": {
+      "type": "integer"
+    },
+    "gatewayProcessingTime": {
+      "type": "integer"
+    },
+    "modifiedTime": {
+      "type": "integer"
+    },
+    "offline": {
+      "type": "boolean"
+    },
+    "result": {
+      "type": "string"
+    },
+    "cardTransaction_cardType": {
+      "type": "string"
+    },
+    "cardTransaction_entryType": {
+      "type": "string"
+    },
+    "cardTransaction_first6": {
+      "type": "string"
+    },
+    "cardTransaction_last4": {
+      "type": "string"
+    },
+    "cardTransaction_type": {
+      "type": "string"
+    },
+    "cardTransaction_authCode": {
+      "type": "string"
+    },
+    "cardTransaction_referenceId": {
+      "type": "string"
+    },
+    "cardTransaction_transactionNo": {
+      "type": "string"
+    },
+    "cardTransaction_state": {
+      "type": "string"
+    },
+    "cardTransaction_begBalance": {
+      "type": "integer"
+    },
+    "cardTransaction_endBalance": {
+      "type": "integer"
+    },
+    "cardTransaction_avsResult": {
+      "type": "string"
+    },
+    "cardTransaction_cardholderName": {
+      "type": "string"
+    },
+    "cardTransaction_token": {
+      "type": "string"
+    },
+    "transactionSettings_cardEntryMethods": {
+      "type": "integer"
+    },
+    "transactionSettings_disableCashBack": {
+      "type": "boolean"
+    },
+    "transactionSettings_cloverShouldHandleReceipts": {
+      "type": "boolean"
+    },
+    "transactionSettings_forcePinEntryOnSwipe": {
+      "type": "boolean"
+    },
+    "transactionSettings_disableRestartTransactionOnFailure": {
+      "type": "boolean"
+    },
+    "transactionSettings_allowOfflinePayment": {
+      "type": "boolean"
+    },
+    "transactionSettings_approveOfflinePaymentWithoutPrompt": {
+      "type": "boolean"
+    },
+    "transactionSettings_forceOfflinePayment": {
+      "type": "boolean"
+    },
+    "transactionSettings_signatureThreshold": {
+      "type": "integer"
+    },
+    "transactionSettings_signatureEntryLocation": {
+      "type": "string"
+    },
+    "transactionSettings_tipMode": {
+      "type": "string"
+    },
+    "attributes_default": {
+      "type": "string"
+    },
+    "appTracking_developerAppId": {
+      "type": "string"
+    },
+    "appTracking_applicationName": {
+      "type": "string"
+    },
+    "appTracking_applicationID": {
+      "type": "string"
+    },
+    "appTracking_applicationVersion": {
+      "type": "string"
+    },
+    "appTracking_sourceSDK": {
+      "type": "string"
+    },
+    "appTracking_sourceSDKVersion": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "id",
+    "merchant_id"
+  ]
+}

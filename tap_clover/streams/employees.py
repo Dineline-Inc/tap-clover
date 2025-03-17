@@ -10,7 +10,7 @@ class EmployeesStream(CloverStream):
     name = "employees"
     primary_keys = ["id"]
     replication_key = None
-    expandable_keys = []
+    expandable_keys = ["roles"]
     parent_stream_type = MerchantsStream
 
     @property

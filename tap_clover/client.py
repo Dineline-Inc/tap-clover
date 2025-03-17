@@ -14,10 +14,11 @@ from importlib import resources
 from singer_sdk.authenticators import APIKeyAuthenticator
 from singer_sdk.exceptions import RetriableAPIError
 from singer_sdk.helpers.jsonpath import extract_jsonpath
-from singer_sdk.pagination import BaseAPIPaginator  # noqa: TC002
+from singer_sdk.pagination import BaseAPIPaginator, BaseOffsetPaginator
 from singer_sdk.streams import RESTStream
 
 from tap_clover.auth import CloverAuthenticator
+from tap_clover.pagination import CustomOffsetPaginator
 
 if t.TYPE_CHECKING:
     from singer_sdk.helpers.types import Auth, Context
@@ -78,7 +79,7 @@ class CloverStream(RESTStream):
     expandable_keys = []
 
     # Update this value if necessary or override `get_new_paginator`.
-    next_page_token_jsonpath = "$.next_page"  # noqa: S105
+    next_page_token_jsonpath = "$.next_page"
 
     @property
     def url_base(self) -> str:
@@ -144,12 +145,12 @@ class CloverStream(RESTStream):
         Returns:
             A pagination helper instance.
         """
-        return super().get_new_paginator()
+        return CustomOffsetPaginator(start_value=1, page_size=1000)
 
     def get_url_params(
         self,
-        context: Context | None,  # noqa: ARG002
-        next_page_token: t.Any | None,  # noqa: ANN401
+        context: Context | None,
+        next_page_token: t.Any | None,
     ) -> dict[str, t.Any]:
         """Return a dictionary of values to be used in URL parameterization.
 
@@ -162,7 +163,7 @@ class CloverStream(RESTStream):
         """
         params: dict = {}
         if next_page_token:
-            params["page"] = next_page_token
+            params["offset"] = next_page_token
         if self.expandable_keys:
             params["expand"] = ",".join(self.expandable_keys)
         starting_timestamp = self.get_starting_replication_key_value(context)
@@ -207,9 +208,8 @@ class CloverStream(RESTStream):
             self.logger.error("Failed to decode JSON response: %s", e)
             return iter([])
 
-        elements = json_response.get("elements")
-        if elements:
-            records = elements
+        if "elements" in json_response:
+            records = json_response.get("elements")
         else:
             records = extract_jsonpath(self.records_jsonpath, input=json_response)
         yield from records

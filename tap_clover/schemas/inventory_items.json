@@ -1,0 +1,110 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Inventory Items",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "merchant_id": {
+      "type": "string"
+    },
+    "hidden": {
+      "type": "boolean"
+    },
+    "available": {
+      "type": "boolean"
+    },
+    "autoManage": {
+      "type": "boolean"
+    },
+    "itemGroup_id": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "alternateName": {
+      "type": "string"
+    },
+    "code": {
+      "type": "string"
+    },
+    "colorCode": {
+      "type": "string"
+    },
+    "sku": {
+      "type": "string"
+    },
+    "price": {
+      "type": "integer"
+    },
+    "priceType": {
+      "type": "string"
+    },
+    "defaultTaxRates": {
+      "type": "boolean"
+    },
+    "unitName": {
+      "type": "string"
+    },
+    "cost": {
+      "type": "integer"
+    },
+    "isRevenue": {
+      "type": "boolean"
+    },
+    "stockCount": {
+      "type": "integer"
+    },
+    "itemStock_stockCount": {
+      "type": "integer"
+    },
+    "itemStock_quantity": {
+      "type": "number"
+    },
+    "itemStock_modifiedTime": {
+      "type": "integer"
+    },
+    "menuItem_id": {
+      "type": "string"
+    },
+    "menuItem_name": {
+      "type": "string"
+    },
+    "menuItem_description": {
+      "type": "string"
+    },
+    "menuItem_imageFilename": {
+      "type": "string"
+    },
+    "menuItem_enabled": {
+      "type": "boolean"
+    },
+    "menuItem_reasonCode": {
+      "type": "string"
+    },
+    "menuItem_createdTime": {
+      "type": "integer"
+    },
+    "menuItem_modifiedTime": {
+      "type": "integer"
+    },
+    "menuItem_deletedTime": {
+      "type": "integer"
+    },
+    "modifiedTime": {
+      "type": "integer"
+    },
+    "deletedTime": {
+      "type": "integer"
+    },
+    "priceWithoutVat": {
+      "type": "integer"
+    }
+  },
+  "required": [
+    "id",
+    "merchant_id"
+  ]
+}

@@ -11,15 +11,11 @@ class MerchantsStream(CloverStream):
     replication_key = None
     expandable_keys = [
         "bankProcessing",
+        "externalMerchant",
         "merchantBoarding",
         "merchantL3Prerequisite",
-        "deviceBoarding",
         "hierarchy",
-        "address",
         "owner",
-        "gateway",
-        "properties",
-        "openingHours",
         "partnerApp",
         "selfBoardingApplication",
         "equipmentSummary"

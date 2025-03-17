@@ -1,0 +1,97 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Merchant Payment Gateway Configurations",
+  "type": "object",
+  "properties": {
+    "merchant_id": {
+      "type": "string"
+    },
+    "paymentProcessorName": {
+      "type": "string"
+    },
+    "authorizationFrontEnd": {
+      "type": "string"
+    },
+    "acquiringBackEnd": {
+      "type": "string"
+    },
+    "paymentGatewayApi": {
+      "type": "string"
+    },
+    "accountName": {
+      "type": "string"
+    },
+    "altMid": {
+      "type": "string"
+    },
+    "mid": {
+      "type": "string"
+    },
+    "fns": {
+      "type": "string"
+    },
+    "tid": {
+      "type": "string"
+    },
+    "storeId": {
+      "type": "string"
+    },
+    "supportsTipping": {
+      "type": "boolean"
+    },
+    "frontendMid": {
+      "type": "string"
+    },
+    "backendMid": {
+      "type": "string"
+    },
+    "mcc": {
+      "type": "string"
+    },
+    "tokenType": {
+      "type": "string"
+    },
+    "groupId": {
+      "type": "string"
+    },
+    "debitKeyCode": {
+      "type": "string"
+    },
+    "sredCode": {
+      "type": "string"
+    },
+    "supportsTipAdjust": {
+      "type": "boolean"
+    },
+    "supportsNakedCredit": {
+      "type": "boolean"
+    },
+    "supportsMultiPayToken": {
+      "type": "boolean"
+    },
+    "supportsPreauthOverage": {
+      "type": "boolean"
+    },
+    "closingTime": {
+      "type": "string"
+    },
+    "telecheck_ica_mid": {
+      "type": "string"
+    },
+    "telecheck_cbp_mid": {
+      "type": "string"
+    },
+    "telecheck_ppd_mid": {
+      "type": "string"
+    },
+    "newBatchCloseEnabled": {
+      "type": "boolean"
+    },
+    "production": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "merchant_id"
+  ]
+}

@@ -1,0 +1,116 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Merchant Devices",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "merchant_id": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "model": {
+      "type": "string"
+    },
+    "orderPrefix": {
+      "type": "string"
+    },
+    "terminalId": {
+      "type": "string"
+    },
+    "terminalPrefix": {
+      "type": "integer"
+    },
+    "serial": {
+      "type": "string"
+    },
+    "buildNumber": {
+      "type": "integer"
+    },
+    "secureId": {
+      "type": "string"
+    },
+    "buildType": {
+      "type": "string"
+    },
+    "cpuId": {
+      "type": "string"
+    },
+    "imei": {
+      "type": "string"
+    },
+    "imsi": {
+      "type": "string"
+    },
+    "simIccid": {
+      "type": "string"
+    },
+    "deviceCertificate": {
+      "type": "string"
+    },
+    "pedCertificate": {
+      "type": "string"
+    },
+    "deviceTypeName": {
+      "type": "string"
+    },
+    "productName": {
+      "type": "string"
+    },
+    "pinDisabled": {
+      "type": "boolean"
+    },
+    "offlinePayments": {
+      "type": "boolean"
+    },
+    "offlinePaymentsAll": {
+      "type": "boolean"
+    },
+    "offlinePaymentsLimit": {
+      "type": "integer"
+    },
+    "offlinePaymentsPromptThreshold": {
+      "type": "integer"
+    },
+    "offlinePaymentsTotalPaymentsLimit": {
+      "type": "integer"
+    },
+    "offlinePaymentsLimitDefault": {
+      "type": "integer"
+    },
+    "offlinePaymentsPromptThresholdDefault": {
+      "type": "integer"
+    },
+    "offlinePaymentsTotalPaymentsLimitDefault": {
+      "type": "integer"
+    },
+    "offlinePaymentsMaxLimit": {
+      "type": "integer"
+    },
+    "offlinePaymentsMaxTotalPaymentsLimit": {
+      "type": "integer"
+    },
+    "showOfflinePayments": {
+      "type": "boolean"
+    },
+    "maxOfflineDays": {
+      "type": "integer"
+    },
+    "allowStoreAndForward": {
+      "type": "boolean"
+    },
+    "bundleIndicator": {
+      "type": "string"
+    },
+    "deviceType_id": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "id",
+    "merchant_id"
+  ]
+}

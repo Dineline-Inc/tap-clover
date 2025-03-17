@@ -1,0 +1,32 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Order Discounts",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "merchant_id": {
+      "type": "string"
+    },
+    "discount_id": {
+      "type": "string"
+    },
+    "approver_id": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "amount": {
+      "type": "integer"
+    },
+    "percentage": {
+      "type": "integer"
+    }
+  },
+  "required": [
+    "id",
+    "merchant_id"
+  ]
+}

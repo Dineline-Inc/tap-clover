@@ -1,0 +1,134 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Employee Shifts",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "merchant_id": {
+      "type": "string"
+    },
+    "employee_id": {
+      "type": "string"
+    },
+    "employee_name": {
+      "type": "string"
+    },
+    "employee_nickname": {
+      "type": "string"
+    },
+    "employee_customId": {
+      "type": "string"
+    },
+    "employee_email": {
+      "type": "string"
+    },
+    "employee_inviteSent": {
+      "type": "boolean"
+    },
+    "employee_claimedTime": {
+      "type": "integer"
+    },
+    "employee_deletedTime": {
+      "type": "integer"
+    },
+    "employee_pin": {
+      "type": "string"
+    },
+    "employee_unhashedPin": {
+      "type": "string"
+    },
+    "employee_role": {
+      "type": "string"
+    },
+    "cashTipsCollected": {
+      "type": "integer"
+    },
+    "serverBanking": {
+      "type": "boolean"
+    },
+    "inTime": {
+      "type": "integer"
+    },
+    "overrideInTime": {
+      "type": "integer"
+    },
+    "overrideInEmployee_id": {
+      "type": "string"
+    },
+    "overrideInEmployee_name": {
+      "type": "string"
+    },
+    "overrideInEmployee_nickname": {
+      "type": "string"
+    },
+    "overrideInEmployee_customId": {
+      "type": "string"
+    },
+    "overrideInEmployee_email": {
+      "type": "string"
+    },
+    "overrideInEmployee_inviteSent": {
+      "type": "boolean"
+    },
+    "overrideInEmployee_claimedTime": {
+      "type": "integer"
+    },
+    "overrideInEmployee_deletedTime": {
+      "type": "integer"
+    },
+    "overrideInEmployee_pin": {
+      "type": "string"
+    },
+    "overrideInEmployee_unhashedPin": {
+      "type": "string"
+    },
+    "overrideInEmployee_role": {
+      "type": "string"
+    },
+    "outTime": {
+      "type": "integer"
+    },
+    "overrideOutTime": {
+      "type": "integer"
+    },
+    "overrideOutEmployee_id": {
+      "type": "string"
+    },
+    "overrideOutEmployee_name": {
+      "type": "string"
+    },
+    "overrideOutEmployee_nickname": {
+      "type": "string"
+    },
+    "overrideOutEmployee_customId": {
+      "type": "string"
+    },
+    "overrideOutEmployee_email": {
+      "type": "string"
+    },
+    "overrideOutEmployee_inviteSent": {
+      "type": "boolean"
+    },
+    "overrideOutEmployee_claimedTime": {
+      "type": "integer"
+    },
+    "overrideOutEmployee_deletedTime": {
+      "type": "integer"
+    },
+    "overrideOutEmployee_pin": {
+      "type": "string"
+    },
+    "overrideOutEmployee_unhashedPin": {
+      "type": "string"
+    },
+    "overrideOutEmployee_role": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "id",
+    "merchant_id"
+  ]
+}

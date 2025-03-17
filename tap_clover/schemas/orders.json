@@ -1,0 +1,168 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Orders",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "merchant_id": {
+      "type": "string"
+    },
+    "currency": {
+      "type": "string"
+    },
+    "employee_id": {
+      "type": "string"
+    },
+    "total": {
+      "type": "integer"
+    },
+    "externalReferenceId": {
+      "type": "string"
+    },
+    "unpaidBalance": {
+      "type": "integer"
+    },
+    "paymentState": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "note": {
+      "type": "string"
+    },
+    "orderType_id": {
+      "type": "string"
+    },
+    "orderType_labelKey": {
+      "type": "string"
+    },
+    "orderType_label": {
+      "type": "string"
+    },
+    "orderType_taxable": {
+      "type": "boolean"
+    },
+    "orderType_isDefault": {
+      "type": "boolean"
+    },
+    "orderType_filterCategories": {
+      "type": "boolean"
+    },
+    "orderType_isHidden": {
+      "type": "boolean"
+    },
+    "orderType_fee": {
+      "type": "integer"
+    },
+    "orderType_minOrderAmount": {
+      "type": "integer"
+    },
+    "orderType_maxOrderAmount": {
+      "type": "integer"
+    },
+    "orderType_maxRadius": {
+      "type": "integer"
+    },
+    "orderType_avgOrderTime": {
+      "type": "integer"
+    },
+    "orderType_hoursAvailable": {
+      "type": "string"
+    },
+    "orderType_customerIdMethod": {
+      "type": "string"
+    },
+    "orderType_isDeleted": {
+      "type": "boolean"
+    },
+    "orderType_systemOrderTypeId": {
+      "type": "string"
+    },
+    "orderType_hours": {
+      "type": "object",
+      "properties": {}
+    },
+    "taxRemoved": {
+      "type": "boolean"
+    },
+    "isVat": {
+      "type": "boolean"
+    },
+    "state": {
+      "type": "string"
+    },
+    "manualTransaction": {
+      "type": "boolean"
+    },
+    "groupLineItems": {
+      "type": "boolean"
+    },
+    "testMode": {
+      "type": "boolean"
+    },
+    "payType": {
+      "type": "string"
+    },
+    "createdTime": {
+      "type": "integer"
+    },
+    "clientCreatedTime": {
+      "type": "integer"
+    },
+    "modifiedTime": {
+      "type": "integer"
+    },
+    "deletedTimestamp": {
+      "type": "integer"
+    },
+    "serviceCharge_id": {
+      "type": "string"
+    },
+    "serviceCharge_name": {
+      "type": "string"
+    },
+    "serviceCharge_enabled": {
+      "type": "boolean"
+    },
+    "serviceCharge_percentage": {
+      "type": "integer"
+    },
+    "serviceCharge_percentageDecimal": {
+      "type": "integer"
+    },
+    "serviceCharge_isAutoApplied": {
+      "type": "boolean"
+    },
+    "device_id": {
+      "type": "string"
+    },
+    "orderFulfillmentEvent_id": {
+      "type": "string"
+    },
+    "orderFulfillmentEvent_type": {
+      "type": "string"
+    },
+    "orderFulfillmentEvent_orderId": {
+      "type": "string"
+    },
+    "orderFulfillmentEvent_lineItemId": {
+      "type": "string"
+    },
+    "orderFulfillmentEvent_clientCreatedTime": {
+      "type": "integer"
+    },
+    "orderFulfillmentEvent_createdTime": {
+      "type": "integer"
+    },
+    "orderFulfillmentEvent_parentLineItemEvent": {
+      "type": "object"
+    }
+  },
+  "required": [
+    "id",
+    "merchant_id"
+  ]
+}

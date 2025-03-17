@@ -1,0 +1,213 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Order Voided Line Items",
+  "type": "object",
+  "properties": {
+    "merchant_id": {
+      "type": "string"
+    },
+    "lineItem_id": {
+      "type": "string"
+    },
+    "lineItem_item_id": {
+      "type": "string"
+    },
+    "lineItem_colorCode": {
+      "type": "string"
+    },
+    "lineItem_name": {
+      "type": "string"
+    },
+    "lineItem_alternateName": {
+      "type": "string"
+    },
+    "lineItem_price": {
+      "type": "integer"
+    },
+    "lineItem_priceWithModifiers": {
+      "type": "integer"
+    },
+    "lineItem_priceWithModifiersAndItemAndOrderDiscounts": {
+      "type": "integer"
+    },
+    "lineItem_unitQty": {
+      "type": "integer"
+    },
+    "lineItem_unitName": {
+      "type": "string"
+    },
+    "lineItem_itemCode": {
+      "type": "string"
+    },
+    "lineItem_note": {
+      "type": "string"
+    },
+    "lineItem_printed": {
+      "type": "boolean"
+    },
+    "lineItem_exchangedLineItem_id": {
+      "type": "string"
+    },
+    "lineItem_binName": {
+      "type": "string"
+    },
+    "lineItem_userData": {
+      "type": "string"
+    },
+    "lineItem_createdTime": {
+      "type": "integer"
+    },
+    "lineItem_orderClientCreatedTime": {
+      "type": "integer"
+    },
+    "lineItem_discountAmount": {
+      "type": "integer"
+    },
+    "lineItem_orderLevelDiscountAmount": {
+      "type": "integer"
+    },
+    "lineItem_exchanged": {
+      "type": "boolean"
+    },
+    "lineItem_refunded": {
+      "type": "boolean"
+    },
+    "lineItem_refund_id": {
+      "type": "string"
+    },
+    "lineItem_refund_orderRef": {
+      "type": "object",
+      "properties": {}
+    },
+    "lineItem_refund_device": {
+      "type": "object",
+      "properties": {}
+    },
+    "lineItem_refund_amount": {
+      "type": "integer"
+    },
+    "lineItem_refund_taxAmount": {
+      "type": "integer"
+    },
+    "lineItem_refund_tipAmount": {
+      "type": "integer"
+    },
+    "lineItem_refund_createdTime": {
+      "type": "integer"
+    },
+    "lineItem_refund_clientCreatedTime": {
+      "type": "integer"
+    },
+    "lineItem_refund_gatewayProcessingTime": {
+      "type": "integer"
+    },
+    "lineItem_refund_payment": {
+      "type": "object",
+      "properties": {}
+    },
+    "lineItem_refund_employee": {
+      "type": "object",
+      "properties": {}
+    },
+    "lineItem_refund_overrideMerchantTender": {
+      "type": "object",
+      "properties": {}
+    },
+    "lineItem_refund_serviceChargeAmount": {
+      "type": "object",
+      "properties": {}
+    },
+    "lineItem_refund_attributes": {
+      "type": "object",
+      "properties": {}
+    },
+    "lineItem_refund_germanInfo": {
+      "type": "object",
+      "properties": {}
+    },
+    "lineItem_refund_appTracking": {
+      "type": "object",
+      "properties": {}
+    },
+    "lineItem_refund_voided": {
+      "type": "boolean"
+    },
+    "lineItem_refund_voidReason": {
+      "type": "string"
+    },
+    "lineItem_refund_cardTransaction": {
+      "type": "object",
+      "properties": {}
+    },
+    "lineItem_refund_transactionInfo": {
+      "type": "object",
+      "properties": {}
+    },
+    "lineItem_refund_merchant": {
+      "type": "object",
+      "properties": {}
+    },
+    "lineItem_refund_externalReferenceId": {
+      "type": "string"
+    },
+    "lineItem_refund_authCode": {
+      "type": "string"
+    },
+    "lineItem_refund_status": {
+      "type": "string"
+    },
+    "lineItem_refund_oceanGatewayInfo": {
+      "type": "object",
+      "properties": {}
+    },
+    "lineItem_refund_reason": {
+      "type": "string"
+    },
+    "lineItem_isRevenue": {
+      "type": "boolean"
+    },
+    "lineItem_revenueAmount": {
+      "type": "integer"
+    },
+    "lineItem_quantitySold": {
+      "type": "number"
+    },
+    "lineItem_printGroup_id": {
+      "type": "string"
+    },
+    "lineItem_merchant_id": {
+      "type": "string"
+    },
+    "lineItem_reason": {
+      "type": "string"
+    },
+    "lineItem_removedBy_id": {
+      "type": "string"
+    },
+    "lineItem_approvedBy_id": {
+      "type": "string"
+    },
+    "lineItem_deleteType": {
+      "type": "string"
+    },
+    "lineItem_device_id": {
+      "type": "string"
+    },
+    "lineItem_createdBy_id": {
+      "type": "string"
+    },
+    "lineItem_deletedTime": {
+      "type": "integer"
+    },
+    "lineItem_environment": {
+      "type": "string"
+    },
+    "lineItem_clientEventType": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "id",
+    "merchant_id"
+  ]
+}

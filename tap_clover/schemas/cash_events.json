@@ -1,0 +1,171 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Cash Events",
+  "type": "object",
+  "properties": {
+    "type": {
+      "type": "string"
+    },
+    "merchant_id": {
+      "type": "string"
+    },
+    "amountChange": {
+      "type": "integer"
+    },
+    "timestamp": {
+      "type": "integer"
+    },
+    "note": {
+      "type": "string"
+    },
+    "employee_id": {
+      "type": "string"
+    },
+    "employee_name": {
+      "type": "string"
+    },
+    "employee_nickname": {
+      "type": "string"
+    },
+    "employee_customId": {
+      "type": "string"
+    },
+    "employee_email": {
+      "type": "string"
+    },
+    "employee_inviteSent": {
+      "type": "boolean"
+    },
+    "employee_claimedTime": {
+      "type": "integer"
+    },
+    "employee_deletedTime": {
+      "type": "integer"
+    },
+    "employee_pin": {
+      "type": "string"
+    },
+    "employee_unhashedPin": {
+      "type": "string"
+    },
+    "employee_role": {
+      "type": "string"
+    },
+    "employee_isOwner": {
+      "type": "boolean"
+    },
+    "employee_merchant_id": {
+      "type": "string"
+    },
+    "device_id": {
+      "type": "string"
+    },
+    "device_name": {
+      "type": "string"
+    },
+    "device_model": {
+      "type": "string"
+    },
+    "device_orderPrefix": {
+      "type": "string"
+    },
+    "device_terminalId": {
+      "type": "string"
+    },
+    "device_terminalPrefix": {
+      "type": "integer"
+    },
+    "device_serial": {
+      "type": "string"
+    },
+    "device_buildNumber": {
+      "type": "integer"
+    },
+    "device_secureId": {
+      "type": "string"
+    },
+    "device_buildType": {
+      "type": "string"
+    },
+    "device_cpuId": {
+      "type": "string"
+    },
+    "device_imei": {
+      "type": "string"
+    },
+    "device_imsi": {
+      "type": "string"
+    },
+    "device_simIccid": {
+      "type": "string"
+    },
+    "device_deviceCertificate": {
+      "type": "string"
+    },
+    "device_pedCertificate": {
+      "type": "string"
+    },
+    "device_deviceTypeName": {
+      "type": "string"
+    },
+    "device_pinDisabled": {
+      "type": "boolean"
+    },
+    "device_offlinePayments": {
+      "type": "boolean"
+    },
+    "device_offlinePaymentsAll": {
+      "type": "boolean"
+    },
+    "device_offlinePaymentsLimit": {
+      "type": "integer"
+    },
+    "device_offlinePaymentsPromptThreshold": {
+      "type": "integer"
+    },
+    "device_offlinePaymentsTotalPaymentsLimit": {
+      "type": "integer"
+    },
+    "device_offlinePaymentsLimitDefault": {
+      "type": "integer"
+    },
+    "device_offlinePaymentsPromptThresholdDefault": {
+      "type": "integer"
+    },
+    "device_offlinePaymentsTotalPaymentsLimitDefault": {
+      "type": "integer"
+    },
+    "device_offlinePaymentsMaxLimit": {
+      "type": "integer"
+    },
+    "device_offlinePaymentsMaxTotalPaymentsLimit": {
+      "type": "integer"
+    },
+    "device_showOfflinePayments": {
+      "type": "boolean"
+    },
+    "device_maxOfflineDays": {
+      "type": "integer"
+    },
+    "device_allowStoreAndForward": {
+      "type": "boolean"
+    },
+    "device_bundleIndicator": {
+      "type": "string"
+    },
+    "device_deviceType": {
+      "type": "object",
+      "properties": {}
+    },
+    "device_productName": {
+      "type": "string"
+    },
+    "device_merchant": {
+      "type": "object",
+      "properties": {}
+    }
+  },
+  "required": [
+    "merchant_id"
+  ]
+}

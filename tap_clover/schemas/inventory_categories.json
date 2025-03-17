@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "title": "Employees",
+  "title": "Inventory Categories",
   "type": "object",
   "properties": {
     "id": {
@@ -12,35 +12,20 @@
     "name": {
       "type": "string"
     },
-    "nickname": {
-      "type": "string"
-    },
-    "customId": {
-      "type": "string"
-    },
-    "email": {
-      "type": "string"
-    },
-    "inviteSent": {
-      "type": "boolean"
-    },
-    "claimedTime": {
+    "sortOrder": {
       "type": "integer"
     },
-    "deletedTime": {
+    "colorCode": {
+      "type": "string"
+    },
+    "deleted": {
+      "type": "boolean"
+    },
+    "modifiedTime": {
       "type": "integer"
     },
-    "pin": {
+    "canonical_id": {
       "type": "string"
-    },
-    "unhashedPin": {
-      "type": "string"
-    },
-    "role": {
-      "type": "string"
-    },
-    "isOwner": {
-      "type": "boolean"
     }
   },
   "required": [

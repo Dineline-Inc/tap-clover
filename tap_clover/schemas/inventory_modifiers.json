@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "title": "Employees",
+  "title": "Inventory Modifiers",
   "type": "object",
   "properties": {
     "id": {
@@ -12,35 +12,17 @@
     "name": {
       "type": "string"
     },
-    "nickname": {
+    "alternateName": {
       "type": "string"
     },
-    "customId": {
-      "type": "string"
-    },
-    "email": {
-      "type": "string"
-    },
-    "inviteSent": {
+    "available": {
       "type": "boolean"
     },
-    "claimedTime": {
+    "price": {
       "type": "integer"
     },
-    "deletedTime": {
-      "type": "integer"
-    },
-    "pin": {
+    "modifierGroup_id": {
       "type": "string"
-    },
-    "unhashedPin": {
-      "type": "string"
-    },
-    "role": {
-      "type": "string"
-    },
-    "isOwner": {
-      "type": "boolean"
     }
   },
   "required": [

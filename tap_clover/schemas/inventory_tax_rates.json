@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "title": "Employees",
+  "title": "Inventory Tax Rates",
   "type": "object",
   "properties": {
     "id": {
@@ -12,35 +12,23 @@
     "name": {
       "type": "string"
     },
-    "nickname": {
+    "taxType": {
       "type": "string"
     },
-    "customId": {
-      "type": "string"
+    "rate": {
+      "type": "integer"
     },
-    "email": {
-      "type": "string"
-    },
-    "inviteSent": {
+    "isDefault": {
       "type": "boolean"
     },
-    "claimedTime": {
+    "taxAmount": {
       "type": "integer"
     },
     "deletedTime": {
       "type": "integer"
     },
-    "pin": {
-      "type": "string"
-    },
-    "unhashedPin": {
-      "type": "string"
-    },
-    "role": {
-      "type": "string"
-    },
-    "isOwner": {
-      "type": "boolean"
+    "modifiedTime": {
+      "type": "integer"
     }
   },
   "required": [

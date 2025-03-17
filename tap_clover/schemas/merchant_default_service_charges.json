@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "title": "Employees",
+  "title": "Merchant Default Service Charges",
   "type": "object",
   "properties": {
     "id": {
@@ -12,34 +12,16 @@
     "name": {
       "type": "string"
     },
-    "nickname": {
-      "type": "string"
-    },
-    "customId": {
-      "type": "string"
-    },
-    "email": {
-      "type": "string"
-    },
-    "inviteSent": {
+    "enabled": {
       "type": "boolean"
     },
-    "claimedTime": {
+    "percentage": {
       "type": "integer"
     },
-    "deletedTime": {
+    "percentageDecimal": {
       "type": "integer"
     },
-    "pin": {
-      "type": "string"
-    },
-    "unhashedPin": {
-      "type": "string"
-    },
-    "role": {
-      "type": "string"
-    },
-    "isOwner": {
+    "isAutoApplied": {
       "type": "boolean"
     }
   },
