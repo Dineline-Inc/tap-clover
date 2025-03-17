@@ -9,7 +9,7 @@ class PaymentsStream(CloverStream):
 
     name = "payments"
     primary_keys = ["id"]
-    replication_key = "modifiedTime"
+    replication_key = None
     expandable_keys = [
         "tender",
         "germanInfo",

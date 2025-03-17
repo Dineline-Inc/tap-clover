@@ -9,7 +9,7 @@ class OrdersStream(CloverStream):
 
     name = "orders"
     primary_keys = ["id"]
-    replication_key = "modifiedTime"
+    replication_key = None
     expandable_keys = [
         "employee",
         "orderType",
