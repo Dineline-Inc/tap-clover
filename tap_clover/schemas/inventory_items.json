@@ -15,6 +15,9 @@
     "available": {
       "type": "boolean"
     },
+    "deleted": {
+      "type": "boolean"
+    },
     "autoManage": {
       "type": "boolean"
     },

@@ -78,9 +78,6 @@ class CloverStream(RESTStream):
 
     expandable_keys = []
 
-    # Update this value if necessary or override `get_new_paginator`.
-    next_page_token_jsonpath = "$.next_page"
-
     @property
     def url_base(self) -> str:
         """Return the API URL root based on environment and region settings."""
@@ -145,7 +142,7 @@ class CloverStream(RESTStream):
         Returns:
             A pagination helper instance.
         """
-        return CustomOffsetPaginator(start_value=1, page_size=1000)
+        return CustomOffsetPaginator(start_value=0, page_size=1000)
 
     def get_url_params(
         self,

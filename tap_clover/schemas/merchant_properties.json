@@ -170,6 +170,9 @@
     },
     "orderChangeReasonSetting": {
       "type": "boolean"
+    },
+    "processingRestrictions": {
+      "type": "string"
     }
   },
   "required": [

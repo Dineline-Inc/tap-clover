@@ -29,6 +29,9 @@
     },
     "sortOrder": {
       "type": "integer"
+    },
+    "deleted": {
+      "type": "boolean"
     }
   },
   "required": [

@@ -23,6 +23,9 @@
     },
     "percentage": {
       "type": "integer"
+    },
+    "type": {
+      "type": "string"
     }
   },
   "required": [
