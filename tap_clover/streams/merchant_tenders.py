@@ -8,7 +8,7 @@ class MerchantTendersStream(CloverStream):
     """Stream for retrieving merchant tender records from the CloverStream API."""
 
     name = "merchant_tenders"
-    primary_keys = ["id"]
+    primary_keys = ["id", "merchant_id"]
     replication_key = None
     expandable_keys = []
     parent_stream_type = MerchantsStream

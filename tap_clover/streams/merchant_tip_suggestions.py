@@ -8,7 +8,7 @@ class MerchantTipSuggestionsStream(CloverStream):
     """Stream for retrieving merchant tip suggestion records from the CloverStream API."""
 
     name = "merchant_tip_suggestions"
-    primary_keys = ["id"]
+    primary_keys = ["id", "merchant_id"]
     replication_key = None
     expandable_keys = []
     parent_stream_type = MerchantsStream

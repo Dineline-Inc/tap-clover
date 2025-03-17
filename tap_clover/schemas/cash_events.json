@@ -159,10 +159,6 @@
     },
     "device_productName": {
       "type": "string"
-    },
-    "device_merchant": {
-      "type": "object",
-      "properties": {}
     }
   },
   "required": [

@@ -8,7 +8,7 @@ class RefundsStream(CloverStream):
     """Stream for retrieving refund records from the CloverStream API."""
 
     name = "refunds"
-    primary_keys = ["id"]
+    primary_keys = ["id", "merchant_id"]
     replication_key = None
     expandable_keys = [
         "payment",

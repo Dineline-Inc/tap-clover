@@ -8,7 +8,7 @@ class EmployeesStream(CloverStream):
     """Stream for retrieving employee records from the CloverStream API."""
 
     name = "employees"
-    primary_keys = ["id"]
+    primary_keys = ["id", "merchant_id"]
     replication_key = None
     expandable_keys = []
     parent_stream_type = MerchantsStream

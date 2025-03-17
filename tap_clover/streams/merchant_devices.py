@@ -8,7 +8,7 @@ class MerchantDevicesStream(CloverStream):
     """Stream for retrieving merchant device records from the CloverStream API."""
 
     name = "merchant_devices"
-    primary_keys = ["id"]
+    primary_keys = ["id", "merchant_id"]
     replication_key = None
     expandable_keys = []
     parent_stream_type = MerchantsStream

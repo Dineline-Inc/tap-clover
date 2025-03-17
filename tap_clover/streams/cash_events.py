@@ -8,7 +8,7 @@ class CashEventsStream(CloverStream):
     """Stream for retrieving cash event records from the CloverStream API."""
 
     name = "cash_events"
-    primary_keys = ["id"]
+    primary_keys = ["merchant_id", "timestamp", "device_id"]
     replication_key = None
     expandable_keys = ["employee", "device"]
     parent_stream_type = MerchantsStream

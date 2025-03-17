@@ -8,7 +8,7 @@ class OrdersStream(CloverStream):
     """Stream for retrieving order records from the CloverStream API."""
 
     name = "orders"
-    primary_keys = ["id"]
+    primary_keys = ["id", "merchant_id"]
     replication_key = None
     expandable_keys = [
         "employee",

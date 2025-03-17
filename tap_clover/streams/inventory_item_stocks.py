@@ -8,7 +8,7 @@ class InventoryItemStocksStream(CloverStream):
     """Stream for retrieving inventory item stock records from the CloverStream API."""
 
     name = "inventory_item_stocks"
-    primary_keys = ["id"]
+    primary_keys = ["item_id", "merchant_id"]
     replication_key = None
     expandable_keys = []
     parent_stream_type = MerchantsStream

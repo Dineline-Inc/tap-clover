@@ -8,7 +8,7 @@ class InventoryModifierGroupsStream(CloverStream):
     """Stream for retrieving inventory modifier group records from the CloverStream API."""
 
     name = "inventory_modifier_groups"
-    primary_keys = ["id"]
+    primary_keys = ["id", "merchant_id"]
     replication_key = None
     expandable_keys = []
     parent_stream_type = MerchantsStream

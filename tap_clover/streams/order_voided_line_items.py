@@ -8,7 +8,7 @@ class OrderVoidedLineItemsStream(CloverStream):
     """Stream for retrieving order voided line item records from the CloverStream API."""
 
     name = "order_voided_line_items"
-    primary_keys = ["id"]
+    primary_keys = ["lineItem_id", "merchant_id"]
     replication_key = None
     expandable_keys = []
     parent_stream_type = OrdersStream

@@ -8,7 +8,7 @@ class InventoryTagsStream(CloverStream):
     """Stream for retrieving inventory tag records from the CloverStream API."""
 
     name = "inventory_tags"
-    primary_keys = ["id"]
+    primary_keys = ["id", "merchant_id"]
     replication_key = None
     expandable_keys = []
     parent_stream_type = MerchantsStream
