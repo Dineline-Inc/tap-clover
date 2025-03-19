@@ -8,7 +8,7 @@ class MerchantPropertiesStream(CloverStream):
     """Stream for retrieving merchant property records from the CloverStream API."""
 
     name = "merchant_properties"
-    primary_keys = ["id", "merchant_id"]
+    primary_keys = ["merchant_id"]
     replication_key = None
     expandable_keys = []
     parent_stream_type = MerchantsStream

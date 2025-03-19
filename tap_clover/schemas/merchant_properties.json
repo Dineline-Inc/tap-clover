@@ -3,12 +3,6 @@
   "title": "Merchant Properties",
   "type": "object",
   "properties": {
-    "id": {
-      "type": [
-        "string",
-        "null"
-      ]
-    },
     "merchant_id": {
       "type": [
         "string",
@@ -347,7 +341,6 @@
     }
   },
   "required": [
-    "id",
     "merchant_id"
   ]
 }
