@@ -4,70 +4,136 @@
   "type": "object",
   "properties": {
     "id": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "name": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "owner_id": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "owner_name": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "owner_email": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "owner_inviteSent": {
-      "type": "boolean"
+      "type": [
+        "boolean",
+        "null"
+      ]
     },
     "owner_claimedTime": {
-      "type": "number"
+      "type": [
+        "number",
+        "null"
+      ]
     },
     "owner_role": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "owner_isOwner": {
-      "type": "boolean"
+      "type": [
+        "boolean",
+        "null"
+      ]
     },
     "merchantPlan_id": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "createdTime": {
-      "type": "number"
+      "type": [
+        "number",
+        "null"
+      ]
     },
     "reseller_id": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "billingInfo_planBillable": {
-      "type": "boolean"
+      "type": [
+        "boolean",
+        "null"
+      ]
     },
     "billingInfo_appBillable": {
-      "type": "boolean"
+      "type": [
+        "boolean",
+        "null"
+      ]
     },
     "billingInfo_wmBillable": {
-      "type": "boolean"
+      "type": [
+        "boolean",
+        "null"
+      ]
     },
     "isBillable": {
-      "type": "boolean"
+      "type": [
+        "boolean",
+        "null"
+      ]
     },
     "merchantBoarding_translatedAccountStatus": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "merchantBoarding_createdTime": {
-      "type": "number"
+      "type": [
+        "number",
+        "null"
+      ]
     },
     "merchantBoarding_modifiedTime": {
-      "type": "number"
+      "type": [
+        "number",
+        "null"
+      ]
     },
     "merchantBoarding_creationSource": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "level3PreReqs_merchantHasTaxId": {
-      "type": "boolean"
+      "type": [
+        "boolean",
+        "null"
+      ]
     },
     "level3PreReqs_isNorthMerchant": {
-      "type": "boolean"
+      "type": [
+        "boolean",
+        "null"
+      ]
     }
   },
   "required": [

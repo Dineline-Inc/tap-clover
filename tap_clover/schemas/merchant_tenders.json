@@ -4,34 +4,64 @@
   "type": "object",
   "properties": {
     "id": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "merchant_id": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "editable": {
-      "type": "boolean"
+      "type": [
+        "boolean",
+        "null"
+      ]
     },
     "labelKey": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "label": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "opensCashDrawer": {
-      "type": "boolean"
+      "type": [
+        "boolean",
+        "null"
+      ]
     },
     "supportsTipping": {
-      "type": "boolean"
+      "type": [
+        "boolean",
+        "null"
+      ]
     },
     "enabled": {
-      "type": "boolean"
+      "type": [
+        "boolean",
+        "null"
+      ]
     },
     "visible": {
-      "type": "boolean"
+      "type": [
+        "boolean",
+        "null"
+      ]
     },
     "instructions": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     }
   },
   "required": [

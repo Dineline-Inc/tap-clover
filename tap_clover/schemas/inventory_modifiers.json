@@ -4,25 +4,46 @@
   "type": "object",
   "properties": {
     "id": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "merchant_id": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "name": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "alternateName": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "available": {
-      "type": "boolean"
+      "type": [
+        "boolean",
+        "null"
+      ]
     },
     "price": {
-      "type": "integer"
+      "type": [
+        "integer",
+        "null"
+      ]
     },
     "modifierGroup_id": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     }
   },
   "required": [

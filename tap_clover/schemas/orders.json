@@ -4,158 +4,308 @@
   "type": "object",
   "properties": {
     "id": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "merchant_id": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "currency": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "employee_id": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "total": {
-      "type": "integer"
+      "type": [
+        "integer",
+        "null"
+      ]
     },
     "externalReferenceId": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "unpaidBalance": {
-      "type": "integer"
+      "type": [
+        "integer",
+        "null"
+      ]
     },
     "paymentState": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "title": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "note": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "orderType_id": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "orderType_labelKey": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "orderType_label": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "orderType_taxable": {
-      "type": "boolean"
+      "type": [
+        "boolean",
+        "null"
+      ]
     },
     "orderType_isDefault": {
-      "type": "boolean"
+      "type": [
+        "boolean",
+        "null"
+      ]
     },
     "orderType_filterCategories": {
-      "type": "boolean"
+      "type": [
+        "boolean",
+        "null"
+      ]
     },
     "orderType_isHidden": {
-      "type": "boolean"
+      "type": [
+        "boolean",
+        "null"
+      ]
     },
     "orderType_fee": {
-      "type": "integer"
+      "type": [
+        "integer",
+        "null"
+      ]
     },
     "orderType_minOrderAmount": {
-      "type": "integer"
+      "type": [
+        "integer",
+        "null"
+      ]
     },
     "orderType_maxOrderAmount": {
-      "type": "integer"
+      "type": [
+        "integer",
+        "null"
+      ]
     },
     "orderType_maxRadius": {
-      "type": "integer"
+      "type": [
+        "integer",
+        "null"
+      ]
     },
     "orderType_avgOrderTime": {
-      "type": "integer"
+      "type": [
+        "integer",
+        "null"
+      ]
     },
     "orderType_hoursAvailable": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "orderType_customerIdMethod": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "orderType_isDeleted": {
-      "type": "boolean"
+      "type": [
+        "boolean",
+        "null"
+      ]
     },
     "orderType_systemOrderTypeId": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "orderType_hours": {
       "type": "object",
       "properties": {}
     },
     "taxRemoved": {
-      "type": "boolean"
+      "type": [
+        "boolean",
+        "null"
+      ]
     },
     "isVat": {
-      "type": "boolean"
+      "type": [
+        "boolean",
+        "null"
+      ]
     },
     "state": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "manualTransaction": {
-      "type": "boolean"
+      "type": [
+        "boolean",
+        "null"
+      ]
     },
     "groupLineItems": {
-      "type": "boolean"
+      "type": [
+        "boolean",
+        "null"
+      ]
     },
     "testMode": {
-      "type": "boolean"
+      "type": [
+        "boolean",
+        "null"
+      ]
     },
     "payType": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "createdTime": {
-      "type": "integer"
+      "type": [
+        "integer",
+        "null"
+      ]
     },
     "clientCreatedTime": {
-      "type": "integer"
+      "type": [
+        "integer",
+        "null"
+      ]
     },
     "modifiedTime": {
-      "type": "integer"
+      "type": [
+        "integer",
+        "null"
+      ]
     },
     "deletedTimestamp": {
-      "type": "integer"
+      "type": [
+        "integer",
+        "null"
+      ]
     },
     "serviceCharge_id": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "serviceCharge_name": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "serviceCharge_enabled": {
-      "type": "boolean"
+      "type": [
+        "boolean",
+        "null"
+      ]
     },
     "serviceCharge_percentage": {
-      "type": "integer"
+      "type": [
+        "integer",
+        "null"
+      ]
     },
     "serviceCharge_percentageDecimal": {
-      "type": "integer"
+      "type": [
+        "integer",
+        "null"
+      ]
     },
     "serviceCharge_isAutoApplied": {
-      "type": "boolean"
+      "type": [
+        "boolean",
+        "null"
+      ]
     },
     "device_id": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "orderFulfillmentEvent_id": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "orderFulfillmentEvent_type": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "orderFulfillmentEvent_orderId": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "orderFulfillmentEvent_lineItemId": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "orderFulfillmentEvent_clientCreatedTime": {
-      "type": "integer"
+      "type": [
+        "integer",
+        "null"
+      ]
     },
     "orderFulfillmentEvent_createdTime": {
-      "type": "integer"
+      "type": [
+        "integer",
+        "null"
+      ]
     },
     "orderFulfillmentEvent_parentLineItemEvent": {
       "type": "object"

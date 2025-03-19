@@ -4,64 +4,124 @@
   "type": "object",
   "properties": {
     "id": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "merchant_id": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "labelKey": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "label": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "taxable": {
-      "type": "boolean"
+      "type": [
+        "boolean",
+        "null"
+      ]
     },
     "isDefault": {
-      "type": "boolean"
+      "type": [
+        "boolean",
+        "null"
+      ]
     },
     "filterCategories": {
-      "type": "boolean"
+      "type": [
+        "boolean",
+        "null"
+      ]
     },
     "isHidden": {
-      "type": "boolean"
+      "type": [
+        "boolean",
+        "null"
+      ]
     },
     "fee": {
-      "type": "integer"
+      "type": [
+        "integer",
+        "null"
+      ]
     },
     "minOrderAmount": {
-      "type": "integer"
+      "type": [
+        "integer",
+        "null"
+      ]
     },
     "maxOrderAmount": {
-      "type": "integer"
+      "type": [
+        "integer",
+        "null"
+      ]
     },
     "maxRadius": {
-      "type": "integer"
+      "type": [
+        "integer",
+        "null"
+      ]
     },
     "avgOrderTime": {
-      "type": "integer"
+      "type": [
+        "integer",
+        "null"
+      ]
     },
     "hoursAvailable": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "customerIdMethod": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "isDeleted": {
-      "type": "boolean"
+      "type": [
+        "boolean",
+        "null"
+      ]
     },
     "systemOrderTypeId": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "hours_id": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "hours_name": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "hours_reference_id": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     }
   },
   "required": [

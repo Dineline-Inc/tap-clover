@@ -1,43 +1,79 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "title": "Custombers",
+  "title": "Customers",
   "type": "object",
   "properties": {
     "id": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "merchant_id": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "firstName": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "lastName": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "marketingAllowed": {
-      "type": "boolean"
+      "type": [
+        "boolean",
+        "null"
+      ]
     },
     "customerSince": {
-      "type": "integer"
+      "type": [
+        "integer",
+        "null"
+      ]
     },
     "metadata_businessName": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "metadata_note": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "metadata_dobYear": {
-      "type": "integer"
+      "type": [
+        "integer",
+        "null"
+      ]
     },
     "metadata_dobMonth": {
-      "type": "integer"
+      "type": [
+        "integer",
+        "null"
+      ]
     },
     "metadata_dobDay": {
-      "type": "integer"
+      "type": [
+        "integer",
+        "null"
+      ]
     },
     "metadata_modifiedTime": {
-      "type": "integer"
+      "type": [
+        "integer",
+        "null"
+      ]
     }
   },
   "required": [

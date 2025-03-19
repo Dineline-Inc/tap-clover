@@ -4,25 +4,46 @@
   "type": "object",
   "properties": {
     "id": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "merchant_id": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "name": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "percentage": {
-      "type": "integer"
+      "type": [
+        "integer",
+        "null"
+      ]
     },
     "amount": {
-      "type": "integer"
+      "type": [
+        "integer",
+        "null"
+      ]
     },
     "isEnabled": {
-      "type": "boolean"
+      "type": [
+        "boolean",
+        "null"
+      ]
     },
     "flatTip": {
-      "type": "integer"
+      "type": [
+        "integer",
+        "null"
+      ]
     }
   },
   "required": [

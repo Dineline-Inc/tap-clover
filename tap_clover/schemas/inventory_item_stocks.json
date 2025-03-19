@@ -4,19 +4,34 @@
   "type": "object",
   "properties": {
     "item_id": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "merchant_id": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "stockCount": {
-      "type": "integer"
+      "type": [
+        "integer",
+        "null"
+      ]
     },
     "quantity": {
-      "type": "number"
+      "type": [
+        "number",
+        "null"
+      ]
     },
     "modifiedTime": {
-      "type": "integer"
+      "type": [
+        "integer",
+        "null"
+      ]
     }
   },
   "required": [

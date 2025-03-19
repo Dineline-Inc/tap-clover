@@ -4,31 +4,58 @@
   "type": "object",
   "properties": {
     "id": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "merchant_id": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "name": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "taxType": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "rate": {
-      "type": "integer"
+      "type": [
+        "integer",
+        "null"
+      ]
     },
     "isDefault": {
-      "type": "boolean"
+      "type": [
+        "boolean",
+        "null"
+      ]
     },
     "taxAmount": {
-      "type": "integer"
+      "type": [
+        "integer",
+        "null"
+      ]
     },
     "deletedTime": {
-      "type": "integer"
+      "type": [
+        "integer",
+        "null"
+      ]
     },
     "modifiedTime": {
-      "type": "integer"
+      "type": [
+        "integer",
+        "null"
+      ]
     }
   },
   "required": [

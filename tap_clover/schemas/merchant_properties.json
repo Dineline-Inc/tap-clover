@@ -4,175 +4,346 @@
   "type": "object",
   "properties": {
     "id": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "merchant_id": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "merchantRef_id": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "defaultCurrency": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "tipsEnabled": {
-      "type": "boolean"
+      "type": [
+        "boolean",
+        "null"
+      ]
     },
     "receiptProperties": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "summaryHour": {
-      "type": "integer"
+      "type": [
+        "integer",
+        "null"
+      ]
     },
     "signatureThreshold": {
-      "type": "integer"
+      "type": [
+        "integer",
+        "null"
+      ]
     },
     "hasDefaultEmployee": {
-      "type": "boolean"
+      "type": [
+        "boolean",
+        "null"
+      ]
     },
     "tipRateDefault": {
-      "type": "integer"
+      "type": [
+        "integer",
+        "null"
+      ]
     },
     "onPaperTipSignatures": {
-      "type": "boolean"
+      "type": [
+        "boolean",
+        "null"
+      ]
     },
     "autoLogout": {
-      "type": "boolean"
+      "type": [
+        "boolean",
+        "null"
+      ]
     },
     "orderTitle": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "orderTitleMax": {
-      "type": "integer"
+      "type": [
+        "integer",
+        "null"
+      ]
     },
     "resetOnReportingTime": {
-      "type": "boolean"
+      "type": [
+        "boolean",
+        "null"
+      ]
     },
     "notesOnOrders": {
-      "type": "boolean"
+      "type": [
+        "boolean",
+        "null"
+      ]
     },
     "deleteOrders": {
-      "type": "boolean"
+      "type": [
+        "boolean",
+        "null"
+      ]
     },
     "removeTaxEnabled": {
-      "type": "boolean"
+      "type": [
+        "boolean",
+        "null"
+      ]
     },
     "groupLineItems": {
-      "type": "boolean"
+      "type": [
+        "boolean",
+        "null"
+      ]
     },
     "alternateInventoryNames": {
-      "type": "boolean"
+      "type": [
+        "boolean",
+        "null"
+      ]
     },
     "autoPrint": {
-      "type": "boolean"
+      "type": [
+        "boolean",
+        "null"
+      ]
     },
     "infoleaseSuppressBilling": {
-      "type": "boolean"
+      "type": [
+        "boolean",
+        "null"
+      ]
     },
     "infoleaseSuppressPlanBilling": {
-      "type": "boolean"
+      "type": [
+        "boolean",
+        "null"
+      ]
     },
     "shippingAddress": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "marketingEnabled": {
-      "type": "boolean"
+      "type": [
+        "boolean",
+        "null"
+      ]
     },
     "supportPhone": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "supportEmail": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "manualCloseout": {
-      "type": "boolean"
+      "type": [
+        "boolean",
+        "null"
+      ]
     },
     "manualCloseoutPerDevice": {
-      "type": "boolean"
+      "type": [
+        "boolean",
+        "null"
+      ]
     },
     "autoCloseoutTimezone": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "showCloseoutOrders": {
-      "type": "boolean"
+      "type": [
+        "boolean",
+        "null"
+      ]
     },
     "sendCloseoutEmail": {
-      "type": "boolean"
+      "type": [
+        "boolean",
+        "null"
+      ]
     },
     "stayInCategory": {
-      "type": "boolean"
+      "type": [
+        "boolean",
+        "null"
+      ]
     },
     "locale": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "timezone": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "vat": {
-      "type": "boolean"
+      "type": [
+        "boolean",
+        "null"
+      ]
     },
     "vatTaxName": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "appBillingSystem": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "abaAccountNumber": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "ddaAccountNumber": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "trackStock": {
-      "type": "boolean"
+      "type": [
+        "boolean",
+        "null"
+      ]
     },
     "updateStock": {
-      "type": "boolean"
+      "type": [
+        "boolean",
+        "null"
+      ]
     },
     "allowClockOutWithOpenOrders": {
-      "type": "boolean"
+      "type": [
+        "boolean",
+        "null"
+      ]
     },
     "logInClockInPrompt": {
-      "type": "boolean"
+      "type": [
+        "boolean",
+        "null"
+      ]
     },
     "pinLength": {
-      "type": "integer"
+      "type": [
+        "integer",
+        "null"
+      ]
     },
     "cashBackEnabled": {
-      "type": "boolean"
+      "type": [
+        "boolean",
+        "null"
+      ]
     },
     "cashBackOptions": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "maxCashBack": {
-      "type": "integer"
+      "type": [
+        "integer",
+        "null"
+      ]
     },
     "hierarchy": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "hasConsented": {
-      "type": "boolean"
+      "type": [
+        "boolean",
+        "null"
+      ]
     },
     "merchantBoardingStatus": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "printedFirstDataReceiptLogoEnabled": {
-      "type": "boolean"
+      "type": [
+        "boolean",
+        "null"
+      ]
     },
     "merchantPrivacyPolicyUrl": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "disablePrintTaxesPaymentOnReceipts": {
-      "type": "boolean"
+      "type": [
+        "boolean",
+        "null"
+      ]
     },
     "limpModeAllowed2": {
-      "type": "boolean"
+      "type": [
+        "boolean",
+        "null"
+      ]
     },
     "orderChangeReasonSetting": {
-      "type": "boolean"
+      "type": [
+        "boolean",
+        "null"
+      ]
     },
     "processingRestrictions": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     }
   },
   "required": [

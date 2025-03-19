@@ -4,28 +4,52 @@
   "type": "object",
   "properties": {
     "id": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "merchant_id": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "name": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "sortOrder": {
-      "type": "integer"
+      "type": [
+        "integer",
+        "null"
+      ]
     },
     "colorCode": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "deleted": {
-      "type": "boolean"
+      "type": [
+        "boolean",
+        "null"
+      ]
     },
     "modifiedTime": {
-      "type": "integer"
+      "type": [
+        "integer",
+        "null"
+      ]
     },
     "canonical_id": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     }
   },
   "required": [

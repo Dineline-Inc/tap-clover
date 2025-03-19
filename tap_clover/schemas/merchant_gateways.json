@@ -4,91 +4,178 @@
   "type": "object",
   "properties": {
     "merchant_id": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "paymentProcessorName": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "authorizationFrontEnd": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "acquiringBackEnd": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "paymentGatewayApi": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "accountName": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "altMid": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "mid": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "fns": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "tid": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "storeId": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "supportsTipping": {
-      "type": "boolean"
+      "type": [
+        "boolean",
+        "null"
+      ]
     },
     "frontendMid": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "backendMid": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "mcc": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "tokenType": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "groupId": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "debitKeyCode": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "sredCode": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "supportsTipAdjust": {
-      "type": "boolean"
+      "type": [
+        "boolean",
+        "null"
+      ]
     },
     "supportsNakedCredit": {
-      "type": "boolean"
+      "type": [
+        "boolean",
+        "null"
+      ]
     },
     "supportsMultiPayToken": {
-      "type": "boolean"
+      "type": [
+        "boolean",
+        "null"
+      ]
     },
     "supportsPreauthOverage": {
-      "type": "boolean"
+      "type": [
+        "boolean",
+        "null"
+      ]
     },
     "closingTime": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "telecheck_ica_mid": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "telecheck_cbp_mid": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "telecheck_ppd_mid": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "newBatchCloseEnabled": {
-      "type": "boolean"
+      "type": [
+        "boolean",
+        "null"
+      ]
     },
     "production": {
-      "type": "boolean"
+      "type": [
+        "boolean",
+        "null"
+      ]
     }
   },
   "required": [

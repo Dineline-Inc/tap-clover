@@ -4,202 +4,388 @@
   "type": "object",
   "properties": {
     "id": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "merchant_id": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "orderRef_id": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "device_id": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "amount": {
-      "type": "integer"
+      "type": [
+        "integer",
+        "null"
+      ]
     },
     "taxAmount": {
-      "type": "integer"
+      "type": [
+        "integer",
+        "null"
+      ]
     },
     "tipAmount": {
-      "type": "integer"
+      "type": [
+        "integer",
+        "null"
+      ]
     },
     "createdTime": {
-      "type": "integer"
+      "type": [
+        "integer",
+        "null"
+      ]
     },
     "clientCreatedTime": {
-      "type": "integer"
+      "type": [
+        "integer",
+        "null"
+      ]
     },
     "gatewayProcessingTime": {
-      "type": "integer"
+      "type": [
+        "integer",
+        "null"
+      ]
     },
     "payment_id": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "employee_id": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "overrideMerchantTender_id": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "overrideMerchantTender_editable": {
-      "type": "boolean"
+      "type": [
+        "boolean",
+        "null"
+      ]
     },
     "overrideMerchantTender_labelKey": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "overrideMerchantTender_label": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "overrideMerchantTender_opensCashDrawer": {
-      "type": "boolean"
+      "type": [
+        "boolean",
+        "null"
+      ]
     },
     "overrideMerchantTender_supportsTipping": {
-      "type": "boolean"
+      "type": [
+        "boolean",
+        "null"
+      ]
     },
     "overrideMerchantTender_enabled": {
-      "type": "boolean"
+      "type": [
+        "boolean",
+        "null"
+      ]
     },
     "overrideMerchantTender_visible": {
-      "type": "boolean"
+      "type": [
+        "boolean",
+        "null"
+      ]
     },
     "overrideMerchantTender_instructions": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "serviceChargeAmount_id": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "serviceChargeAmount_name": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "serviceChargeAmount_amount": {
-      "type": "integer"
+      "type": [
+        "integer",
+        "null"
+      ]
     },
     "attributes_default": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "germanInfo_cardTrack2": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "germanInfo_cardSequenceNumber": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "germanInfo_transactionCaseGermany": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "germanInfo_transactionTypeGermany": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "germanInfo_terminalID": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "germanInfo_traceNumber": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "germanInfo_oldTraceNumber": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "germanInfo_receiptNumber": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "germanInfo_transactionAID": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "germanInfo_transactionMSApp": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "appTracking_developerAppId": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "appTracking_applicationName": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "appTracking_applicationID": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "appTracking_applicationVersion": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "appTracking_sourceSDK": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "appTracking_sourceSDKVersion": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "voided": {
-      "type": "boolean"
+      "type": [
+        "boolean",
+        "null"
+      ]
     },
     "voidReason": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "cardTransaction_cardType": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "cardTransaction_entryType": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "cardTransaction_first6": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "cardTransaction_last4": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "cardTransaction_type": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "cardTransaction_authCode": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "cardTransaction_referenceId": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "cardTransaction_transactionNo": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "cardTransaction_state": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "cardTransaction_extra": {
       "type": "object"
     },
     "cardTransaction_begBalance": {
-      "type": "integer"
+      "type": [
+        "integer",
+        "null"
+      ]
     },
     "cardTransaction_endBalance": {
-      "type": "integer"
+      "type": [
+        "integer",
+        "null"
+      ]
     },
     "cardTransaction_avsResult": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "cardTransaction_cardholderName": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "cardTransaction_token": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "cardTransaction_vaultedCard": {
       "type": "object"
     },
     "cardTransaction_gatewayTxState": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "transactionInfo": {
       "type": "object"
     },
     "externalReferenceId": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "authCode": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "status": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "oceanGatewayInfo": {
       "type": "object"
     },
     "reason": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     }
   },
   "required": [

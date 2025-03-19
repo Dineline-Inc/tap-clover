@@ -4,43 +4,82 @@
   "type": "object",
   "properties": {
     "id": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "merchant_id": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "name": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "nickname": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "customId": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "email": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "inviteSent": {
-      "type": "boolean"
+      "type": [
+        "boolean",
+        "null"
+      ]
     },
     "claimedTime": {
-      "type": "integer"
+      "type": [
+        "integer",
+        "null"
+      ]
     },
     "deletedTime": {
-      "type": "integer"
+      "type": [
+        "integer",
+        "null"
+      ]
     },
     "pin": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "unhashedPin": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "role": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "isOwner": {
-      "type": "boolean"
+      "type": [
+        "boolean",
+        "null"
+      ]
     }
   },
   "required": [

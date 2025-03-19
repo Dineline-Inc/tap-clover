@@ -4,106 +4,208 @@
   "type": "object",
   "properties": {
     "id": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "merchant_id": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "hidden": {
-      "type": "boolean"
+      "type": [
+        "boolean",
+        "null"
+      ]
     },
     "available": {
-      "type": "boolean"
+      "type": [
+        "boolean",
+        "null"
+      ]
     },
     "deleted": {
-      "type": "boolean"
+      "type": [
+        "boolean",
+        "null"
+      ]
     },
     "autoManage": {
-      "type": "boolean"
+      "type": [
+        "boolean",
+        "null"
+      ]
     },
     "itemGroup_id": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "name": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "alternateName": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "code": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "colorCode": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "sku": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "price": {
-      "type": "integer"
+      "type": [
+        "integer",
+        "null"
+      ]
     },
     "priceType": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "defaultTaxRates": {
-      "type": "boolean"
+      "type": [
+        "boolean",
+        "null"
+      ]
     },
     "unitName": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "cost": {
-      "type": "integer"
+      "type": [
+        "integer",
+        "null"
+      ]
     },
     "isRevenue": {
-      "type": "boolean"
+      "type": [
+        "boolean",
+        "null"
+      ]
     },
     "stockCount": {
-      "type": "integer"
+      "type": [
+        "integer",
+        "null"
+      ]
     },
     "itemStock_stockCount": {
-      "type": "integer"
+      "type": [
+        "integer",
+        "null"
+      ]
     },
     "itemStock_quantity": {
-      "type": "number"
+      "type": [
+        "number",
+        "null"
+      ]
     },
     "itemStock_modifiedTime": {
-      "type": "integer"
+      "type": [
+        "integer",
+        "null"
+      ]
     },
     "menuItem_id": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "menuItem_name": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "menuItem_description": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "menuItem_imageFilename": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "menuItem_enabled": {
-      "type": "boolean"
+      "type": [
+        "boolean",
+        "null"
+      ]
     },
     "menuItem_reasonCode": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "menuItem_createdTime": {
-      "type": "integer"
+      "type": [
+        "integer",
+        "null"
+      ]
     },
     "menuItem_modifiedTime": {
-      "type": "integer"
+      "type": [
+        "integer",
+        "null"
+      ]
     },
     "menuItem_deletedTime": {
-      "type": "integer"
+      "type": [
+        "integer",
+        "null"
+      ]
     },
     "modifiedTime": {
-      "type": "integer"
+      "type": [
+        "integer",
+        "null"
+      ]
     },
     "deletedTime": {
-      "type": "integer"
+      "type": [
+        "integer",
+        "null"
+      ]
     },
     "priceWithoutVat": {
-      "type": "integer"
+      "type": [
+        "integer",
+        "null"
+      ]
     }
   },
   "required": [

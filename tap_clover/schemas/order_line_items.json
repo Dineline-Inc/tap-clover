@@ -4,76 +4,148 @@
   "type": "object",
   "properties": {
     "id": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "merchant_id": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "item_id": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "colorCode": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "name": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "alternateName": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "price": {
-      "type": "integer"
+      "type": [
+        "integer",
+        "null"
+      ]
     },
     "priceWithModifiers": {
-      "type": "integer"
+      "type": [
+        "integer",
+        "null"
+      ]
     },
     "priceWithModifiersAndItemAndOrderDiscounts": {
-      "type": "integer"
+      "type": [
+        "integer",
+        "null"
+      ]
     },
     "unitQty": {
-      "type": "integer"
+      "type": [
+        "integer",
+        "null"
+      ]
     },
     "unitName": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "itemCode": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "note": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "printed": {
-      "type": "boolean"
+      "type": [
+        "boolean",
+        "null"
+      ]
     },
     "exchangedLineItem_id": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "binName": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "userData": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "createdTime": {
-      "type": "integer"
+      "type": [
+        "integer",
+        "null"
+      ]
     },
     "orderClientCreatedTime": {
-      "type": "integer"
+      "type": [
+        "integer",
+        "null"
+      ]
     },
     "discountAmount": {
-      "type": "integer"
+      "type": [
+        "integer",
+        "null"
+      ]
     },
     "orderLevelDiscountAmount": {
-      "type": "integer"
+      "type": [
+        "integer",
+        "null"
+      ]
     },
     "exchanged": {
-      "type": "boolean"
+      "type": [
+        "boolean",
+        "null"
+      ]
     },
     "refunded": {
-      "type": "boolean"
+      "type": [
+        "boolean",
+        "null"
+      ]
     },
     "refund_id": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "refund_orderRef": {
       "type": "object",
@@ -84,22 +156,40 @@
       "properties": {}
     },
     "refund_amount": {
-      "type": "integer"
+      "type": [
+        "integer",
+        "null"
+      ]
     },
     "refund_taxAmount": {
-      "type": "integer"
+      "type": [
+        "integer",
+        "null"
+      ]
     },
     "refund_tipAmount": {
-      "type": "integer"
+      "type": [
+        "integer",
+        "null"
+      ]
     },
     "refund_createdTime": {
-      "type": "integer"
+      "type": [
+        "integer",
+        "null"
+      ]
     },
     "refund_clientCreatedTime": {
-      "type": "integer"
+      "type": [
+        "integer",
+        "null"
+      ]
     },
     "refund_gatewayProcessingTime": {
-      "type": "integer"
+      "type": [
+        "integer",
+        "null"
+      ]
     },
     "refund_payment": {
       "type": "object",
@@ -130,10 +220,16 @@
       "properties": {}
     },
     "refund_voided": {
-      "type": "boolean"
+      "type": [
+        "boolean",
+        "null"
+      ]
     },
     "refund_voidReason": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "refund_cardTransaction": {
       "type": "object",
@@ -148,32 +244,56 @@
       "properties": {}
     },
     "refund_externalReferenceId": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "refund_authCode": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "refund_status": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "refund_oceanGatewayInfo": {
       "type": "object",
       "properties": {}
     },
     "refund_reason": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "isRevenue": {
-      "type": "boolean"
+      "type": [
+        "boolean",
+        "null"
+      ]
     },
     "revenueAmount": {
-      "type": "integer"
+      "type": [
+        "integer",
+        "null"
+      ]
     },
     "quantitySold": {
-      "type": "number"
+      "type": [
+        "number",
+        "null"
+      ]
     },
     "printGroup_id": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     }
   },
   "required": [

@@ -4,25 +4,46 @@
   "type": "object",
   "properties": {
     "id": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "merchant_id": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "discount_id": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "approver_id": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "name": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "amount": {
-      "type": "integer"
+      "type": [
+        "integer",
+        "null"
+      ]
     },
     "percentage": {
-      "type": "integer"
+      "type": [
+        "integer",
+        "null"
+      ]
     }
   },
   "required": [

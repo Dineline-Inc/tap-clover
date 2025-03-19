@@ -4,161 +4,317 @@
   "type": "object",
   "properties": {
     "type": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "merchant_id": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "amountChange": {
-      "type": "integer"
+      "type": [
+        "integer",
+        "null"
+      ]
     },
     "timestamp": {
-      "type": "integer"
+      "type": [
+        "integer",
+        "null"
+      ]
     },
     "note": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "employee_id": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "employee_name": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "employee_nickname": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "employee_customId": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "employee_email": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "employee_inviteSent": {
-      "type": "boolean"
+      "type": [
+        "boolean",
+        "null"
+      ]
     },
     "employee_claimedTime": {
-      "type": "integer"
+      "type": [
+        "integer",
+        "null"
+      ]
     },
     "employee_deletedTime": {
-      "type": "integer"
+      "type": [
+        "integer",
+        "null"
+      ]
     },
     "employee_pin": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "employee_unhashedPin": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "employee_role": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "employee_isOwner": {
-      "type": "boolean"
+      "type": [
+        "boolean",
+        "null"
+      ]
     },
     "employee_merchant_id": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "device_id": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "device_name": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "device_model": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "device_orderPrefix": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "device_terminalId": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "device_terminalPrefix": {
-      "type": "integer"
+      "type": [
+        "integer",
+        "null"
+      ]
     },
     "device_serial": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "device_buildNumber": {
-      "type": "integer"
+      "type": [
+        "integer",
+        "null"
+      ]
     },
     "device_secureId": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "device_buildType": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "device_cpuId": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "device_imei": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "device_imsi": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "device_simIccid": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "device_deviceCertificate": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "device_pedCertificate": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "device_deviceTypeName": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "device_pinDisabled": {
-      "type": "boolean"
+      "type": [
+        "boolean",
+        "null"
+      ]
     },
     "device_offlinePayments": {
-      "type": "boolean"
+      "type": [
+        "boolean",
+        "null"
+      ]
     },
     "device_offlinePaymentsAll": {
-      "type": "boolean"
+      "type": [
+        "boolean",
+        "null"
+      ]
     },
     "device_offlinePaymentsLimit": {
-      "type": "integer"
+      "type": [
+        "integer",
+        "null"
+      ]
     },
     "device_offlinePaymentsPromptThreshold": {
-      "type": "integer"
+      "type": [
+        "integer",
+        "null"
+      ]
     },
     "device_offlinePaymentsTotalPaymentsLimit": {
-      "type": "integer"
+      "type": [
+        "integer",
+        "null"
+      ]
     },
     "device_offlinePaymentsLimitDefault": {
-      "type": "integer"
+      "type": [
+        "integer",
+        "null"
+      ]
     },
     "device_offlinePaymentsPromptThresholdDefault": {
-      "type": "integer"
+      "type": [
+        "integer",
+        "null"
+      ]
     },
     "device_offlinePaymentsTotalPaymentsLimitDefault": {
-      "type": "integer"
+      "type": [
+        "integer",
+        "null"
+      ]
     },
     "device_offlinePaymentsMaxLimit": {
-      "type": "integer"
+      "type": [
+        "integer",
+        "null"
+      ]
     },
     "device_offlinePaymentsMaxTotalPaymentsLimit": {
-      "type": "integer"
+      "type": [
+        "integer",
+        "null"
+      ]
     },
     "device_showOfflinePayments": {
-      "type": "boolean"
+      "type": [
+        "boolean",
+        "null"
+      ]
     },
     "device_maxOfflineDays": {
-      "type": "integer"
+      "type": [
+        "integer",
+        "null"
+      ]
     },
     "device_allowStoreAndForward": {
-      "type": "boolean"
+      "type": [
+        "boolean",
+        "null"
+      ]
     },
     "device_bundleIndicator": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
-    "device_deviceType": {
-      "type": "object",
+    "device_deviceType_id": {
+      "type": [
+        "string",
+        "null"
+      ],
       "properties": {}
     },
     "device_productName": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     }
   },
   "required": [

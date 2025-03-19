@@ -4,76 +4,148 @@
   "type": "object",
   "properties": {
     "merchant_id": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "lineItem_id": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "lineItem_item_id": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "lineItem_colorCode": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "lineItem_name": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "lineItem_alternateName": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "lineItem_price": {
-      "type": "integer"
+      "type": [
+        "integer",
+        "null"
+      ]
     },
     "lineItem_priceWithModifiers": {
-      "type": "integer"
+      "type": [
+        "integer",
+        "null"
+      ]
     },
     "lineItem_priceWithModifiersAndItemAndOrderDiscounts": {
-      "type": "integer"
+      "type": [
+        "integer",
+        "null"
+      ]
     },
     "lineItem_unitQty": {
-      "type": "integer"
+      "type": [
+        "integer",
+        "null"
+      ]
     },
     "lineItem_unitName": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "lineItem_itemCode": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "lineItem_note": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "lineItem_printed": {
-      "type": "boolean"
+      "type": [
+        "boolean",
+        "null"
+      ]
     },
     "lineItem_exchangedLineItem_id": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "lineItem_binName": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "lineItem_userData": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "lineItem_createdTime": {
-      "type": "integer"
+      "type": [
+        "integer",
+        "null"
+      ]
     },
     "lineItem_orderClientCreatedTime": {
-      "type": "integer"
+      "type": [
+        "integer",
+        "null"
+      ]
     },
     "lineItem_discountAmount": {
-      "type": "integer"
+      "type": [
+        "integer",
+        "null"
+      ]
     },
     "lineItem_orderLevelDiscountAmount": {
-      "type": "integer"
+      "type": [
+        "integer",
+        "null"
+      ]
     },
     "lineItem_exchanged": {
-      "type": "boolean"
+      "type": [
+        "boolean",
+        "null"
+      ]
     },
     "lineItem_refunded": {
-      "type": "boolean"
+      "type": [
+        "boolean",
+        "null"
+      ]
     },
     "lineItem_refund_id": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "lineItem_refund_orderRef": {
       "type": "object",
@@ -84,22 +156,40 @@
       "properties": {}
     },
     "lineItem_refund_amount": {
-      "type": "integer"
+      "type": [
+        "integer",
+        "null"
+      ]
     },
     "lineItem_refund_taxAmount": {
-      "type": "integer"
+      "type": [
+        "integer",
+        "null"
+      ]
     },
     "lineItem_refund_tipAmount": {
-      "type": "integer"
+      "type": [
+        "integer",
+        "null"
+      ]
     },
     "lineItem_refund_createdTime": {
-      "type": "integer"
+      "type": [
+        "integer",
+        "null"
+      ]
     },
     "lineItem_refund_clientCreatedTime": {
-      "type": "integer"
+      "type": [
+        "integer",
+        "null"
+      ]
     },
     "lineItem_refund_gatewayProcessingTime": {
-      "type": "integer"
+      "type": [
+        "integer",
+        "null"
+      ]
     },
     "lineItem_refund_payment": {
       "type": "object",
@@ -130,10 +220,16 @@
       "properties": {}
     },
     "lineItem_refund_voided": {
-      "type": "boolean"
+      "type": [
+        "boolean",
+        "null"
+      ]
     },
     "lineItem_refund_voidReason": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "lineItem_refund_cardTransaction": {
       "type": "object",
@@ -148,62 +244,116 @@
       "properties": {}
     },
     "lineItem_refund_externalReferenceId": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "lineItem_refund_authCode": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "lineItem_refund_status": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "lineItem_refund_oceanGatewayInfo": {
       "type": "object",
       "properties": {}
     },
     "lineItem_refund_reason": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "lineItem_isRevenue": {
-      "type": "boolean"
+      "type": [
+        "boolean",
+        "null"
+      ]
     },
     "lineItem_revenueAmount": {
-      "type": "integer"
+      "type": [
+        "integer",
+        "null"
+      ]
     },
     "lineItem_quantitySold": {
-      "type": "number"
+      "type": [
+        "number",
+        "null"
+      ]
     },
     "lineItem_printGroup_id": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "lineItem_merchant_id": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "lineItem_reason": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "lineItem_removedBy_id": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "lineItem_approvedBy_id": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "lineItem_deleteType": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "lineItem_device_id": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "lineItem_createdBy_id": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "lineItem_deletedTime": {
-      "type": "integer"
+      "type": [
+        "integer",
+        "null"
+      ]
     },
     "lineItem_environment": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "lineItem_clientEventType": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     }
   },
   "required": [

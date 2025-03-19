@@ -4,178 +4,352 @@
   "type": "object",
   "properties": {
     "id": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "merchant_id": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "order_id": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "device_id": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "tender_id": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "tender_editable": {
-      "type": "boolean"
+      "type": [
+        "boolean",
+        "null"
+      ]
     },
     "tender_labelKey": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "tender_label": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "tender_opensCashDrawer": {
-      "type": "boolean"
+      "type": [
+        "boolean",
+        "null"
+      ]
     },
     "tender_supportsTipping": {
-      "type": "boolean"
+      "type": [
+        "boolean",
+        "null"
+      ]
     },
     "tender_enabled": {
-      "type": "boolean"
+      "type": [
+        "boolean",
+        "null"
+      ]
     },
     "tender_visible": {
-      "type": "boolean"
+      "type": [
+        "boolean",
+        "null"
+      ]
     },
     "tender_instructions": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "amount": {
-      "type": "integer"
+      "type": [
+        "integer",
+        "null"
+      ]
     },
     "tipAmount": {
-      "type": "integer"
+      "type": [
+        "integer",
+        "null"
+      ]
     },
     "taxAmount": {
-      "type": "integer"
+      "type": [
+        "integer",
+        "null"
+      ]
     },
     "cashbackAmount": {
-      "type": "integer"
+      "type": [
+        "integer",
+        "null"
+      ]
     },
     "cashTendered": {
-      "type": "integer"
+      "type": [
+        "integer",
+        "null"
+      ]
     },
     "externalPaymentId": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "employee_id": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "createdTime": {
-      "type": "integer"
+      "type": [
+        "integer",
+        "null"
+      ]
     },
     "clientCreatedTime": {
-      "type": "integer"
+      "type": [
+        "integer",
+        "null"
+      ]
     },
     "gatewayProcessingTime": {
-      "type": "integer"
+      "type": [
+        "integer",
+        "null"
+      ]
     },
     "modifiedTime": {
-      "type": "integer"
+      "type": [
+        "integer",
+        "null"
+      ]
     },
     "offline": {
-      "type": "boolean"
+      "type": [
+        "boolean",
+        "null"
+      ]
     },
     "result": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "cardTransaction_cardType": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "cardTransaction_entryType": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "cardTransaction_first6": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "cardTransaction_last4": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "cardTransaction_type": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "cardTransaction_authCode": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "cardTransaction_referenceId": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "cardTransaction_transactionNo": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "cardTransaction_state": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "cardTransaction_begBalance": {
-      "type": "integer"
+      "type": [
+        "integer",
+        "null"
+      ]
     },
     "cardTransaction_endBalance": {
-      "type": "integer"
+      "type": [
+        "integer",
+        "null"
+      ]
     },
     "cardTransaction_avsResult": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "cardTransaction_cardholderName": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "cardTransaction_token": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "transactionSettings_cardEntryMethods": {
-      "type": "integer"
+      "type": [
+        "integer",
+        "null"
+      ]
     },
     "transactionSettings_disableCashBack": {
-      "type": "boolean"
+      "type": [
+        "boolean",
+        "null"
+      ]
     },
     "transactionSettings_cloverShouldHandleReceipts": {
-      "type": "boolean"
+      "type": [
+        "boolean",
+        "null"
+      ]
     },
     "transactionSettings_forcePinEntryOnSwipe": {
-      "type": "boolean"
+      "type": [
+        "boolean",
+        "null"
+      ]
     },
     "transactionSettings_disableRestartTransactionOnFailure": {
-      "type": "boolean"
+      "type": [
+        "boolean",
+        "null"
+      ]
     },
     "transactionSettings_allowOfflinePayment": {
-      "type": "boolean"
+      "type": [
+        "boolean",
+        "null"
+      ]
     },
     "transactionSettings_approveOfflinePaymentWithoutPrompt": {
-      "type": "boolean"
+      "type": [
+        "boolean",
+        "null"
+      ]
     },
     "transactionSettings_forceOfflinePayment": {
-      "type": "boolean"
+      "type": [
+        "boolean",
+        "null"
+      ]
     },
     "transactionSettings_signatureThreshold": {
-      "type": "integer"
+      "type": [
+        "integer",
+        "null"
+      ]
     },
     "transactionSettings_signatureEntryLocation": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "transactionSettings_tipMode": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "attributes_default": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "appTracking_developerAppId": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "appTracking_applicationName": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "appTracking_applicationID": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "appTracking_applicationVersion": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "appTracking_sourceSDK": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "appTracking_sourceSDKVersion": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     }
   },
   "required": [
