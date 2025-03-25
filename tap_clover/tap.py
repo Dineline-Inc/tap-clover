@@ -44,6 +44,24 @@ class TapClover(Tap):
 
     name = "tap-clover"
 
+    def __init__(
+            self,
+            *,
+            config: dict | PurePath | str | list[PurePath | str] | None = None,
+            catalog: PurePath | str | dict | Catalog | None = None,
+            state: PurePath | str | dict | None = None,
+            parse_env_config: bool = False,
+            validate_config: bool = True,
+    ) -> None:
+        super().__init__(
+            config=config,
+            catalog=catalog,
+            state=state,
+            parse_env_config=parse_env_config,
+            validate_config=validate_config,
+        )
+        self.config_file = config[0]
+
     config_jsonschema = th.PropertiesList(
         th.Property(
             "access_token",
