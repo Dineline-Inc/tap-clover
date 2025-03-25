@@ -95,25 +95,14 @@ class CloverStream(RESTStream):
 
         return base_urls.get(region, "https://api.clover.com")
 
-    @cached_property
-    def authenticator(self) -> Auth:
-        """Return a new authenticator object.
-
-        Returns:
-            An authenticator instance.
-        """
-        is_sandbox = self.config.get("is_sandbox", True)
-        sandbox_api_token = self.config.get("api_token", "")
-
-        return (
-            APIKeyAuthenticator.create_for_stream(
-                self,
-                key="authorization",
-                value=f"Bearer {sandbox_api_token}",
-                location="header",
-            ) if is_sandbox and sandbox_api_token
-            else CloverAuthenticator.create_for_stream(self)
-        )
+    @property
+    def authenticator(self):
+        oauth_url = self.config.get("auth_url", self.config.get("uri")) or "https://sandbox.dev.clover.com/oauth/v2/token"
+        if "/oauth/v2/token" not in oauth_url:
+            oauth_url = f"{oauth_url}/oauth/v2/token"
+        if not oauth_url.endswith("/token"):
+            oauth_url += "/token"
+        return CloverAuthenticator(self, self.config, auth_endpoint=oauth_url)
 
     @property
     def schema(self) -> dict:
