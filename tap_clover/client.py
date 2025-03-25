@@ -111,7 +111,7 @@ class CloverStream(RESTStream):
                 key="authorization",
                 value=f"Bearer {sandbox_api_token}",
                 location="header",
-            ) if is_sandbox
+            ) if is_sandbox and sandbox_api_token
             else CloverAuthenticator.create_for_stream(self)
         )
 

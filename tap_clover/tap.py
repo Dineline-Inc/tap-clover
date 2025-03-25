@@ -46,6 +46,16 @@ class TapClover(Tap):
 
     config_jsonschema = th.PropertiesList(
         th.Property(
+            "access_token",
+            th.StringType,
+            required=False
+        ),
+        th.Property(
+            "refresh_token",
+            th.StringType,
+            required=True
+        ),
+        th.Property(
             "is_sandbox",
             th.BooleanType,
             required=True,
@@ -60,24 +70,18 @@ class TapClover(Tap):
             description="Clover Merchant ID.",
         ),
         th.Property(
-            "app_id",
+            "client_id",
             th.StringType,
             secret=True,
             title="App ID",
             description="Clover Application ID.",
         ),
         th.Property(
-            "app_secret",
+            "client_secret",
             th.StringType,
             secret=True,
             title="App Secret",
             description="Clover Application Secret.",
-        ),
-        th.Property(
-            "redirect_uri",
-            th.StringType,
-            title="Redirect URI",
-            description="Custom Redirect URI.",
         ),
         th.Property(
             "api_token",
