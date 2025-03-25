@@ -26,11 +26,12 @@ Built with the [Meltano Singer SDK](https://sdk.meltano.com).
 
 | Setting | Required | Default | Description |
 |:--------|:--------:|:-------:|:------------|
+| access_token | False    | None    |             |
+| refresh_token | True     | None    |             |
 | is_sandbox | True     | None    | Whether or not to use the sandbox instance. |
 | merchant_id | True     | None    | Clover Merchant ID. |
-| app_id | False    | None    | Clover Application ID. |
-| app_secret | False    | None    | Clover Application Secret. |
-| redirect_uri | False    | None    | Custom Redirect URI. |
+| client_id | False    | None    | Clover Application ID. |
+| client_secret | False    | None    | Clover Application Secret. |
 | api_token | False    | None    | API Token (sandbox only). |
 | region | False    | us      | Specify the instance region. |
 | user_agent | False    | None    | A custom User-Agent header to send with each request. |
