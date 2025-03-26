@@ -52,6 +52,7 @@ class TapClover(Tap):
             state: PurePath | str | dict | None = None,
             parse_env_config: bool = False,
             validate_config: bool = True,
+            setup_mapper: bool = True,
     ) -> None:
         super().__init__(
             config=config,
@@ -59,6 +60,7 @@ class TapClover(Tap):
             state=state,
             parse_env_config=parse_env_config,
             validate_config=validate_config,
+            setup_mapper=setup_mapper
         )
         self.config_file = config[0]
 
